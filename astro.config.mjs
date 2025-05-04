@@ -3,7 +3,7 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-    site: " https://awscommunitydayecuador.github.io/",
+    site: " https://awscommunitydayecuador.github.io/web/",
     output: 'static',
     base: '/',
     integrations: [
