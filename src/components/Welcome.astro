@@ -1,0 +1,40 @@
+<div class="bg-[#161e2d] h-screen flex flex-col justify-center items-center relative overflow-hidden">
+	<!-- Fondo animado con nubes estilo FLISOL -->
+	<div id="cloud-animation" class="absolute inset-0 z-0 pointer-events-none">
+	  <img src="https://flisolguayaquil.org/assets/images/nube-2.svg" 
+		   class="animate-clouds absolute top-[10%] left-[-20%] w-40 opacity-20" />
+	  <img src="https://flisolguayaquil.org/assets/images/nube-2.svg" 
+		   class="animate-clouds absolute top-[30%] right-[-15%] w-60 opacity-30" />
+	  <img src="https://flisolguayaquil.org/assets/images/nube-2.svg" 
+		   class="animate-clouds absolute bottom-[15%] left-[10%] w-32 opacity-20" />
+	  <img src="https://flisolguayaquil.org/assets/images/nube-2.svg" 
+		   class="animate-clouds absolute bottom-[25%] right-[20%] w-48 opacity-25" />
+	</div>
+  
+	<!-- Contenido principal -->
+	<div class="z-10 text-center text-white px-6">
+	  <h1 class="text-6xl font-bold mb-2 text-[#f90] tracking-wide drop-shadow-md">AWS</h1>
+	  <p class="text-4xl sm:text-5xl font-bold text-white mb-4 drop-shadow-md">Community Day Ecuador</p>
+	  <p class="text-[8rem] sm:text-[5rem] font-extrabold text-white drop-shadow-xl leading-none">2025</p>
+	</div>
+  </div>
+  
+  <style>
+	@keyframes animate-clouds {
+	  0% { transform: translateX(0); }
+	  100% { transform: translateX(100vw); }
+	}
+  
+	.animate-clouds {
+	  animation: animate-clouds 80s linear infinite;
+	}
+  
+	.drop-shadow-md {
+	  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	}
+  
+	.drop-shadow-xl {
+	  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+	}
+  </style>
+  
