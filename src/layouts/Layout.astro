@@ -1,3 +1,20 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description = "Únete a AWS Community Day Ecuador 2025, el evento más importante para la comunidad de AWS en Ecuador. Disfruta de charlas, talleres y la oportunidad de aprender sobre las últimas tecnologías de AWS.",
+  image = "/assets/images/logo.webp",
+} = Astro.props;
+
+// Base URL for canonical links
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
