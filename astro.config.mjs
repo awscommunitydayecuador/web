@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: " https://awscommunitydayecuador.github.io",
   output: 'static',
-  base: '/',
+  base: 'web',
 
   integrations: [
       compress({
@@ -20,7 +20,7 @@ export default defineConfig({
     ],
 
   build: {
-    assets: "_assets",
+    assets: "assets",
   },
 
   compressHTML: true,
