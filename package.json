@@ -11,7 +11,9 @@
   "author": "FLISol Guayaquil",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
     "astro": "^5.7.10",
-    "astro-compress": "^2.3.8"
+    "astro-compress": "^2.3.8",
+    "tailwindcss": "^4.1.5"
   }
 }
