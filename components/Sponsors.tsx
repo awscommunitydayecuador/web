@@ -89,139 +89,74 @@ export default function Sponsors() {
   }
 
   return (
-    <section id="sponsors" className="py-24 px-4 relative overflow-hidden">
+    <section id="sponsors" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 sm:w-48 lg:w-64 h-32 sm:h-48 lg:h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-32 sm:w-48 lg:w-64 h-32 sm:h-48 lg:h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8">
             <span className="gradient-text">Nuestros Sponsors</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Empresas líderes que apoyan la comunidad AWS en Ecuador y hacen posible 
-            este evento de aprendizaje y networking.
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed px-2">
+            Empresas líderes que apoyan y hacen posible el AWS Community Day Ecuador 2025
           </p>
         </div>
 
-        {/* Platinum Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent">
-              Platinum Sponsors
-            </span>
-          </h3>
-          <div className="grid md:grid-cols-1 gap-8 justify-items-center">
-            {sponsors.filter(s => s.tier === 'platinum').map(sponsor => (
-              <div key={sponsor.id} className="card group max-w-md">
-                <div className="relative">
-                  <div className="w-64 h-32 bg-white/10 rounded-xl flex items-center justify-center p-6 group-hover:bg-white/20 transition-all duration-300">
+        {/* Sponsors Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+          {sponsors.map((sponsor) => (
+            <div key={sponsor.id} className="card group">
+              <div className="text-center">
+                {/* Sponsor Logo */}
+                <div className="relative mb-4 sm:mb-6">
+                  <div className="w-20 h-16 sm:w-24 sm:h-20 md:w-28 md:h-24 mx-auto rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 group-hover:border-[#f8991d]/40 transition-all duration-300">
                     <img
                       src={sponsor.logo}
                       alt={sponsor.name}
-                      className="max-w-full max-h-full object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+                      className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="absolute -top-2 -right-2">
-                    <span className="px-3 py-1 bg-gradient-to-r from-gray-400 to-gray-600 text-white text-xs font-bold rounded-full">
-                      Platinum
-                    </span>
+                  {/* Tier Badge */}
+                  <div className={`absolute -top-2 -right-2 px-2 py-1 rounded-full text-xs font-semibold bg-gradient-to-r ${getTierColor(sponsor.tier)} text-white shadow-lg`}>
+                    {sponsor.tier}
                   </div>
                 </div>
-                <div className="text-center mt-4">
-                  <h4 className="text-white font-semibold">{sponsor.name}</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Gold Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              Gold Sponsors
-            </span>
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            {sponsors.filter(s => s.tier === 'gold').map(sponsor => (
-              <div key={sponsor.id} className="card group">
-                <div className="relative">
-                  <div className="w-full h-24 bg-white/10 rounded-xl flex items-center justify-center p-4 group-hover:bg-white/20 transition-all duration-300">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="max-w-full max-h-full object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="absolute -top-2 -right-2">
-                    <span className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-xs font-bold rounded-full">
-                      Gold
-                    </span>
-                  </div>
-                </div>
-                <div className="text-center mt-4">
-                  <h4 className="text-white font-semibold">{sponsor.name}</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+                {/* Sponsor Info */}
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[#f8991d] transition-colors duration-300">
+                  {sponsor.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 mb-4">
+                  {getTierLabel(sponsor.tier)}
+                </p>
 
-        {/* Silver & Bronze Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent">
-              Silver & Bronze Sponsors
-            </span>
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sponsors.filter(s => s.tier === 'silver' || s.tier === 'bronze').map(sponsor => (
-              <div key={sponsor.id} className="card group">
-                <div className="relative">
-                  <div className="w-full h-20 bg-white/10 rounded-xl flex items-center justify-center p-4 group-hover:bg-white/20 transition-all duration-300">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="max-w-full max-h-full object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="absolute -top-2 -right-2">
-                    <span className={`px-3 py-1 bg-gradient-to-r ${getTierColor(sponsor.tier)} text-white text-xs font-bold rounded-full`}>
-                      {sponsor.tier === 'silver' ? 'Silver' : 'Bronze'}
-                    </span>
-                  </div>
-                </div>
-                <div className="text-center mt-4">
-                  <h4 className="text-white font-semibold text-sm">{sponsor.name}</h4>
-                </div>
+                {/* Visit Website Button */}
+                <a 
+                  href={sponsor.website} 
+                  className="inline-flex items-center space-x-2 text-sm sm:text-base text-[#f8991d] hover:text-[#fbbf24] transition-colors duration-300 group-hover:scale-105"
+                >
+                  <span>Visitar Sitio</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA for sponsors */}
-        <div className="text-center">
-          <div className="card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              ¿Quieres ser Sponsor?
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Únete a las empresas líderes que apoyan la comunidad AWS en Ecuador. 
-              Obtén visibilidad y conecta con profesionales del sector.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#register" className="btn-primary">
-                Convertirse en Sponsor
-              </a>
-              <a href="#" className="btn-outline">
-                Descargar Kit de Sponsorship
-              </a>
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* CTA for Sponsors */}
+        <div className="text-center mt-12 sm:mt-16">
+          <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 px-2">
+            ¿Tu empresa quiere ser parte de este gran evento?
+          </p>
+          <a href="#call-for-participants" className="btn-outline text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
+            Convertirse en Sponsor
+          </a>
         </div>
       </div>
     </section>
