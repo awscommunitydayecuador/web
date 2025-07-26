@@ -14,17 +14,29 @@ import { getEventData } from '../utils/siteData'
 export default function About() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isClient, setIsClient] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const swiperRef = useRef<any>(null)
   const eventData = getEventData()
   const eventPhotos = eventData.photos
 
   useEffect(() => {
     setIsClient(true)
+    
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
   const handleSlideChange = (swiper: any) => {
     setActiveIndex(swiper.realIndex)
   }
+
+  const galleryHeight = isMobile ? '180px' : '300px'
 
   return (
     <section id="about" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 relative overflow-hidden">
@@ -85,7 +97,7 @@ export default function About() {
                   loop={true}
                   grabCursor={true}
                   className="material-you-swiper max-w-xs sm:max-w-sm md:max-w-md mx-auto"
-                  style={{ height: '180px' }}
+                  style={{ height: galleryHeight }}
                 >
                   {eventPhotos.map((photo, index) => (
                     <SwiperSlide key={index}>
@@ -128,7 +140,7 @@ export default function About() {
               
               {/* Fallback for SSR */}
               {!isClient && (
-                <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto bg-gray-800 rounded-2xl flex items-center justify-center" style={{ height: '180px' }}>
+                <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto bg-gray-800 rounded-2xl flex items-center justify-center" style={{ height: galleryHeight }}>
                   <div className="text-gray-400">Cargando galería...</div>
                 </div>
               )}
