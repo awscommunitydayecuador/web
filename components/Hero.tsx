@@ -19,7 +19,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 animate-fade-in-up">
           <span className="gradient-text">{eventData.title}</span>
           <br />
-          <span className="text-white">Ecuador 2025</span>
+          <span className="text-white">{eventData.subtitle}</span>
         </h1>
 
         {/* Subtitle */}

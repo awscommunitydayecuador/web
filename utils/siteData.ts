@@ -10,6 +10,7 @@ export interface EventPhoto {
 
 export interface EventData {
   title: string
+  subtitle: string
   date: string
   location: string
   description: string
