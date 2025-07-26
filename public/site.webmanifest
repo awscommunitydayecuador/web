@@ -1,0 +1,26 @@
+{
+  "name": "AWS Community Day Ecuador 2025",
+  "short_name": "AWSCD Ecuador",
+  "description": "El evento más importante de la comunidad AWS en Ecuador",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B2530",
+  "theme_color": "#FF9900",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+} 

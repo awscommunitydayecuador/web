@@ -1,0 +1,283 @@
+{
+  "event": {
+    "title": "AWS Community Day Ecuador 2025",
+    "date": "25 de Octubre",
+    "location": "Quito",
+    "description": "¡No te pierdas el 3er AWS Community Day Ecuador una jornada llena de conocimiento, networking y experiencias únicas en la nube AWS.",
+    "registrationUrl": "https://awscommunitydayec.eventbrite.com/",
+    "photos": [
+      {
+        "url": "/cmd_old/01.jpg",
+        "title": "AWS Community Day 2023",
+        "description": "Más de 200 participantes se reunieron para compartir conocimiento en la nube",
+        "subtitle": "Evento Principal",
+        "color": "from-amber-500 to-yellow-500"
+      },
+      {
+        "url": "/cmd_old/02.jpg",
+        "title": "Talleres Prácticos",
+        "description": "Sesiones hands-on donde los participantes construyeron soluciones reales",
+        "subtitle": "Hands-on Labs",
+        "color": "from-blue-500 to-indigo-500"
+      },
+      {
+        "url": "/cmd_old/03.jpg",
+        "title": "Networking y Conexiones",
+        "description": "Momentos de conexión entre profesionales del sector tecnológico",
+        "subtitle": "Networking",
+        "color": "from-green-500 to-emerald-500"
+      },
+      {
+        "url": "/cmd_old/04.jpg",
+        "title": "AWS Community Day 2023",
+        "description": "Más de 200 participantes se reunieron para compartir conocimiento en la nube",
+        "subtitle": "Evento Principal",
+        "color": "from-amber-500 to-yellow-500"
+      },
+      {
+        "url": "/cmd_old/05.jpg",
+        "title": "Certificaciones AWS",
+        "description": "Preparación y orientación para obtener certificaciones oficiales",
+        "subtitle": "Certificaciones",
+        "color": "from-red-500 to-orange-500"
+      },
+      {
+        "url": "/cmd_old/06.jpg",
+        "title": "AWS Community Day 2024",
+        "description": "Más de 500 participantes se reunieron para compartir conocimiento en la nube",
+        "subtitle": "Evento Principal",
+        "color": "from-amber-500 to-yellow-500"
+      },
+      {
+        "url": "/cmd_old/07.jpg",
+        "title": "Certificaciones AWS",
+        "description": "Preparación y orientación para obtener certificaciones oficiales",
+        "subtitle": "Certificaciones",
+        "color": "from-red-500 to-orange-500"
+      }
+    ]
+  },
+  "communities": {
+    "awsUserGroup": {
+      "logo": "/logo-aws-ug-ecuador.svg",
+      "name": "AWS User Group Ecuador",
+      "description": "Comunidad principal de AWS en Ecuador",
+      "socialMedia": {
+        "instagram": {
+          "url": "https://www.instagram.com/ecuadoraws",
+          "handle": "Instagram",
+          "color": "text-amber-500"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/awsecuador/",
+          "handle": "Linkedin",
+          "color": "text-amber-500"
+        },
+        "facebook": {
+          "url": "https://www.facebook.com/ecuadoraws",
+          "handle": "Facebook",
+          "color": "text-amber-500"
+        },
+        "website": {
+          "url": "https://www.awsugecuador.com/",
+          "handle": "Sitio Web",
+          "color": "text-amber-500"
+        }
+      }
+    },
+    "awsWomen": {
+      "logo": "/logo-aws-woman-ecuador.svg",
+      "name": "AWS Women Ecuador",
+      "description": "Comunidad de mujeres en AWS Ecuador",
+      "socialMedia": {
+        "instagram": {
+          "url": "https://www.instagram.com/awswomenecuador",
+          "handle": "Instagram",
+          "color": "text-amber-500"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/aws-women-ecuador/",
+          "handle": "Linkedin",
+          "color": "text-amber-500"
+        },
+        "facebook": {
+          "url": "https://www.facebook.com/groups/awswomenecuador",
+          "handle": "Facebook",
+          "color": "text-amber-500"
+        },
+        "website": {
+          "url": "https://linktr.ee/awswomenecuador",
+          "handle": "Sitio Web",
+          "color": "text-amber-500"
+        }
+      }
+    }
+  },
+  "speakers": {
+    "callForSpeakers": {
+      "title": "¡No te pierdas la oportunidad de ser Speaker!",
+      "description": "No te pierdas la oportunidad de ser speaker en el AWS Community Day Ecuador 2025. Comparte tus conocimientos, inspira a otros builders y forma parte del evento más grande de AWS en el país. Tu experiencia puede marcar la diferencia.",
+      "ctaText": "Aplicar como Speaker",
+      "ctaUrl": "https://sessionize.com/communitydayecuador2025/"
+    },
+    "confirmed": [
+      {
+        "id": 1,
+        "name": "María González",
+        "role": "Senior Cloud Architect",
+        "company": "Amazon Web Services",
+        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Carlos Rodríguez",
+        "role": "DevOps Engineer",
+        "company": "TechCorp Ecuador",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Ana Martínez",
+        "role": "Data Scientist",
+        "company": "DataFlow Solutions",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Luis Fernández",
+        "role": "Security Specialist",
+        "company": "SecureCloud Ecuador",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Patricia López",
+        "role": "Solutions Architect",
+        "company": "Innovation Labs",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Roberto Silva",
+        "role": "Full Stack Developer",
+        "company": "Startup Ecuador",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "twitter": "#",
+          "linkedin": "#",
+          "github": "#"
+        }
+      }
+    ]
+  },
+  "sponsors": {
+    "callForSponsors": {
+      "title": "¡Sé parte de este gran evento!",
+      "description": "Da a conocer tu marca y conecta con profesionales, entusiastas y líderes de la comunidad tech. Al apoyar este evento, posicionas tu empresa como un aliado de la innovación, el aprendizaje abierto y el crecimiento del talento local en tecnologías en la nube.",
+      "ctaText": "Convertirse en Sponsor",
+      "ctaUrl": "#register-sponsor"
+    },
+    "confirmed": [
+      {
+        "id": 1,
+        "name": "Amazon Web Services",
+        "tier": "platinum",
+        "logo": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 2,
+        "name": "TechCorp Ecuador",
+        "tier": "gold",
+        "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 3,
+        "name": "DataFlow Solutions",
+        "tier": "gold",
+        "logo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 4,
+        "name": "SecureCloud Ecuador",
+        "tier": "silver",
+        "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 5,
+        "name": "Innovation Labs",
+        "tier": "silver",
+        "logo": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 6,
+        "name": "Startup Ecuador",
+        "tier": "bronze",
+        "logo": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 7,
+        "name": "CloudTech Solutions",
+        "tier": "bronze",
+        "logo": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=200&h=100&fit=crop",
+        "website": "#"
+      },
+      {
+        "id": 8,
+        "name": "Digital Innovation Hub",
+        "tier": "bronze",
+        "logo": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=200&h=100&fit=crop",
+        "website": "#"
+      }
+    ]
+  },
+  "contact": {
+    "email": "info@awscommunityday.ec",
+    "location": "Quito, Ecuador",
+    "socialMedia": {
+      "twitter": "#",
+      "linkedin": "#",
+      "facebook": "#",
+      "instagram": "#"
+    }
+  },
+  "navigation": {
+    "links": [
+      { "href": "#about", "text": "Acerca de" },
+      { "href": "#speakers", "text": "Speakers" },
+      { "href": "#sponsors", "text": "Sponsors" },
+      { "href": "#venue", "text": "Lugar" },
+      { "href": "#community", "text": "Comunidad" }
+    ]
+  }
+} 
