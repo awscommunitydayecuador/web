@@ -5,11 +5,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo y descripción */}
           <div className="sm:col-span-2">
-            <div className="mb-4">
+            <div className="mb-4 flex justify-center sm:justify-start">
               <img
                 src="/logo-community-day.svg"
                 alt="AWS Community Day Ecuador"
-                className="h-8 sm:h-10 lg:h-12 w-auto"
+                className="h-10 sm:h-10 lg:h-12 w-auto"
               />
             </div>
             <p className="text-sm sm:text-base text-gray-300 mb-4 max-w-md leading-relaxed">
@@ -58,8 +58,8 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@awscommunityday.ec" className="text-sm sm:text-base hover:text-[#f8991d] transition-colors break-all">
-                  info@awscommunityday.ec
+                <a href="mailto:hello@awsugecuador.com" className="text-sm sm:text-base hover:text-[#f8991d] transition-colors break-all">
+                  hello@awsugecuador.com
                 </a>
               </li>
               <li className="flex items-center text-gray-300">
