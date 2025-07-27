@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCards, Autoplay, Pagination } from 'swiper/modules'
@@ -16,8 +16,10 @@ export default function About() {
   const [isClient, setIsClient] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const swiperRef = useRef<any>(null)
-  const eventData = getEventData()
-  const eventPhotos = eventData.photos
+  
+  // Memoize data to prevent unnecessary re-renders
+  const eventData = useMemo(() => getEventData(), [])
+  const eventPhotos = useMemo(() => eventData.photos, [eventData.photos])
 
   useEffect(() => {
     setIsClient(true)
@@ -27,9 +29,20 @@ export default function About() {
     }
     
     checkMobile()
-    window.addEventListener('resize', checkMobile)
     
-    return () => window.removeEventListener('resize', checkMobile)
+    // Debounce resize listener
+    let timeoutId: NodeJS.Timeout
+    const handleResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkMobile, 100)
+    }
+    
+    window.addEventListener('resize', handleResize)
+    
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(timeoutId)
+    }
   }, [])
 
   const handleSlideChange = (swiper: any) => {
@@ -110,6 +123,8 @@ export default function About() {
                             fill
                             className="object-cover transition-all duration-1000 group-hover:scale-110"
                             priority={index === 0}
+                            loading={index === 0 ? 'eager' : 'lazy'}
+                            sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 448px, 600px"
                             suppressHydrationWarning
                           />
                           

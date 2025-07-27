@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Remove Google Fonts import - using Next.js font optimization instead */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -20,8 +21,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   scroll-behavior: smooth;
+  /* Optimize for performance */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -35,6 +40,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Custom scrollbar */
@@ -55,7 +67,7 @@ a {
   background: #fbbf24;
 }
 
-/* Custom animations */
+/* Custom animations - optimized */
 @keyframes fadeInUp {
   from {
     opacity: 0;
