@@ -10,11 +10,9 @@
 # Cache static assets
 /*.js
   Cache-Control: public, max-age=31536000, immutable
-  Content-Encoding: gzip
 
 /*.css
   Cache-Control: public, max-age=31536000, immutable
-  Content-Encoding: gzip
 
 /*.svg
   Cache-Control: public, max-age=31536000, immutable
