@@ -66,7 +66,7 @@ export default function Venue() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Horario</h4>
-                  <p className="text-gray-300">8:00 AM - 6:00 PM</p>
+                  <p className="text-gray-300">9:00 - 17:00</p>
                 </div>
               </div>
 
