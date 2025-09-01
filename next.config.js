@@ -6,9 +6,6 @@ const withBundleAnalyzer = process.env.ANALYZE === 'true'
   : (config) => config
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
     domains: ['images.unsplash.com'],
     formats: ['image/webp', 'image/avif'],
