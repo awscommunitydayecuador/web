@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
 // import Speakers from '../components/Speakers'
-// import Sponsors from '../components/Sponsors'
+import Sponsors from '../components/Sponsors'
 import CallForSpeakersAndSponsors from '../components/CallForSpeakersAndSponsors'
 import Venue from '../components/Venue'
 import Community from '../components/Community'
@@ -72,7 +72,7 @@ export default function Home() {
       <About />
       <Venue />
       {/* <Speakers /> */}
-      {/* <Sponsors /> */}
+      <Sponsors /> 
       <CallForSpeakersAndSponsors />
       <Community />
       <Footer />
