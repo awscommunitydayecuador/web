@@ -16,10 +16,24 @@ export default function Sponsors() {
     },
     {
       id: 3,
+      name: "Escala 24x7",
+      tier: "gold",
+      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/Logo-Escala24x7-variaciones-2025_Escala-24x7-Logo-Color-RGB-scaled.png",
+      website: "https://www.escala24x7.com/"
+    },
+    {
+      id: 4,
       name: "Ingram Micro",
       tier: "Bronce",
       logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logo-ingram-01.png",
       website: "https://www.ingrammicro.com/"
+    },
+    {
+      id: 5,
+      name: "Publifyer Micro",
+      tier: "platinum",
+      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logotipo-HotPink-scaled.png",
+      website: "https://publifyer.com/"
     },
   ]
 
@@ -56,16 +70,25 @@ export default function Sponsors() {
   const getLogoSize = (tier: string) => {
     switch (tier) {
       case 'platinum':
-        return 'w-20 h-16 sm:w-24 sm:h-20 md:w-28 md:h-24 lg:w-32 lg:h-28'
+        return 'w-56 h-44' // 14rem x 11rem
       case 'gold':
-        return 'w-28 h-20 sm:w-32 sm:h-24 md:w-36 md:h-28 lg:w-40 lg:h-32'
+        return 'w-48 h-36' // 12rem x 9rem
       case 'silver':
-        return 'w-24 h-18 sm:w-28 sm:h-20 md:w-32 md:h-24 lg:w-36 lg:h-28'
+        return 'w-40 h-32' // 10rem x 8rem
       case 'Bronce':
-        return 'w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 lg:w-32 lg:h-24'
+        return 'w-32 h-24' // 8rem x 6rem
       default:
         return 'w-28 h-20'
     }
+  }
+
+  const getImageSize = (tier: string, sponsorName?: string) => {
+    // Tamaño especial para la imagen de AWS
+    if (sponsorName === "Amazon Web Services") {
+      return 'max-w-32 max-h-24' // Imagen más pequeña
+    }
+    
+    return 'max-w-full max-h-full' // Tamaño normal
   }
 
   const getCardSize = (tier: string) => {
@@ -155,15 +178,15 @@ export default function Sponsors() {
                       <div className="relative z-10 text-center">
                         {/* Logo Container with Glow Effect */}
                         <div className="relative mb-6">
-                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative`}>
+                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative h-44 flex items-center justify-center`}>
                             {/* Glow Effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                             {/* Logo */}
-                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-2xl p-4 border border-white/20 group-hover:border-gray-400/60 transition-all duration-500">
+                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-2xl p-4 border border-white/20 group-hover:border-gray-400/60 transition-all duration-500 w-full h-full flex items-center justify-center">
                               <img
                                 src={sponsor.logo}
                                 alt={sponsor.name}
-                                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                                className={`${getImageSize(sponsor.tier, sponsor.name)} object-contain group-hover:scale-110 transition-transform duration-500`}
                               />
                             </div>
                           </div>
@@ -224,15 +247,15 @@ export default function Sponsors() {
                       <div className="relative z-10 text-center">
                         {/* Logo Container with Glow Effect */}
                         <div className="relative mb-6">
-                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative`}>
+                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative h-36 flex items-center justify-center`}>
                             {/* Glow Effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-600 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                             {/* Logo */}
-                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-xl p-3 border border-white/20 group-hover:border-yellow-400/60 transition-all duration-500">
+                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-xl p-3 border border-white/20 group-hover:border-yellow-400/60 transition-all duration-500 w-full h-full flex items-center justify-center">
                               <img
                                 src={sponsor.logo}
                                 alt={sponsor.name}
-                                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                                className={`${getImageSize(sponsor.tier, sponsor.name)} object-contain group-hover:scale-110 transition-transform duration-500`}
                               />
                             </div>
                           </div>
@@ -293,15 +316,15 @@ export default function Sponsors() {
                       <div className="relative z-10 text-center">
                         {/* Logo Container with Glow Effect */}
                         <div className="relative mb-4">
-                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative`}>
+                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative h-32 flex items-center justify-center`}>
                             {/* Glow Effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-500 rounded-lg blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                             {/* Logo */}
-                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-lg p-2 border border-white/20 group-hover:border-gray-400/60 transition-all duration-500">
+                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-lg p-2 border border-white/20 group-hover:border-gray-400/60 transition-all duration-500 w-full h-full flex items-center justify-center">
                               <img
                                 src={sponsor.logo}
                                 alt={sponsor.name}
-                                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                                className={`${getImageSize(sponsor.tier, sponsor.name)} object-contain group-hover:scale-110 transition-transform duration-500`}
                               />
                             </div>
                           </div>
@@ -362,15 +385,15 @@ export default function Sponsors() {
                       <div className="relative z-10 text-center">
                         {/* Logo Container with Glow Effect */}
                         <div className="relative mb-3">
-                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative`}>
+                          <div className={`${getLogoSize(sponsor.tier)} mx-auto relative h-24 flex items-center justify-center`}>
                             {/* Glow Effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-800 rounded-lg blur-sm opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                             {/* Logo */}
-                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-lg p-1 border border-white/20 group-hover:border-amber-500/60 transition-all duration-500">
+                            <div className="relative bg-[rgb(255_255_255/87%)] backdrop-blur-sm rounded-lg p-1 border border-white/20 group-hover:border-amber-500/60 transition-all duration-500 w-full h-full flex items-center justify-center">
                               <img
                                 src={sponsor.logo}
                                 alt={sponsor.name}
-                                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                                className={`${getImageSize(sponsor.tier, sponsor.name)} object-contain group-hover:scale-110 transition-transform duration-500`}
                               />
                             </div>
                           </div>
