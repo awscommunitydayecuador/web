@@ -30,8 +30,8 @@ export default function Sponsors() {
     },
     {
       id: 5,
-      name: "Publifyer Micro",
-      tier: "platinum",
+      name: "Publifyer",
+      tier: "gold",
       logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logotipo-HotPink-scaled.png",
       website: "https://publifyer.com/"
     },
