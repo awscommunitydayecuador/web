@@ -442,34 +442,6 @@
     ]
   },
   {
-    "SessionId": 986525,
-    "Title": "Caminando hacia la cultura FinOps",
-    "Speakers": [
-      {
-        "FirstName": "Alexis",
-        "LastName": "Velásquez Quintero",
-        "TagLine": "Member FinOps Foundation",
-        "Bio": "Fanatic Cloud - AWS/Azure/GCP/Oracle/Alibaba | Devops | FinOps (Member FinOps Foundation)",
-        "LinkedIn": "https://www.linkedin.com/in/alexis-vel%C3%A1squez-quintero-3a9003170/",
-        "Profile Picture": "https://sessionize.com/image/cc23-400o400o1-SdgVrXWAK9ewMwLJ5wm93V.png"
-      }
-    ]
-  },
-  {
-    "SessionId": 989487,
-    "Title": "Construyendo agentes de IA con memoria persistente usando LangGraph, Bedrock y DynamoDB",
-    "Speakers": [
-      {
-        "FirstName": "Willy Joao",
-        "LastName": "Mateo Espinoza",
-        "TagLine": "Fullstack Software Developer Engineer",
-        "Bio": "As a Computer Science Engineer and full-stack developer, I combine technologies such as Python, LangGraph, AWS, and Terraform to create scalable and accessible solutions, prioritizing clean code and robust architectures.\nMy focus is on integrating Artificial Intelligence into innovative projects: I led a research project using OpenAI's Whisper to analyze oral presentations at ESPOL, my alma mater, results that we published as a scientific paper in 2024.\nCurrently, as a consultant, I apply my passion for AI by developing applications that solve critical challenges at Incyte, a US biopharmaceutical company.",
-        "LinkedIn": "https://www.linkedin.com/in/willymateo",
-        "Profile Picture": "https://sessionize.com/image/b235-400o400o1-hds3TTgLhi9sxTSMpALw1u.png"
-      }
-    ]
-  },
-  {
     "SessionId": 991413,
     "Title": "Amazon Q",
     "Speakers": [
