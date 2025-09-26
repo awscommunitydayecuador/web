@@ -246,20 +246,6 @@
     ]
   },
   {
-    "SessionId": 1017782,
-    "Title": "De la Universidad al Mercado: Construyendo MVPs Serverless en AWS como Estudiante y Freelancer",
-    "Speakers": [
-      {
-        "FirstName": "Jostin",
-        "LastName": "Alvarado",
-        "TagLine": "Estudiante - Desarrollador Freelancer",
-        "Bio": "Jostin Alvarado, estudiante de Ingeniería en Ciencias de la Computación en la Universidad Técnica Particular de Loja (UTPL), es un desarrollador freelance apasionado por la tecnología serverless. Ha desarrollado múltiples MVPs con AWS Lambda para proyectos académicos y clientes en sectores como auditoría.\nCombinando su experiencia universitaria y profesional, Jostin busca inspirar a otros estudiantes y desarrolladores con una experiencia no tan amplia a crear soluciones innovadoras y accesibles con AWS.",
-        "LinkedIn": "https://www.linkedin.com/in/jostinalvarado",
-        "Profile Picture": "https://sessionize.com/image/092d-400o400o1-RfMbv7c6DyevF78EsycmvZ.jpg"
-      }
-    ]
-  },
-  {
     "SessionId": 1019123,
     "Title": "Más allá de RAG: Amazon S3 Vectors",
     "Speakers": [
@@ -372,20 +358,6 @@
     ]
   },
   {
-    "SessionId": 1023471,
-    "Title": "Gestionando los costos de la nube: la especificación FOCUS",
-    "Speakers": [
-      {
-        "FirstName": "Horacio",
-        "LastName": "Recinos",
-        "TagLine": "Digital Practitioner",
-        "Bio": "Graduado de la Universidad Francisco Marroquín como Administrador de Sistemas de Información, posee una maestría en Dirección Estratégica en Ingeniería de Software por la Universidad de León, España; una especialización en Big Data por la Universidad Oberta de Cataluña, una Maestría en Transformación Digital por la Universidad Europea del Atlántico y un Máster en Cloud Computing por IMMUNE Technology Institute. Tiene 25 años de experiencia en el área de tecnología y 10 años de experiencia en el análisis de datos. Ha trabajado en la implementación de soluciones para el control de fraude y lavado de dinero, así como diversas soluciones en el sector de telecomunicaciones. Es docente en la Universidad del Valle de Guatemala desde hace 8 años impartiendo cursos de análisis de datos en las maestrías de business intelligence y business administration. Actualmente trabaja como consultor independiente en instituciones financieras desarrollando equipos de alto desempeño para la construcción de aplicaciones basadas en datos utilizando las mejores herramientas del mercado y un enfoque basado en la gestión de productos de datos.",
-        "LinkedIn": "https://www.linkedin.com/in/horacio-recinos-roca",
-        "Profile Picture": "https://sessionize.com/image/9abe-400o400o1-nb22DTHfMPedKmBwpT7fbB.jpg"
-      }
-    ]
-  },
-  {
     "SessionId": 1023615,
     "Title": "Construya su primer agente de lA listo para producción con Amazon Bedrock",
     "Speakers": [
@@ -438,20 +410,6 @@
         "Bio": "Más de 10 años de experiencia en desarrollo de software, AWS Cloud Practitioner.\n\nApasionado por la tecnología y el software libre.",
         "LinkedIn": "https://www.linkedin.com/in/jsarangoq/",
         "Profile Picture": "https://sessionize.com/image/a671-400o400o1-JjosRHhMYoJFinyzWgbJAC.jpg"
-      }
-    ]
-  },
-  {
-    "SessionId": 1025088,
-    "Title": "Gerardo Moran",
-    "Speakers": [
-      {
-        "FirstName": "Gerardo",
-        "LastName": "Moran",
-        "TagLine": "Arquitecto de Soluciones ",
-        "Bio": "Arquitecturas Seguras y Escalables en AWS: Lecciones desde el Campo\n\nDescription:\nEn esta charla compartiré experiencias reales diseñando e implementando arquitecturas en AWS para empresas de distintos sectores, desde PyMEs hasta corporativos. Revisaremos buenas prácticas de seguridad en la nube, estrategias de costo-eficiencia (FinOps) y patrones de arquitectura escalable. También presentaré casos de éxito con migraciones, integración multi-cloud y monitoreo de infraestructura, destacando lecciones aprendidas y recomendaciones prácticas que los equipos pueden aplicar en sus propios entornos.",
-        "LinkedIn": "https://www.linkedin.com/in/gerardo-moran-86030011a",
-        "Profile Picture": "https://sessionize.com/image/19bc-400o400o1-at9MMCSByjNpZCPvr4QB27.jpg"
       }
     ]
   },
