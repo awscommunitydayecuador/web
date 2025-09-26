@@ -1,0 +1,542 @@
+[
+  {
+    "SessionId": 984176,
+    "Title": "Arquitectura Inteligente en AWS: Automatiza y Transforma con Fargate, EventBridge y Bedrock",
+    "Speakers": [
+      {
+        "FirstName": "Bryam David",
+        "LastName": "Vega Moreno",
+        "TagLine": "Thoughtworks, Senior Consultant Developer",
+        "Bio": "I am a passionate and versatile software engineer with over 5 years of experience specializing in Java, focusing on developing scalable and high-quality solutions. I have led teams using agile methodologies and established myself as a technical authority in the design and implementation of diverse architectures, including microservices, event-driven, and monolithic systems. My profound understanding of design patterns and best practices in software development enables me to deliver robust and scalable solutions that exceed client expectations. Currently, I shine as a Java Developer, dedicating myself to crafting high-quality solutions that reflect my love for technology and innovation.",
+        "LinkedIn": "https://www.linkedin.com/in/bryam-vega",
+        "Profile Picture": "https://sessionize.com/image/f899-400o400o1-97jJgJ1h2NcfMiPSr7nun8.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 984432,
+    "Title": "Múltiples herramientas y un solo flujo: descubre la usabilidad de AWS State Machine",
+    "Speakers": [
+      {
+        "FirstName": "Andrew",
+        "LastName": "Rueda",
+        "TagLine": "SOFTWARE SPECIALIST",
+        "Bio": "I am 22 years old, I live in Quito, and I work as a Software Specialist at a bank in Ecuador. I have followed the path of artificial intelligence and its implementation in a large company. I recently graduated from university with a degree in Computer Science Engineering. I am enthusiastic about learning and new cloud technologies. I have participated in AWS workshops in Ecuador, and I want to be a speaker because I want to share my ideas with the world and, just as I learn from them, I also want to share what I know with the younger generations.\nI have used cloud tools such as Bedrock, S3, RAG, EC2, and more.",
+        "LinkedIn": "https://www.linkedin.com/in/andrew-paul-rueda-valencia/",
+        "Profile Picture": "https://sessionize.com/image/68cc-400o400o1-WfGUUXMoFyZ5rKMXJAGkwB.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 984857,
+    "Title": "Aprendiendo el Lenguaje de las Series de Tiempo - AWS Chronos Bolt",
+    "Speakers": [
+      {
+        "FirstName": "Sebastián",
+        "LastName": "Sarasti",
+        "TagLine": "Crossbridge, Machine Learning Engineer",
+        "Bio": "Sebastián Sarasti es un ingeniero en machine learning con una destacada trayectoria en el desarrollo e implementación de modelos de inteligencia artificial end-to-end en diversas industrias, como retail, sector bancario y farmacéutico.\n\nActualmente, Sebastián se especializa en la creación de arquitecturas de deep learning avanzadas para aplicaciones en la industria farmacéutica, con un enfoque particular en su despliegue eficiente en la nube.",
+        "LinkedIn": "https://www.linkedin.com/in/sebastiansarasti/",
+        "Profile Picture": "https://sessionize.com/image/4547-400o400o1-EEMYXy4qze77H9BHxVCgP1.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 984952,
+    "Title": "Arquitectura de un Agente FinOps: Memory Layers, Bedrock y Predicción Continua de Costos",
+    "Speakers": [
+      {
+        "FirstName": "Gabriel",
+        "LastName": "Torres",
+        "TagLine": "Cloud Engineer at Banco Bolivariano - Community Builder at Serverless",
+        "Bio": "Soy un profesional con más de 10 años de experiencia en el sector financiero, habiendo trabajado en varios bancos en Ecuador y en startups innovadoras como Kushki Pagos. Actualmente, soy Cloud Engineer en Banco Bolivariano. Este año, me he convertido en Community Builder en el área de Serverless, donde me dedico a fomentar la comunidad y compartir conocimientos. Además, soy un activo creador de contenido, publicando regularmente en blogs de Medium y otras plataformas.\n",
+        "LinkedIn": "http://linkedin.com/in/gtorreswm",
+        "Profile Picture": "https://sessionize.com/image/85cc-400o400o1-pLYveV1NCBsRVMPfoJBydg.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 984960,
+    "Title": "Usa RAG para mejorar las respuestas en aplicaciones de IA generativa",
+    "Speakers": [
+      {
+        "FirstName": "Giacomo",
+        "LastName": "Orizzonte",
+        "TagLine": "Infrastructure Director Kushki",
+        "Bio": "Giacomo Orizzonte\nDirector de Infraestructura en Kushki. Ingeniero y administrador de empresas de TI, con trayectoria en soporte, seguridad, programación e infraestructura en producción real.\n\nTrabajo liderando equipos técnicos que hacen que las plataformas no se caigan y escalen sin drama. Uso AWS todos los días, y no solo desde la consola.\n\nApasionado por la inteligencia artificial y el machine learning, aplicándolos en casos concretos, más allá de la moda. Creo en el trabajo bien hecho, en colaborar sin burocracia y en que la tecnología tiene que resolver problemas reales, no solo verse bonita en un diagrama.",
+        "LinkedIn": "https://www.linkedin.com/in/giozz/",
+        "Profile Picture": "https://sessionize.com/image/0f5d-400o400o1-9VRhuHr6ww9RjiV1RJdShS.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 984987,
+    "Title": "Del modelo al impacto: Cómo optimizar cargas de IA en AWS con enfoque FinOps",
+    "Speakers": [
+      {
+        "FirstName": "Barbara",
+        "LastName": "Gaspar",
+        "TagLine": "FinOps Specialist ",
+        "Bio": "Especialista FinOps con 7 años de experiencia liderando implementaciones técnicas, operaciones en la nube (AWS, AZURE, GCP) y gestión de soporte técnico para clientes de diferentes sectores, resolviendo casos técnicos con la colaboración de equipos internos y externos. Ganadora de la presea Jóvenes con Valores, y del primer lugar del premio Daniel Cosío Villegas, autora de 7 libros sobre tecnología y FinOps. Cuenta con todas las certificaciones de la FinOps Foundation ",
+        "LinkedIn": "https://www.linkedin.com/in/barbaragaspargaona/",
+        "Profile Picture": "https://sessionize.com/image/4ca2-400o400o1-PMRZGY1w26djVMFvB7jgbP.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986408,
+    "Title": "Gobernanza y escalabilidad en la nube: introducción práctica a AWS Control Tower y Organizations",
+    "Speakers": [
+      {
+        "FirstName": "Roberto ",
+        "LastName": "Hidalgo",
+        "TagLine": "Cloud Improvement and Innovation Leader",
+        "Bio": "Ingeniero en Informática con especialización en Cloud Computing, enfocado en construir soluciones que generan impacto real en las personas, el negocio y la sociedad.\n\nHe trabajado liderando equipos de tecnología, acompañando su crecimiento profesional y fortaleciendo su capacidad para tomar decisiones técnicas estratégicas.\n\nMi experiencia se enfoca en modernizar y optimizar servicios tecnológicos para los clientes, logrando mayor eficiencia, ahorro y valor.\n\nCreo en la tecnología no solo como herramienta, sino como motor de transformación cuando se combina con buenas prácticas, visión y compromiso.\n\nMi propósito es contribuir a un uso más inteligente de las TICs, que beneficie a las empresas, sus equipos, sus clientes… y la comunidad en general, como un principio personal de servicio.",
+        "LinkedIn": "https://www.linkedin.com/in/carlos-roberto-hidalgo-herrera-27979a59/",
+        "Profile Picture": "https://sessionize.com/image/6df4-400o400o1-QWTxYtaELcP9aUfdJyKuSk.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986493,
+    "Title": "Can you escape from EC2? : Post-Exploitation & Cloud lateral Movement in AWS",
+    "Speakers": [
+      {
+        "FirstName": "Jeremy",
+        "LastName": "Erazo",
+        "TagLine": "Adversary Simulation",
+        "Bio": "Jeremy Erazo es un especialista en ciberseguridad ofensiva con más de 5 años de experiencia en Red Team, desarrollo de exploits, y simulaciones APT en entornos reales. Ha participado como speaker en conferencias Internacionales, entrenado equipos militares y corporativos en técnicas avanzadas de hacking.\nEntre sus logros destacan estar en el Top #1 de Hack The Box Ecuador y el Top #82 a nivel global, así como certificaciones avanzadas como OSED, BSCP, INE Mobile Pentesting y especializaciones en seguridad cloud de CrowdStrike, Tenable y Spartan.",
+        "LinkedIn": "https://www.linkedin.com/in/jeremy-erazo-0811081b2/",
+        "Profile Picture": "https://sessionize.com/image/96bc-400o400o1-VdUvTUt4YRCy8ZyGiCeUcd.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986495,
+    "Title": "Del caos al control: Estrategias de optimización de costos en EKS",
+    "Speakers": [
+      {
+        "FirstName": "Israel",
+        "LastName": "Oña Ordoñez",
+        "TagLine": "Lider de DevOps",
+        "Bio": "Soy ingeniero en sistemas con más de 8 años de experiencia liderando la automatización y operación de entornos en la nube, especializado en AWS. Actualmente lidero un equipo DevSecOps enfocado en crear soluciones resilientes, seguras y escalables usando prácticas como GitOps, Infrastructure as Code con Terraform y estrategias avanzadas de optimización.\n\nMe apasiona compartir experiencias reales y prácticas que ayuden a otros equipos a mejorar su eficiencia operativa sin sacrificar estabilidad. Hablo sobre lo que implemento, pruebo y mantengo en producción.",
+        "LinkedIn": "https://www.linkedin.com/in/isrradev/",
+        "Profile Picture": "https://sessionize.com/image/4288-400o400o1-R9E2XMeKiktWWK34a9GWNZ.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986631,
+    "Title": "“Seguridad y Cumplimiento Inteligente con Amazon Q Business”",
+    "Speakers": [
+      {
+        "FirstName": "Marice",
+        "LastName": "Marrero",
+        "TagLine": "Arquitecta de soluciones seguras e innovadoras en cloud.",
+        "Bio": "Arquitecta de Soluciones en Ciberseguridad, Cloud y Networking. Mi experiencia como profesora universitaria, ingeniera preventa e instructora técnica me permite transformar requerimientos complejos en arquitecturas seguras y eficientes, alineadas a las mejores prácticas.",
+        "LinkedIn": "https://www.linkedin.com/in/maricemarrero/",
+        "Profile Picture": "https://sessionize.com/image/2b52-400o400o1-Gub9Sut85kmbT9G8Stm28E.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986844,
+    "Title": "Apps que ven: Integrando Flutter con AWS Textract para resolver problemas reales",
+    "Speakers": [
+      {
+        "FirstName": "Cristhian",
+        "LastName": "Recalde",
+        "TagLine": "Isnotcristhian Devs",
+        "Bio": "Tengo una pasión por la programación, trato de encontrar la mejor solución y no me gusta rendirme. Me gusta dar valor en donde me encuentre y a la vez puedan contar conmigo, por ello he creado algunos proyectos interesantes Del mismo modo me gusta trabajar en solitario o en grupo, siempre que haya pasión por el trabajo o proyecto cuentan con mi voluntad a cumplirlo de la mejor manera",
+        "LinkedIn": "https://www.linkedin.com/in/isnotcristhianr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        "Profile Picture": "https://sessionize.com/image/8c9d-400o400o1-ftMW8azQ1eKFynwFz8ScBo.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 988056,
+    "Title": "El Laboratorio en Cloud, garantizando continuidad alineado a normativas internacionales",
+    "Speakers": [
+      {
+        "FirstName": "Christhian",
+        "LastName": "Chamba",
+        "TagLine": "Christhian Chamba, Roche PEC, Digital Solutions Manager",
+        "Bio": "Gerente de Portafolio con una sólida pasión por la innovación, dedicado a desarrollar soluciones digitales que mejoren la atención y experiencia de sus clientes.",
+        "LinkedIn": "https://www.linkedin.com/in/christhian-chamba-14631280?trk=contact-info",
+        "Profile Picture": "https://sessionize.com/image/17c6-400o400o1-RfNcwpg8Sjc3Ff8eVucUeR.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 989325,
+    "Title": "Datawarehouse en AWS usando Glue, Athena, SQS y S3",
+    "Speakers": [
+      {
+        "FirstName": "Efren",
+        "LastName": "Arana",
+        "TagLine": "Software Developer | Solutions Achitect Professional",
+        "Bio": "Efrén Arana, un apasionado por la tecnología, Desarrollador de Software y administrador del departamento de TIC de una empresa reconocida a nivel nacional de la industria Agropecuaria, creador de un almacén de datos en AWS para la analítica con rápido acceso a los datos y a bajo costo.",
+        "LinkedIn": "https://www.linkedin.com/in/efren-arana-56117a180/",
+        "Profile Picture": "https://sessionize.com/image/1f00-400o400o1-JBpKicmTdogg82qpDHUqNN.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 991460,
+    "Title": "Analizando almacenamiento vectorial en S3: Vector S3 vs Bucket S3 con OS",
+    "Speakers": [
+      {
+        "FirstName": "Carlos",
+        "LastName": "Chicata",
+        "TagLine": "Ingeniero de datos en Visiva",
+        "Bio": "Con bases en ciencias de la computación formado en arequipa; busco comprender y compartir más sobre los datos y la privacidad de los mismos; lo que me lleva a tener una opinión sobre ello generalmente. Apoyo a la comunidad de AWS en Perú y soy lider de UG en la ciudad blanca de Arequipa.\n\nEfimero Community Top Voice en linkedin en data engineer y data warehousing cuando existia esa opción, con experiencia en formación y liderazgos de equipos de datos; buscador siempre de la maduración los ecosistemas de datos y cuidador de un conejo que es mi lider.",
+        "LinkedIn": "https://www.linkedin.com/in/carlos-chicata-farfan/",
+        "Profile Picture": "https://sessionize.com/image/547f-400o400o1-GBrA3hvFzCdzJhYD7CTXrb.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 991681,
+    "Title": "Tu Primer Despliegue con Infraestructura como Código",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Maya",
+        "TagLine": "Digital Challengers, Java Senior Developer",
+        "Bio": "Profesional de tecnología con más de 6 años de experiencia, enfocado en el ciclo de vida completo de soluciones en la nube, abarcando desde el diseño de arquitecturas de alto nivel hasta el desarrollo y la optimización DevOps. Experto en el diseño de arquitecturas resilientes, escalables y de alto rendimiento en AWS, combinando la visión estratégica de un arquitecto con la ejecución técnica de un desarrollador senior para modernizar sistemas legados del sector bancario y mentorizar equipos en la adopción de mejores prácticas.\nIngeniero en Sistemas Informáticos y de Computación Escuela Politécnica Nacional.\nAWS Certified DevOps Engineer – Professional\nAWS Certified Developer – Associate\nAWS Certified Solutions Architect – Associate\nAWS Certified Cloud Practitioner\nOracle Certified Professional (OCP), Java Programmer",
+        "LinkedIn": "https://www.linkedin.com/in/ricardo-maya-930a9a161/",
+        "Profile Picture": "https://sessionize.com/image/340a-400o400o1-MtMgcZf1NXwLMorRyuAHYk.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 993255,
+    "Title": "De DevSecOps a Zero Trust: Firma de Contenedores en Amazon EKS con Amazon Signer",
+    "Speakers": [
+      {
+        "FirstName": "Xavier Alonso",
+        "LastName": "Llauca Uchupailla",
+        "TagLine": "Cloud Security Engineer",
+        "Bio": "Xavier es un Ingeniero de Seguridad en la Nube con experiencia en la automatización de despliegue de infraestructura y gestión de configuraciones en la nube, aplicando las mejores prácticas. Ha colaborado exitosamente con equipos de desarrollo y operaciones para garantizar la entrega segura y confiable de software. Además, ha creado políticas, procesos y procedimientos de seguridad de la información, y ha realizado actividades de hacking ético y pruebas de penetración tanto en infraestructuras tradicionales como en la nube.\n\nComo conferencista, ha impartido las siguientes charlas en varios países:\n\n* AWS Community Day Colombia 2023\n* Kubernetes Community Day Guatemala 2023\n* Kubernetes Community Day El Salvador 2023 \n* Kubernetes Community Day Costa Rica 2024\n* Kubernetes Community Day Lima, Peru 2024\n\nEs organizador y fundador de la Comunidad de Cloud Native Compute Foundation (CNCF): Cloud Native Cuenca, Ecuador \n\nComo colaborador, ha participado en los siguientes proyectos en GitHub:\n\n* Proyecto \"GOAD\" de Orange Cyberdefense (Laboratorio para prácticas de ataque/defensa de Active Directory)\n* Proyecto \"TIWAP\" de Tombstoneghost (Laboratorio para realizar prácticas/ataques a diferentes tipos de vulnerabilidades web)",
+        "LinkedIn": "https://www.linkedin.com/in/xllauca/",
+        "Profile Picture": "https://sessionize.com/image/7e26-400o400o1-s3WYKqUjhZ8tLBCsu8LSGr.jpg"
+      },
+      {
+        "FirstName": "Smith Anthony",
+        "LastName": "Grijalva",
+        "TagLine": "IT Security | Process Automation",
+        "Bio": "Soy Anthony Grijalva, un apasionado de la Seguridad Informática y especialista en Automatización de Procesos. Mi enfoque se centra en analizar y optimizar procesos, utilizando soluciones tecnológicas para impulsar la eficiencia en entornos de TI, con especial atención en ambientes cloud y Kubernetes.",
+        "LinkedIn": "https://www.linkedin.com/in/anthony-grijalva-934606225/",
+        "Profile Picture": "https://sessionize.com/image/d624-400o400o1-3iqrfPVMNFKGtQ9KJFJTZF.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 995553,
+    "Title": "Construyendo un sistema multi-agente para la atención al cliente con Amazon Bedrock y LangGraph",
+    "Speakers": [
+      {
+        "FirstName": "Daniel",
+        "LastName": "Erazo",
+        "TagLine": "UDLA",
+        "Bio": "Estudiante de Ingeniería en TI de la UDLA.",
+        "LinkedIn": "https://www.linkedin.com/in/daniel-erazo-e/",
+        "Profile Picture": "https://sessionize.com/image/c1ef-400o400o1-4QMa1MZDk3yrYEsLHYB6X2.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1017782,
+    "Title": "De la Universidad al Mercado: Construyendo MVPs Serverless en AWS como Estudiante y Freelancer",
+    "Speakers": [
+      {
+        "FirstName": "Jostin",
+        "LastName": "Alvarado",
+        "TagLine": "Estudiante - Desarrollador Freelancer",
+        "Bio": "Jostin Alvarado, estudiante de Ingeniería en Ciencias de la Computación en la Universidad Técnica Particular de Loja (UTPL), es un desarrollador freelance apasionado por la tecnología serverless. Ha desarrollado múltiples MVPs con AWS Lambda para proyectos académicos y clientes en sectores como auditoría.\nCombinando su experiencia universitaria y profesional, Jostin busca inspirar a otros estudiantes y desarrolladores con una experiencia no tan amplia a crear soluciones innovadoras y accesibles con AWS.",
+        "LinkedIn": "https://www.linkedin.com/in/jostinalvarado",
+        "Profile Picture": "https://sessionize.com/image/092d-400o400o1-RfMbv7c6DyevF78EsycmvZ.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1019123,
+    "Title": "Más allá de RAG: Amazon S3 Vectors",
+    "Speakers": [
+      {
+        "FirstName": "Juan",
+        "LastName": "Báez",
+        "TagLine": "Chief AI Scientist & Co-founder at Legal Badger",
+        "Bio": "Soy ingeniero mecatrónico con amplia experiencia como Machine Learning Engineer. He participado en proyectos de IA para La Favorita, Bimbo y El Rosado, y hoy me desempeño como Chief AI Scientist en LegalBadger, donde diseño soluciones de búsqueda semántica, similitud de imágenes y automatización para registro y vigilancia de marcas con AWS (Bedrock y S3 Vectors).",
+        "LinkedIn": "https://www.linkedin.com/in/juan-daniel-baez/",
+        "Profile Picture": "https://sessionize.com/image/0410-400o400o1-R1e1rhUwTGbFQo3JRLYZLH.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1019588,
+    "Title": "Trazabilidad y gobernanza en el uso de Amazon Q: de la consulta al control",
+    "Speakers": [
+      {
+        "FirstName": "David",
+        "LastName": "Arias",
+        "TagLine": "Cloud DevOps Engineer | Solutions Architect | 6X AWS Certified | Terraform Certified | AWS UserGroup Leader | IT Instructor",
+        "Bio": "I am an experienced Cloud and DevOps Engineer, who was an English-Spanish translator traveling around the world along 8 years. I like to learn, improve and share tech knowledge. Always giving the extra mile. \nFacing challenges is a way to improve myself.",
+        "LinkedIn": "https://www.linkedin.com/in/david4tech/",
+        "Profile Picture": "https://sessionize.com/image/58fd-400o400o1-G6AXjMYfAQrXFfQB5hb9Q8.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1020583,
+    "Title": "WAF Custom Rules  Deep Dive",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Reyes",
+        "TagLine": "Cloud Security Specialist",
+        "Bio": "Profesional con una amplia experiencia de 16 años en infraestructura de TI, ciberseguridad y continuidad del negocio, me especializo en salvaguardar la seguridad y la disponibilidad de soluciones basadas en la nube y On premise.",
+        "LinkedIn": "https://www.linkedin.com/in/williereyes/",
+        "Profile Picture": "https://sessionize.com/image/b0af-400o400o1-qMtzUrpGmqW4Q8kcSqZ3U.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1020584,
+    "Title": "Implementando Seguridad Defensiva con WAF + Automatización",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Reyes",
+        "TagLine": "Cloud Security Specialist",
+        "Bio": "Profesional con una amplia experiencia de 16 años en infraestructura de TI, ciberseguridad y continuidad del negocio, me especializo en salvaguardar la seguridad y la disponibilidad de soluciones basadas en la nube y On premise.",
+        "LinkedIn": "https://www.linkedin.com/in/williereyes/",
+        "Profile Picture": "https://sessionize.com/image/b0af-400o400o1-qMtzUrpGmqW4Q8kcSqZ3U.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1020667,
+    "Title": "ChatBot de IA basado en RAG usando Amazon Bedrock",
+    "Speakers": [
+      {
+        "FirstName": "Jordan",
+        "LastName": "Vera",
+        "TagLine": "Desarrollar software es la pasión por aprender e innovar",
+        "Bio": "Ingeniero de software y estudiante de maestría en Inteligencia Artificial. Actualmente, programador fullstack con una sólida formación en aplicaciones web, desarrollo y entrenamiento de modelos de IA. Mi pasión por el desarrollo de software se refleja en crear aplicaciones dinámicas las cuales combinan un diseño de alta calidad con una excelente experiencia de usuario, ofreciendo soluciones a problemas reales, complementandolas con funcionalidades que incorporen IA. He colaborado en diversos proyectos tanto empresariales como educativos, lo que me ha permitido desarrollar mis habilidades, trabajar en equipo y obtener buena comunicación para ofrecer soluciones innovadoras y de calidad.",
+        "LinkedIn": "https://www.linkedin.com/in/jordanfvc26/",
+        "Profile Picture": "https://sessionize.com/image/4c77-400o400o1-wi73HtJkrQ9yR1WJtLByk7.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1021735,
+    "Title": "De pipelines a plataformas: el siguiente nivel en la automatización y la entrega continua",
+    "Speakers": [
+      {
+        "FirstName": "Jairo Hernan",
+        "LastName": "Espinoza",
+        "TagLine": "Sector Financiero, DevOps",
+        "Bio": "Jairo Espinoza es DevOps Engineer en el sector bancario, con más de 3 años de experiencia en automatización e infraestructura. Con background en desarrollo, impulsa la adopción de IaC y prácticas modernas que llevan a los equipos de software del enfoque en pipelines hacia plataformas internas de autoservicio.",
+        "LinkedIn": "https://www.linkedin.com/in/jhespinozaa/",
+        "Profile Picture": "https://sessionize.com/image/75e1-400o400o1-REy9CV27QdrXdAEygmmMD5.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1022503,
+    "Title": "Construyendo una plataforma de datos en AWS",
+    "Speakers": [
+      {
+        "FirstName": "Tex",
+        "LastName": "Albuja",
+        "TagLine": "Thoughtworks, Lead Consultant Developer",
+        "Bio": "Tex works at Thoughtworks as a Lead Consultant Developer. He has more than a decade of experience in software development. He loves to solve problems, analyze a situation, identify potential shortcomings and change course in times of difficulty and crisis. He is fluent in backend and front-end technologies, as well as software architecture and infrastructure.\n\nOccasionally, Tex looks for opportunities to gain skills or knowledge in areas that do not fall into his primary role, such as quality assurance, user experience, and technical leadership. As a generalist, Tex can help others get started in those disciplines and increase the overall success of a project.\n\n",
+        "LinkedIn": "https://www.linkedin.com/in/texalbuja/",
+        "Profile Picture": "https://sessionize.com/image/966a-400o400o1-aSoQbHANDrNkACei9i47mv.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1022777,
+    "Title": "From Generic to Genius: Configurando Agentes en Amazon Q Developer + Rules + MCP's",
+    "Speakers": [
+      {
+        "FirstName": "Jose",
+        "LastName": "Verbel Tous",
+        "TagLine": "Director Desarrollo en Solati SaS",
+        "Bio": "José David Verbel es un arquitecto de soluciones cloud y líder en transformación tecnológica con más de 15 años de experiencia. Como Director de Desarrollo, ha implementado exitosamente cultura DevOps y optimizado ciclos mediante metodologías ágiles. Certificado AWS Solutions Architect Associate, integra seguridad, infraestructura como código y prácticas DevOps para acelerar entrega de valor. Participa como mentor en TalentoTECH y MisionTic de MinTIC Colombia, compartiendo conocimiento en desarrollo, cloud y DevOps. Su presencia en DevOpsDays, AWS Summit refleja su compromiso con la innovación tecnológica continua.",
+        "LinkedIn": "https://www.linkedin.com/in/jverbel",
+        "Profile Picture": "https://sessionize.com/image/8cc6-400o400o1-NTAhTU6ms6Sn9LpZic5dnG.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1023471,
+    "Title": "Gestionando los costos de la nube: la especificación FOCUS",
+    "Speakers": [
+      {
+        "FirstName": "Horacio",
+        "LastName": "Recinos",
+        "TagLine": "Digital Practitioner",
+        "Bio": "Graduado de la Universidad Francisco Marroquín como Administrador de Sistemas de Información, posee una maestría en Dirección Estratégica en Ingeniería de Software por la Universidad de León, España; una especialización en Big Data por la Universidad Oberta de Cataluña, una Maestría en Transformación Digital por la Universidad Europea del Atlántico y un Máster en Cloud Computing por IMMUNE Technology Institute. Tiene 25 años de experiencia en el área de tecnología y 10 años de experiencia en el análisis de datos. Ha trabajado en la implementación de soluciones para el control de fraude y lavado de dinero, así como diversas soluciones en el sector de telecomunicaciones. Es docente en la Universidad del Valle de Guatemala desde hace 8 años impartiendo cursos de análisis de datos en las maestrías de business intelligence y business administration. Actualmente trabaja como consultor independiente en instituciones financieras desarrollando equipos de alto desempeño para la construcción de aplicaciones basadas en datos utilizando las mejores herramientas del mercado y un enfoque basado en la gestión de productos de datos.",
+        "LinkedIn": "https://www.linkedin.com/in/horacio-recinos-roca",
+        "Profile Picture": "https://sessionize.com/image/9abe-400o400o1-nb22DTHfMPedKmBwpT7fbB.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1023615,
+    "Title": "Construya su primer agente de lA listo para producción con Amazon Bedrock",
+    "Speakers": [
+      {
+        "FirstName": "Kevin",
+        "LastName": "Lupera",
+        "TagLine": "bedrock, agent",
+        "Bio": "Soy ingeniero en sistemas y actualmente trabajo como Developer Leader en Alegra una empresa que trabaja con AWS como proveedor de cloud, con más de seis años de experiencia en desarrollo backend y arquitectura de soluciones AWS.",
+        "LinkedIn": "https://www.linkedin.com/in/kevin-lupera",
+        "Profile Picture": "https://sessionize.com/image/69d2-400o400o1-wAz2yY5rCLWEc4HikSEF9j.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1024074,
+    "Title": "Comercio electrónico sin fronteras: seguridad, escalabilidad y coordinación con AWS Transit Gateway",
+    "Speakers": [
+      {
+        "FirstName": "Jocelyn",
+        "LastName": "Poblete",
+        "TagLine": "TD SYNNEX, Senior Solution Architect, Podcaster Cloud AWS \"ClousWise\", Evangelist Cloud, AWS.",
+        "Bio": "Senior Solution Architect and AWS Certified x3 | Women in tech 🧑‍💻 and Mom of 3👶.💞 | Evangelista Cloud AWS🧑‍💻 |✨Podcaster in the channel🚨Visit YouTube Channel https://www.youtube.com/@Cloud_Wise and ✨ Spotify 👉 https://creators.spotify.com/pod/show/jossytech VISIT MY Link https://linktr.ee/jossy.samhatech",
+        "LinkedIn": "https://www.linkedin.com/in/jocelynhs/",
+        "Profile Picture": "https://sessionize.com/image/8f79-400o400o1-nL3qgSJShQn25JbR8WhFm7.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1024095,
+    "Title": "Automatización Inteligente: Haz que los Agentes de IA Trabajen Para Ti",
+    "Speakers": [
+      {
+        "FirstName": "Diego",
+        "LastName": "Zumarraga Mera",
+        "TagLine": "Solutions Architect & AI Consultant",
+        "Bio": "My name is Diego Zumarraga Mera, I'm from Ecuador, I am 38 years old. I am passionate about technology. For ten years I have helped transform the insurance and financial sectors with innovation projects. I love working with data, AI, Machine Learning and agile methodologies.",
+        "LinkedIn": "https://ec.linkedin.com/in/dfmera",
+        "Profile Picture": "https://sessionize.com/image/65a1-400o400o1-UyNkCaWn1r9YjzcwngsmJo.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1024923,
+    "Title": "De Zero a AI Tutor: Construye tu Agente para certificarte en AWS sin escribir código",
+    "Speakers": [
+      {
+        "FirstName": "Julio",
+        "LastName": "Sarango",
+        "TagLine": "Centro Hub / Diners Club - Especialista en DevSecOps",
+        "Bio": "Más de 10 años de experiencia en desarrollo de software, AWS Cloud Practitioner.\n\nApasionado por la tecnología y el software libre.",
+        "LinkedIn": "https://www.linkedin.com/in/jsarangoq/",
+        "Profile Picture": "https://sessionize.com/image/a671-400o400o1-JjosRHhMYoJFinyzWgbJAC.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1025088,
+    "Title": "Gerardo Moran",
+    "Speakers": [
+      {
+        "FirstName": "Gerardo",
+        "LastName": "Moran",
+        "TagLine": "Arquitecto de Soluciones ",
+        "Bio": "Arquitecturas Seguras y Escalables en AWS: Lecciones desde el Campo\n\nDescription:\nEn esta charla compartiré experiencias reales diseñando e implementando arquitecturas en AWS para empresas de distintos sectores, desde PyMEs hasta corporativos. Revisaremos buenas prácticas de seguridad en la nube, estrategias de costo-eficiencia (FinOps) y patrones de arquitectura escalable. También presentaré casos de éxito con migraciones, integración multi-cloud y monitoreo de infraestructura, destacando lecciones aprendidas y recomendaciones prácticas que los equipos pueden aplicar en sus propios entornos.",
+        "LinkedIn": "https://www.linkedin.com/in/gerardo-moran-86030011a",
+        "Profile Picture": "https://sessionize.com/image/19bc-400o400o1-at9MMCSByjNpZCPvr4QB27.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 984930,
+    "Title": "Desplegando agentes de IA con LangGraph, AWS Bedrock y arquitectura serverless",
+    "Speakers": [
+      {
+        "FirstName": "Willy Joao",
+        "LastName": "Mateo Espinoza",
+        "TagLine": "Fullstack Software Developer Engineer",
+        "Bio": "As a Computer Science Engineer and full-stack developer, I combine technologies such as Python, LangGraph, AWS, and Terraform to create scalable and accessible solutions, prioritizing clean code and robust architectures.\nMy focus is on integrating Artificial Intelligence into innovative projects: I led a research project using OpenAI's Whisper to analyze oral presentations at ESPOL, my alma mater, results that we published as a scientific paper in 2024.\nCurrently, as a consultant, I apply my passion for AI by developing applications that solve critical challenges at Incyte, a US biopharmaceutical company.",
+        "LinkedIn": "https://www.linkedin.com/in/willymateo",
+        "Profile Picture": "https://sessionize.com/image/b235-400o400o1-hds3TTgLhi9sxTSMpALw1u.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 986392,
+    "Title": "Cloud First: adoptando la nube como pilar de innovación",
+    "Speakers": [
+      {
+        "FirstName": "Roberto ",
+        "LastName": "Hidalgo",
+        "TagLine": "Cloud Improvement and Innovation Leader",
+        "Bio": "Ingeniero en Informática con especialización en Cloud Computing, enfocado en construir soluciones que generan impacto real en las personas, el negocio y la sociedad.\n\nHe trabajado liderando equipos de tecnología, acompañando su crecimiento profesional y fortaleciendo su capacidad para tomar decisiones técnicas estratégicas.\n\nMi experiencia se enfoca en modernizar y optimizar servicios tecnológicos para los clientes, logrando mayor eficiencia, ahorro y valor.\n\nCreo en la tecnología no solo como herramienta, sino como motor de transformación cuando se combina con buenas prácticas, visión y compromiso.\n\nMi propósito es contribuir a un uso más inteligente de las TICs, que beneficie a las empresas, sus equipos, sus clientes… y la comunidad en general, como un principio personal de servicio.",
+        "LinkedIn": "https://www.linkedin.com/in/carlos-roberto-hidalgo-herrera-27979a59/",
+        "Profile Picture": "https://sessionize.com/image/6df4-400o400o1-QWTxYtaELcP9aUfdJyKuSk.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 986525,
+    "Title": "Caminando hacia la cultura FinOps",
+    "Speakers": [
+      {
+        "FirstName": "Alexis",
+        "LastName": "Velásquez Quintero",
+        "TagLine": "Member FinOps Foundation",
+        "Bio": "Fanatic Cloud - AWS/Azure/GCP/Oracle/Alibaba | Devops | FinOps (Member FinOps Foundation)",
+        "LinkedIn": "https://www.linkedin.com/in/alexis-vel%C3%A1squez-quintero-3a9003170/",
+        "Profile Picture": "https://sessionize.com/image/cc23-400o400o1-SdgVrXWAK9ewMwLJ5wm93V.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 989487,
+    "Title": "Construyendo agentes de IA con memoria persistente usando LangGraph, Bedrock y DynamoDB",
+    "Speakers": [
+      {
+        "FirstName": "Willy Joao",
+        "LastName": "Mateo Espinoza",
+        "TagLine": "Fullstack Software Developer Engineer",
+        "Bio": "As a Computer Science Engineer and full-stack developer, I combine technologies such as Python, LangGraph, AWS, and Terraform to create scalable and accessible solutions, prioritizing clean code and robust architectures.\nMy focus is on integrating Artificial Intelligence into innovative projects: I led a research project using OpenAI's Whisper to analyze oral presentations at ESPOL, my alma mater, results that we published as a scientific paper in 2024.\nCurrently, as a consultant, I apply my passion for AI by developing applications that solve critical challenges at Incyte, a US biopharmaceutical company.",
+        "LinkedIn": "https://www.linkedin.com/in/willymateo",
+        "Profile Picture": "https://sessionize.com/image/b235-400o400o1-hds3TTgLhi9sxTSMpALw1u.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 991413,
+    "Title": "Amazon Q",
+    "Speakers": [
+      {
+        "FirstName": "Francisco",
+        "LastName": "Tixi",
+        "TagLine": "Desarrollador",
+        "Bio": "Desarrollador de software enfocado en sistemas operativos móviles.\nIngeniero en Sistemas\nMaestria en Desarrollo de Software",
+        "LinkedIn": null,
+        "Profile Picture": "https://sessionize.com/image/e8ca-400o400o1-MMNLS3eGXdYnRNSVbBhDbv.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 1025107,
+    "Title": "Procesos de Agilismo y DevOps para desarrollo productivo y de calidad.",
+    "Speakers": [
+      {
+        "FirstName": "Diego",
+        "LastName": "Zumarraga Mera",
+        "TagLine": "Solutions Architect & AI Consultant",
+        "Bio": "My name is Diego Zumarraga Mera, I'm from Ecuador, I am 38 years old. I am passionate about technology. For ten years I have helped transform the insurance and financial sectors with innovation projects. I love working with data, AI, Machine Learning and agile methodologies.",
+        "LinkedIn": "https://ec.linkedin.com/in/dfmera",
+        "Profile Picture": "https://sessionize.com/image/65a1-400o400o1-UyNkCaWn1r9YjzcwngsmJo.jpg"
+      }
+    ]
+  }
+]

@@ -11,28 +11,28 @@ export default function Sponsors() {
       id: 2,
       name: "Ondú Cloud",
       tier: "platinum",
-      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logo-onducloud.png",
+      logo: "/sponsor/logo-onducloud.png",
       website: "https://www.onducloud.com/"
     },
     {
       id: 3,
       name: "Escala 24x7",
       tier: "gold",
-      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/Logo-Escala24x7-variaciones-2025_Escala-24x7-Logo-Color-RGB-scaled.png",
+      logo: "/sponsor/Logo-Escala24x7-variaciones-2025_Escala-24x7-Logo-Color-RGB-scaled.png",
       website: "https://www.escala24x7.com/"
     },
     {
       id: 4,
       name: "Ingram Micro",
       tier: "Bronce",
-      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logo-ingram-01.png",
+      logo: "/sponsor/logo-ingram-01.png",
       website: "https://www.ingrammicro.com/"
     },
     {
       id: 5,
       name: "Publifyer",
       tier: "gold",
-      logo: "https://www.awsugecuador.com/wp-content/uploads/2025/09/logotipo-HotPink-scaled.png",
+      logo: "/sponsor/logotipo-HotPink-scaled.png",
       website: "https://publifyer.com/"
     },
   ]

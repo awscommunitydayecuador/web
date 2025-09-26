@@ -8,6 +8,7 @@ import CallForSpeakersAndSponsors from '../components/CallForSpeakersAndSponsors
 import Venue from '../components/Venue'
 import Community from '../components/Community'
 import Footer from '../components/Footer'
+import Speakers from '@/components/Speakers'
 
 export const metadata: Metadata = {
   title: 'AWS Community Day Ecuador',
@@ -71,7 +72,7 @@ export default function Home() {
       <Hero />
       <About />
       <Venue />
-      {/* <Speakers /> */}
+      <Speakers />
       <Sponsors /> 
       <CallForSpeakersAndSponsors />
       <Community />
