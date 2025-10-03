@@ -169,6 +169,46 @@ export default function Community() {
         </div>
       </div>
     </div>
+
+    {/* Sección Organizado por */}
+    <div className="mt-8 pt-4 border-t border-white/10">
+      <div className="text-center mb-4">
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          Organizado por:
+        </h3>
+        <div className="flex justify-center items-center flex-wrap">
+          {/* Logo de la UDLA */}
+          <div className="w-96 h-24 md:w-[19rem] md:h-28 mr-[5px]">
+            <img
+              src="/Logotipo-UDLA_rojo-y-blanco_1200x400V3.png"
+              alt="Universidad de Las Américas - UDLA"
+              className="w-full h-full object-contain drop-shadow-2xl"
+            />
+          </div>
+          
+          {/* Logos AWS */}
+          <div className="flex items-center">
+            {/* Logo AWS User Group Ecuador */}
+            <div className="w-40 h-40 md:w-48 md:h-48">
+              <img
+                src="/logo-aws-ug-ecuador.svg"
+                alt="AWS User Group Ecuador"
+                className="w-full h-full object-contain drop-shadow-2xl"
+              />
+            </div>
+            
+            {/* Logo AWS Women Ecuador */}
+            <div className="w-40 h-40 md:w-48 md:h-48 ml-[18px]">
+              <img
+                src="/logo-aws-woman-ecuador.svg"
+                alt="AWS Women Ecuador"
+                className="w-full h-full object-contain drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
