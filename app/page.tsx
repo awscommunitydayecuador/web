@@ -7,6 +7,7 @@ import Sponsors from '../components/Sponsors'
 import CallForSpeakersAndSponsors from '../components/CallForSpeakersAndSponsors'
 import Venue from '../components/Venue'
 import Community from '../components/Community'
+import OrganizedBy from '../components/OrganizedBy'
 import Footer from '../components/Footer'
 import Speakers from '@/components/Speakers'
 
@@ -71,6 +72,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <OrganizedBy />
       <Venue />
       <Speakers />
       <Sponsors /> 
