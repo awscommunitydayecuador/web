@@ -15,6 +15,13 @@ export default function Sponsors() {
       website: "https://www.onducloud.com/"
     },
     {
+      id: 6,
+      name: "DFX5",
+      tier: "platinum",
+      logo: "/sponsor/DFX5_logo_black.png",
+      website: "https://www.dfx5.com/"
+    },
+    {
       id: 3,
       name: "Escala 24x7",
       tier: "gold",
@@ -35,6 +42,7 @@ export default function Sponsors() {
       logo: "/sponsor/logotipo-HotPink-scaled.png",
       website: "https://publifyer.com/"
     },
+    
   ]
 
   const getTierColor = (tier: string) => {
