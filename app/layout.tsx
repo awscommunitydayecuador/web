@@ -57,6 +57,76 @@ export default function RootLayout({
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://awscommunitydayec.eventbrite.com" crossOrigin="anonymous" />
+        
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFR7SSMGP5"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FFR7SSMGP5', {
+                send_page_view: true,
+                anonymize_ip: false,
+                allow_google_signals: true,
+                allow_ad_personalization_signals: true
+              });
+              
+              // Track all clicks
+              document.addEventListener('click', function(e) {
+                gtag('event', 'click', {
+                  event_category: 'engagement',
+                  event_label: e.target.tagName + (e.target.className ? '.' + e.target.className : ''),
+                  value: 1
+                });
+              });
+              
+              // Track scroll depth
+              let maxScroll = 0;
+              window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+                  maxScroll = scrollPercent;
+                  gtag('event', 'scroll', {
+                    event_category: 'engagement',
+                    event_label: scrollPercent + '%',
+                    value: scrollPercent
+                  });
+                }
+              });
+              
+              // Track time on page
+              let startTime = Date.now();
+              window.addEventListener('beforeunload', function() {
+                const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'timing_complete', {
+                  name: 'time_on_page',
+                  value: timeOnPage
+                });
+              });
+              
+              // Track form interactions
+              document.addEventListener('submit', function(e) {
+                gtag('event', 'form_submit', {
+                  event_category: 'engagement',
+                  event_label: e.target.id || e.target.className || 'form'
+                });
+              });
+              
+              // Track external link clicks
+              document.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A' && e.target.hostname !== window.location.hostname) {
+                  gtag('event', 'click', {
+                    event_category: 'outbound',
+                    event_label: e.target.href,
+                    transport_type: 'beacon'
+                  });
+                }
+              });
+            `,
+          }}
+        />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         {children}
