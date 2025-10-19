@@ -1,7 +1,113 @@
 [
   {
-    "SessionId": 984176,
-    "Title": "Arquitectura Inteligente en AWS: Automatiza y Transforma con Fargate, EventBridge y Bedrock",
+    "SessionId": 1,
+    "Title": "Inauguración AWS Community Day EC",
+    "Desde": "9:00",
+    "Hasta": "9:30",
+    "Room": "Auditorio Principal",
+    "Level": "All",
+    "Category": "Evento",
+    "Type": "Evento",
+    "Speakers": [
+      {
+        "FirstName": "Equipo",
+        "LastName": "Organizador",
+        "TagLine": "Comunidades de AWS en Ecuador",
+        "Bio": "Comunidades de AWS en Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 2,
+    "Title": "Keynote: IA y el Futuro de las empresas",
+    "Desde": "9:30",
+    "Hasta": "10:00",
+    "Room": "Auditorio Principal",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Fernandez",
+        "LastName": "Damián",
+        "TagLine": "CEO & Founder DFX5",
+        "Bio": "Damian Fernandez es pianista, productor musical y emprendedor en serie. Fundó Smart Citizen, PARKEN y DFX5, donde actualmente se desempeña como CEO impulsando transformaciones de CX/IA. Su carrera tecnológica comenzó en Intel desarrollando el procesador Pentium II. Es ganador del premio Ernst & Young Entrepreneur of the Year 2002.",
+        "LinkedIn": "https://www.linkedin.com/in/damianfernandez",
+        "Profile Picture": "https://sessionize.com/image/cb81-0o0o0-RKqkDYCDrJH5gVD4RTq8V6.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 3,
+    "Title": "Foto oficial del evento",
+    "Desde": "10:00",
+    "Hasta": "10:15",
+    "Room": "UDLA",
+    "Level": "All",
+    "Category": "General",
+    "Type": "Actividad",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 4,
+    "Title": "Actividad Ludicas UDLA",
+    "Desde": "10:30",
+    "Hasta": "13:00",
+    "Room": "UDLA",
+    "Level": "All",
+    "Category": "General",
+    "Type": "Actividad",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 5,
+    "Title": "Construyendo Publifyer en AWS: del MVP al mundo.",
+    "Desde": "10:20",
+    "Hasta": "11:10",
+    "Room": "Auditorio Principal",
+    "Level": "L100",
+    "Category": "General",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Benjamin",
+        "LastName": "Lopez",
+        "TagLine": "CTO & Founder Publifyer",
+        "Bio": "Benjamin Lopez es CTO y fundador de Publifyer, una empresa que se dedica a la creación de software para la industria del marketing.",
+        "LinkedIn": "https://www.linkedin.com/in/benjamin-lopez-7645451a4/",
+        "Profile Picture": "https://media.licdn.com/dms/image/v2/D4E03AQFtlq5Lp9acbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709045700342?e=1762387200&v=beta&t=3E5WCudNS-OL42zpFEwDF597NMt6y5vSMNydOjP_mS8"
+      }
+    ]
+  },
+  {
+    "SessionId": 6,
+    "Title": "Workshop: Arquitectura Inteligente en AWS: Automatiza y Transforma con Fargate, EventBridge y Bedrock",
+    "Desde": "11:00",
+    "Hasta": "12:30",
+    "Room": "Lambda del Cotopaxi",
+    "Level": "L200",
+    "Category": "Architecture",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Bryam David",
@@ -14,69 +120,239 @@
     ]
   },
   {
-    "SessionId": 984432,
+    "SessionId": 7,
+    "Title": "Builder Cards",
+    "Desde": "11:10",
+    "Hasta": "14:00",
+    "Room": "Área de Networking Andino",
+    "Level": "All",
+    "Category": "Actividad",
+    "Type": "Evento",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "AWS Community Day Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 8,
+    "Title": "Tendencias que están dando forma al futuro en AWS",
+    "Desde": "11:20",
+    "Hasta": "12:10",
+    "Room": "Huchuy 1",
+    "Level": "L100",
+    "Category": "General",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Frank",
+        "LastName": "Varela",
+        "TagLine": "IAAS Solutions Architect",
+        "Bio": "Apasionado por la tecnología y las finanzas, actualmente formo parte de Ingram Micro, donde impulsamos proyectos que acercan la innovación tecnológica a organizaciones de diferentes industrias. Resido en Costa Rica y disfruto colaborar con personas y equipos para ayudarles a alcanzar sus objetivos a través de soluciones tecnológicas que generan impacto real.",
+        "LinkedIn": "linkedin.com/in/fvarelab/",
+        "Profile Picture": "https://sessionize.com/image/ed12-200o200o2-RvLpVCV7WjUouX4AzZgKKy.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 9,
+    "Title": "Ondu Cloud",
+    "Desde": "11:20",
+    "Hasta": "12:10:00",
+    "Room": "Auditorio Principal",
+    "Level": "L200",
+    "Category": "",
+    "Type": "",
+    "Speakers": [
+      {
+        "FirstName": "Ondu",
+        "LastName": "Cloud",
+        "TagLine": "",
+        "Bio": "Ondu Cloud",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-ondu.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 10,
     "Title": "Múltiples herramientas y un solo flujo: descubre la usabilidad de AWS State Machine",
+    "Desde": "11:20",
+    "Hasta": "12:10",
+    "Room": "Huchuy 2",
+    "Level": "L200",
+    "Category": "Architecture",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Andrew",
         "LastName": "Rueda",
         "TagLine": "SOFTWARE SPECIALIST",
-        "Bio": "I am 22 years old, I live in Quito, and I work as a Software Specialist at a bank in Ecuador. I have followed the path of artificial intelligence and its implementation in a large company. I recently graduated from university with a degree in Computer Science Engineering. I am enthusiastic about learning and new cloud technologies. I have participated in AWS workshops in Ecuador, and I want to be a speaker because I want to share my ideas with the world and, just as I learn from them, I also want to share what I know with the younger generations.\nI have used cloud tools such as Bedrock, S3, RAG, EC2, and more.",
+        "Bio": "I am 22 years old, I live in Quito, and I work as a Software Specialist at a bank in Ecuador. I have followed the path of artificial intelligence and its implementation in a large company. I recently graduated from university with a degree in Computer Science Engineering. I am enthusiastic about learning and new cloud technologies. I have participated in AWS workshops in Ecuador, and I want to be a speaker because I want to share my ideas with the world and, just as I learn from them, I also want to share what I know with the younger generations. I have used cloud tools such as Bedrock, S3, RAG, EC2, and more.",
         "LinkedIn": "https://www.linkedin.com/in/andrew-paul-rueda-valencia/",
         "Profile Picture": "https://sessionize.com/image/68cc-400o400o1-WfGUUXMoFyZ5rKMXJAGkwB.jpg"
       }
     ]
   },
   {
-    "SessionId": 984857,
+    "SessionId": 11,
     "Title": "Aprendiendo el Lenguaje de las Series de Tiempo - AWS Chronos Bolt",
+    "Desde": "11:20",
+    "Hasta": "12:10:00",
+    "Room": "Huchuy 3",
+    "Level": "L300",
+    "Category": "AI & ML",
+    "Type": "Workshop",
     "Speakers": [
       {
         "FirstName": "Sebastián",
         "LastName": "Sarasti",
         "TagLine": "Crossbridge, Machine Learning Engineer",
-        "Bio": "Sebastián Sarasti es un ingeniero en machine learning con una destacada trayectoria en el desarrollo e implementación de modelos de inteligencia artificial end-to-end en diversas industrias, como retail, sector bancario y farmacéutico.\n\nActualmente, Sebastián se especializa en la creación de arquitecturas de deep learning avanzadas para aplicaciones en la industria farmacéutica, con un enfoque particular en su despliegue eficiente en la nube.",
+        "Bio": "Sebastián Sarasti es un ingeniero en machine learning con una destacada trayectoria en el desarrollo e implementación de modelos de inteligencia artificial end-to-end en diversas industrias, como retail, sector bancario y farmacéutico.  Actualmente, Sebastián se especializa en la creación de arquitecturas de deep learning avanzadas para aplicaciones en la industria farmacéutica, con un enfoque particular en su despliegue eficiente en la nube.",
         "LinkedIn": "https://www.linkedin.com/in/sebastiansarasti/",
         "Profile Picture": "https://sessionize.com/image/4547-400o400o1-EEMYXy4qze77H9BHxVCgP1.png"
       }
     ]
   },
   {
-    "SessionId": 984952,
+    "SessionId": 12,
+    "Title": "Del caos al control: Estrategias de optimización de costos en EKS",
+    "Desde": "11:20",
+    "Hasta": "11:20",
+    "Room": "Huchuy 4",
+    "Level": "L300",
+    "Category": "DevOps",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Israel",
+        "LastName": "Oña Ordoñez",
+        "TagLine": "Lider de DevOps",
+        "Bio": "Soy ingeniero en sistemas con más de 8 años de experiencia liderando la automatización y operación de entornos en la nube, especializado en AWS. Actualmente lidero un equipo DevSecOps enfocado en crear soluciones resilientes, seguras y escalables usando prácticas como GitOps, Infrastructure as Code con Terraform y estrategias avanzadas de optimización.  Me apasiona compartir experiencias reales y prácticas que ayuden a otros equipos a mejorar su eficiencia operativa sin sacrificar estabilidad. Hablo sobre lo que implemento, pruebo y mantengo en producción.",
+        "LinkedIn": "https://www.linkedin.com/in/isrradev/",
+        "Profile Picture": "https://sessionize.com/image/4288-400o400o1-R9E2XMeKiktWWK34a9GWNZ.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 13,
+    "Title": "Construyendo una plataforma de datos en AWS",
+    "Desde": "11:20",
+    "Hasta": "12:10",
+    "Room": "Huchuy 5",
+    "Level": "L200",
+    "Category": "Data & Analytics",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Tex",
+        "LastName": "Albuja",
+        "TagLine": "Thoughtworks, Lead Consultant Developer",
+        "Bio": "Tex works at Thoughtworks as a Lead Consultant Developer. He has more than a decade of experience in software development. He loves to solve problems, analyze a situation, identify potential shortcomings and change course in times of difficulty and crisis. He is fluent in backend and front-end technologies, as well as software architecture and infrastructure.  Occasionally, Tex looks for opportunities to gain skills or knowledge in areas that do not fall into his primary role, such as quality assurance, user experience, and technical leadership. As a generalist, Tex can help others get started in those disciplines and increase the overall success of a project.  ",
+        "LinkedIn": "https://www.linkedin.com/in/texalbuja/",
+        "Profile Picture": "https://sessionize.com/image/966a-400o400o1-aSoQbHANDrNkACei9i47mv.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 14,
+    "Title": "Networking General",
+    "Desde": "12:10",
+    "Hasta": "12:30",
+    "Room": "Patio Amazonico",
+    "Level": "",
+    "Category": "",
+    "Type": "",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "AWS Community Day Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 15,
+    "Title": "Break & Almuerzo",
+    "Desde": "12:30",
+    "Hasta": "13:30",
+    "Room": "Comedor Sub suelo2",
+    "Level": "",
+    "Category": "",
+    "Type": "",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "AWS Community Day Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 16,
     "Title": "Arquitectura de un Agente FinOps: Memory Layers, Bedrock y Predicción Continua de Costos",
+    "Desde": "13:30",
+    "Hasta": "14:20",
+    "Room": "Huchuy 1",
+    "Level": "L300",
+    "Category": "FinOps",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Gabriel",
         "LastName": "Torres",
         "TagLine": "Cloud Engineer at Banco Bolivariano - Community Builder at Serverless",
-        "Bio": "Soy un profesional con más de 10 años de experiencia en el sector financiero, habiendo trabajado en varios bancos en Ecuador y en startups innovadoras como Kushki Pagos. Actualmente, soy Cloud Engineer en Banco Bolivariano. Este año, me he convertido en Community Builder en el área de Serverless, donde me dedico a fomentar la comunidad y compartir conocimientos. Además, soy un activo creador de contenido, publicando regularmente en blogs de Medium y otras plataformas.\n",
+        "Bio": "Soy un profesional con más de 10 años de experiencia en el sector financiero, habiendo trabajado en varios bancos en Ecuador y en startups innovadoras como Kushki Pagos. Actualmente, soy Cloud Engineer en Banco Bolivariano. Este año, me he convertido en Community Builder en el área de Serverless, donde me dedico a fomentar la comunidad y compartir conocimientos. Además, soy un activo creador de contenido, publicando regularmente en blogs de Medium y otras plataformas. ",
         "LinkedIn": "http://linkedin.com/in/gtorreswm",
         "Profile Picture": "https://sessionize.com/image/85cc-400o400o1-pLYveV1NCBsRVMPfoJBydg.jpg"
       }
     ]
   },
   {
-    "SessionId": 984960,
+    "SessionId": 17,
     "Title": "Usa RAG para mejorar las respuestas en aplicaciones de IA generativa",
+    "Desde": "13:30",
+    "Hasta": "14:20",
+    "Room": "Huchuy 2",
+    "Level": "L300",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Giacomo",
         "LastName": "Orizzonte",
         "TagLine": "Infrastructure Director Kushki",
-        "Bio": "Giacomo Orizzonte\nDirector de Infraestructura en Kushki. Ingeniero y administrador de empresas de TI, con trayectoria en soporte, seguridad, programación e infraestructura en producción real.\n\nTrabajo liderando equipos técnicos que hacen que las plataformas no se caigan y escalen sin drama. Uso AWS todos los días, y no solo desde la consola.\n\nApasionado por la inteligencia artificial y el machine learning, aplicándolos en casos concretos, más allá de la moda. Creo en el trabajo bien hecho, en colaborar sin burocracia y en que la tecnología tiene que resolver problemas reales, no solo verse bonita en un diagrama.",
+        "Bio": "Giacomo Orizzonte Director de Infraestructura en Kushki. Ingeniero y administrador de empresas de TI, con trayectoria en soporte, seguridad, programación e infraestructura en producción real.  Trabajo liderando equipos técnicos que hacen que las plataformas no se caigan y escalen sin drama. Uso AWS todos los días, y no solo desde la consola.  Apasionado por la inteligencia artificial y el machine learning, aplicándolos en casos concretos, más allá de la moda. Creo en el trabajo bien hecho, en colaborar sin burocracia y en que la tecnología tiene que resolver problemas reales, no solo verse bonita en un diagrama.",
         "LinkedIn": "https://www.linkedin.com/in/giozz/",
         "Profile Picture": "https://sessionize.com/image/0f5d-400o400o1-9VRhuHr6ww9RjiV1RJdShS.jpg"
       }
     ]
   },
   {
-    "SessionId": 984987,
+    "SessionId": 18,
     "Title": "Del modelo al impacto: Cómo optimizar cargas de IA en AWS con enfoque FinOps",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 3",
+    "Level": "L300",
+    "Category": "FinOps",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Barbara",
         "LastName": "Gaspar",
-        "TagLine": "FinOps Specialist ",
+        "TagLine": "FinOps Specialist",
         "Bio": "Especialista FinOps con 7 años de experiencia liderando implementaciones técnicas, operaciones en la nube (AWS, AZURE, GCP) y gestión de soporte técnico para clientes de diferentes sectores, resolviendo casos técnicos con la colaboración de equipos internos y externos. Ganadora de la presea Jóvenes con Valores, y del primer lugar del premio Daniel Cosío Villegas, autora de 7 libros sobre tecnología y FinOps. Cuenta con todas las certificaciones de la FinOps Foundation ",
         "LinkedIn": "https://www.linkedin.com/in/barbaragaspargaona/",
         "Profile Picture": "https://sessionize.com/image/4ca2-400o400o1-PMRZGY1w26djVMFvB7jgbP.jpg"
@@ -84,50 +360,34 @@
     ]
   },
   {
-    "SessionId": 986408,
+    "SessionId": 20,
     "Title": "Gobernanza y escalabilidad en la nube: introducción práctica a AWS Control Tower y Organizations",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 5",
+    "Level": "L200",
+    "Category": "Architecture",
+    "Type": "Charla",
     "Speakers": [
       {
-        "FirstName": "Roberto ",
+        "FirstName": "Roberto",
         "LastName": "Hidalgo",
         "TagLine": "Cloud Improvement and Innovation Leader",
-        "Bio": "Ingeniero en Informática con especialización en Cloud Computing, enfocado en construir soluciones que generan impacto real en las personas, el negocio y la sociedad.\n\nHe trabajado liderando equipos de tecnología, acompañando su crecimiento profesional y fortaleciendo su capacidad para tomar decisiones técnicas estratégicas.\n\nMi experiencia se enfoca en modernizar y optimizar servicios tecnológicos para los clientes, logrando mayor eficiencia, ahorro y valor.\n\nCreo en la tecnología no solo como herramienta, sino como motor de transformación cuando se combina con buenas prácticas, visión y compromiso.\n\nMi propósito es contribuir a un uso más inteligente de las TICs, que beneficie a las empresas, sus equipos, sus clientes… y la comunidad en general, como un principio personal de servicio.",
+        "Bio": "Ingeniero en Informática con especialización en Cloud Computing, enfocado en construir soluciones que generan impacto real en las personas, el negocio y la sociedad.  He trabajado liderando equipos de tecnología, acompañando su crecimiento profesional y fortaleciendo su capacidad para tomar decisiones técnicas estratégicas.  Mi experiencia se enfoca en modernizar y optimizar servicios tecnológicos para los clientes, logrando mayor eficiencia, ahorro y valor.  Creo en la tecnología no solo como herramienta, sino como motor de transformación cuando se combina con buenas prácticas, visión y compromiso.  Mi propósito es contribuir a un uso más inteligente de las TICs, que beneficie a las empresas, sus equipos, sus clientes… y la comunidad en general, como un principio personal de servicio.",
         "LinkedIn": "https://www.linkedin.com/in/carlos-roberto-hidalgo-herrera-27979a59/",
         "Profile Picture": "https://sessionize.com/image/6df4-400o400o1-QWTxYtaELcP9aUfdJyKuSk.jpg"
       }
     ]
   },
   {
-    "SessionId": 986493,
-    "Title": "Can you escape from EC2? : Post-Exploitation & Cloud lateral Movement in AWS",
-    "Speakers": [
-      {
-        "FirstName": "Jeremy",
-        "LastName": "Erazo",
-        "TagLine": "Adversary Simulation",
-        "Bio": "Jeremy Erazo es un especialista en ciberseguridad ofensiva con más de 5 años de experiencia en Red Team, desarrollo de exploits, y simulaciones APT en entornos reales. Ha participado como speaker en conferencias Internacionales, entrenado equipos militares y corporativos en técnicas avanzadas de hacking.\nEntre sus logros destacan estar en el Top #1 de Hack The Box Ecuador y el Top #82 a nivel global, así como certificaciones avanzadas como OSED, BSCP, INE Mobile Pentesting y especializaciones en seguridad cloud de CrowdStrike, Tenable y Spartan.",
-        "LinkedIn": "https://www.linkedin.com/in/jeremy-erazo-0811081b2/",
-        "Profile Picture": "https://sessionize.com/image/96bc-400o400o1-VdUvTUt4YRCy8ZyGiCeUcd.jpg"
-      }
-    ]
-  },
-  {
-    "SessionId": 986495,
-    "Title": "Del caos al control: Estrategias de optimización de costos en EKS",
-    "Speakers": [
-      {
-        "FirstName": "Israel",
-        "LastName": "Oña Ordoñez",
-        "TagLine": "Lider de DevOps",
-        "Bio": "Soy ingeniero en sistemas con más de 8 años de experiencia liderando la automatización y operación de entornos en la nube, especializado en AWS. Actualmente lidero un equipo DevSecOps enfocado en crear soluciones resilientes, seguras y escalables usando prácticas como GitOps, Infrastructure as Code con Terraform y estrategias avanzadas de optimización.\n\nMe apasiona compartir experiencias reales y prácticas que ayuden a otros equipos a mejorar su eficiencia operativa sin sacrificar estabilidad. Hablo sobre lo que implemento, pruebo y mantengo en producción.",
-        "LinkedIn": "https://www.linkedin.com/in/isrradev/",
-        "Profile Picture": "https://sessionize.com/image/4288-400o400o1-R9E2XMeKiktWWK34a9GWNZ.jpg"
-      }
-    ]
-  },
-  {
-    "SessionId": 986631,
-    "Title": "“Seguridad y Cumplimiento Inteligente con Amazon Q Business”",
+    "SessionId": 21,
+    "Title": "Seguridad y Cumplimiento Inteligente con Amazon Q Business",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 6",
+    "Level": "L300",
+    "Category": "AI & Security",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Marice",
@@ -140,8 +400,34 @@
     ]
   },
   {
-    "SessionId": 986844,
+    "SessionId": 22,
+    "Title": "Tu Primer Despliegue con Infraestructura como Código",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 7",
+    "Level": "L100",
+    "Category": "DevOps",
+    "Type": "workshop",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Maya",
+        "TagLine": "Digital Challengers, Java Senior Developer",
+        "Bio": "Profesional de tecnología con más de 6 años de experiencia, enfocado en el ciclo de vida completo de soluciones en la nube, abarcando desde el diseño de arquitecturas de alto nivel hasta el desarrollo y la optimización DevOps. Experto en el diseño de arquitecturas resilientes, escalables y de alto rendimiento en AWS, combinando la visión estratégica de un arquitecto con la ejecución técnica de un desarrollador senior para modernizar sistemas legados del sector bancario y mentorizar equipos en la adopción de mejores prácticas. Ingeniero en Sistemas Informáticos y de Computación Escuela Politécnica Nacional. AWS Certified DevOps Engineer – Professional AWS Certified Developer – Associate AWS Certified Solutions Architect – Associate AWS Certified Cloud Practitioner Oracle Certified Professional (OCP), Java Programmer",
+        "LinkedIn": "https://www.linkedin.com/in/ricardo-maya-930a9a161/",
+        "Profile Picture": "https://sessionize.com/image/340a-400o400o1-MtMgcZf1NXwLMorRyuAHYk.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 23,
     "Title": "Apps que ven: Integrando Flutter con AWS Textract para resolver problemas reales",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 8",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Cristhian",
@@ -154,8 +440,14 @@
     ]
   },
   {
-    "SessionId": 988056,
+    "SessionId": 24,
     "Title": "El Laboratorio en Cloud, garantizando continuidad alineado a normativas internacionales",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 9",
+    "Level": "L200",
+    "Category": "Architecture",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Christhian",
@@ -168,8 +460,74 @@
     ]
   },
   {
-    "SessionId": 989325,
+    "SessionId": 25,
+    "Title": "Workshop: Implementando Seguridad Defensiva con WAF + Automatización",
+    "Desde": "13:30",
+    "Hasta": "15:00",
+    "Room": "Api Ruco Pichincha",
+    "Level": "L200",
+    "Category": "Security",
+    "Type": "workshop",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Reyes",
+        "TagLine": "Cloud Security Specialist",
+        "Bio": "Profesional con una amplia experiencia de 16 años en infraestructura de TI, ciberseguridad y continuidad del negocio, me especializo en salvaguardar la seguridad y la disponibilidad de soluciones basadas en la nube y On premise.",
+        "LinkedIn": "https://www.linkedin.com/in/williereyes/",
+        "Profile Picture": "https://sessionize.com/image/b0af-400o400o1-qMtzUrpGmqW4Q8kcSqZ3U.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 26,
+    "Title": "Quiños del año Builder Card",
+    "Desde": "14:00",
+    "Hasta": "14:45",
+    "Room": "Área de Networking Andino",
+    "Level": "L100",
+    "Category": "",
+    "Type": "",
+    "Speakers": [
+      {
+        "FirstName": "AWS Community Day",
+        "LastName": "Ecuador",
+        "TagLine": "",
+        "Bio": "AWS Community Day Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 27,
+    "Title": "FinOps en Ecuador: estrategias para optimizar el gasto en la nube",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 1",
+    "Level": "L200",
+    "Category": "FinOps",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Sarmiento",
+        "LastName": "Manuel",
+        "TagLine": "Global Sales - Digital sales",
+        "Bio": "Actualmente me desempeño como Territory Sales Manager en IBM, donde lidero iniciativas de optimización del gasto en la nube, promoviendo soluciones que permiten a las organizaciones ser más eficientes, competitivas y sostenibles. Su experiencia incluye la implementación de programas FinOps, la gestión de consumo cloud y el acompañamiento estratégico a clientes en su evolución tecnológica.\nMi propósito es impulsar el uso inteligente de la nube en la región, ayudando a las empresas a tomar decisiones informadas sobre su consumo tecnológico y a convertir el gasto en una ventaja estratégica.",
+        "LinkedIn": "https://www.linkedin.com/in/manuel-sarmiento/",
+        "Profile Picture": "https://sessionize.com/image/acb2-0o0o0-nuRGAyPWfgzV3ceEadHXxw.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 28,
     "Title": "Datawarehouse en AWS usando Glue, Athena, SQS y S3",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 2",
+    "Level": "L200",
+    "Category": "Data & Analytics",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Efren",
@@ -182,42 +540,20 @@
     ]
   },
   {
-    "SessionId": 991460,
-    "Title": "Analizando almacenamiento vectorial en S3: Vector S3 vs Bucket S3 con OS",
-    "Speakers": [
-      {
-        "FirstName": "Carlos",
-        "LastName": "Chicata",
-        "TagLine": "Ingeniero de datos en Visiva",
-        "Bio": "Con bases en ciencias de la computación formado en arequipa; busco comprender y compartir más sobre los datos y la privacidad de los mismos; lo que me lleva a tener una opinión sobre ello generalmente. Apoyo a la comunidad de AWS en Perú y soy lider de UG en la ciudad blanca de Arequipa.\n\nEfimero Community Top Voice en linkedin en data engineer y data warehousing cuando existia esa opción, con experiencia en formación y liderazgos de equipos de datos; buscador siempre de la maduración los ecosistemas de datos y cuidador de un conejo que es mi lider.",
-        "LinkedIn": "https://www.linkedin.com/in/carlos-chicata-farfan/",
-        "Profile Picture": "https://sessionize.com/image/547f-400o400o1-GBrA3hvFzCdzJhYD7CTXrb.jpg"
-      }
-    ]
-  },
-  {
-    "SessionId": 991681,
-    "Title": "Tu Primer Despliegue con Infraestructura como Código",
-    "Speakers": [
-      {
-        "FirstName": "Ricardo",
-        "LastName": "Maya",
-        "TagLine": "Digital Challengers, Java Senior Developer",
-        "Bio": "Profesional de tecnología con más de 6 años de experiencia, enfocado en el ciclo de vida completo de soluciones en la nube, abarcando desde el diseño de arquitecturas de alto nivel hasta el desarrollo y la optimización DevOps. Experto en el diseño de arquitecturas resilientes, escalables y de alto rendimiento en AWS, combinando la visión estratégica de un arquitecto con la ejecución técnica de un desarrollador senior para modernizar sistemas legados del sector bancario y mentorizar equipos en la adopción de mejores prácticas.\nIngeniero en Sistemas Informáticos y de Computación Escuela Politécnica Nacional.\nAWS Certified DevOps Engineer – Professional\nAWS Certified Developer – Associate\nAWS Certified Solutions Architect – Associate\nAWS Certified Cloud Practitioner\nOracle Certified Professional (OCP), Java Programmer",
-        "LinkedIn": "https://www.linkedin.com/in/ricardo-maya-930a9a161/",
-        "Profile Picture": "https://sessionize.com/image/340a-400o400o1-MtMgcZf1NXwLMorRyuAHYk.png"
-      }
-    ]
-  },
-  {
-    "SessionId": 993255,
+    "SessionId": 29,
     "Title": "De DevSecOps a Zero Trust: Firma de Contenedores en Amazon EKS con Amazon Signer",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 3",
+    "Level": "L300",
+    "Category": "Security",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Xavier Alonso",
         "LastName": "Llauca Uchupailla",
         "TagLine": "Cloud Security Engineer",
-        "Bio": "Xavier es un Ingeniero de Seguridad en la Nube con experiencia en la automatización de despliegue de infraestructura y gestión de configuraciones en la nube, aplicando las mejores prácticas. Ha colaborado exitosamente con equipos de desarrollo y operaciones para garantizar la entrega segura y confiable de software. Además, ha creado políticas, procesos y procedimientos de seguridad de la información, y ha realizado actividades de hacking ético y pruebas de penetración tanto en infraestructuras tradicionales como en la nube.\n\nComo conferencista, ha impartido las siguientes charlas en varios países:\n\n* AWS Community Day Colombia 2023\n* Kubernetes Community Day Guatemala 2023\n* Kubernetes Community Day El Salvador 2023 \n* Kubernetes Community Day Costa Rica 2024\n* Kubernetes Community Day Lima, Peru 2024\n\nEs organizador y fundador de la Comunidad de Cloud Native Compute Foundation (CNCF): Cloud Native Cuenca, Ecuador \n\nComo colaborador, ha participado en los siguientes proyectos en GitHub:\n\n* Proyecto \"GOAD\" de Orange Cyberdefense (Laboratorio para prácticas de ataque/defensa de Active Directory)\n* Proyecto \"TIWAP\" de Tombstoneghost (Laboratorio para realizar prácticas/ataques a diferentes tipos de vulnerabilidades web)",
+        "Bio": "Xavier es un Ingeniero de Seguridad en la Nube con experiencia en la automatización de despliegue de infraestructura y gestión de configuraciones en la nube, aplicando las mejores prácticas. Ha colaborado exitosamente con equipos de desarrollo y operaciones para garantizar la entrega segura y confiable de software. Además, ha creado políticas, procesos y procedimientos de seguridad de la información, y ha realizado actividades de hacking ético y pruebas de penetración tanto en infraestructuras tradicionales como en la nube.  Como conferencista, ha impartido las siguientes Charlas en varios países:  * AWS Community Day Colombia 2023 * Kubernetes Community Day Guatemala 2023 * Kubernetes Community Day El Salvador 2023  * Kubernetes Community Day Costa Rica 2024 * Kubernetes Community Day Lima, Peru 2024  Es organizador y fundador de la Comunidad de Cloud Native Compute Foundation (CNCF): Cloud Native Cuenca, Ecuador   Como colaborador, ha participado en los siguientes proyectos en GitHub:  * Proyecto \"GOAD\" de Orange Cyberdefense (Laboratorio para prácticas de ataque/defensa de Active Directory) * Proyecto \"TIWAP\" de Tombstoneghost (Laboratorio para realizar prácticas/ataques a diferentes tipos de vulnerabilidades web)",
         "LinkedIn": "https://www.linkedin.com/in/xllauca/",
         "Profile Picture": "https://sessionize.com/image/7e26-400o400o1-s3WYKqUjhZ8tLBCsu8LSGr.jpg"
       },
@@ -231,9 +567,16 @@
       }
     ]
   },
+
   {
-    "SessionId": 995553,
+    "SessionId": 31,
     "Title": "Construyendo un sistema multi-agente para la atención al cliente con Amazon Bedrock y LangGraph",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 5",
+    "Level": "L300",
+    "Category": "AI & ML",
+    "Type": "workshop",
     "Speakers": [
       {
         "FirstName": "Daniel",
@@ -246,8 +589,14 @@
     ]
   },
   {
-    "SessionId": 1019123,
+    "SessionId": 32,
     "Title": "Más allá de RAG: Amazon S3 Vectors",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 6",
+    "Level": "L300",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Juan",
@@ -260,22 +609,54 @@
     ]
   },
   {
-    "SessionId": 1019588,
+    "SessionId": 33,
+    "Title": "kruger corp",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 7",
+    "Level": "",
+    "Category": "",
+    "Type": "",
+    "Speakers": [
+      {
+        "FirstName": "Marcelo",
+        "LastName": "Hidalgo",
+        "TagLine": "",
+        "Bio": "",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 34,
     "Title": "Trazabilidad y gobernanza en el uso de Amazon Q: de la consulta al control",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 8",
+    "Level": "L300",
+    "Category": "Security",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "David",
         "LastName": "Arias",
         "TagLine": "Cloud DevOps Engineer | Solutions Architect | 6X AWS Certified | Terraform Certified | AWS UserGroup Leader | IT Instructor",
-        "Bio": "I am an experienced Cloud and DevOps Engineer, who was an English-Spanish translator traveling around the world along 8 years. I like to learn, improve and share tech knowledge. Always giving the extra mile. \nFacing challenges is a way to improve myself.",
+        "Bio": "I am an experienced Cloud and DevOps Engineer, who was an English-Spanish translator traveling around the world along 8 years. I like to learn, improve and share tech knowledge. Always giving the extra mile.  Facing challenges is a way to improve myself.",
         "LinkedIn": "https://www.linkedin.com/in/david4tech/",
         "Profile Picture": "https://sessionize.com/image/58fd-400o400o1-G6AXjMYfAQrXFfQB5hb9Q8.jpg"
       }
     ]
   },
   {
-    "SessionId": 1020583,
+    "SessionId": 35,
     "Title": "WAF Custom Rules  Deep Dive",
+    "Desde": "14:20",
+    "Hasta": "15:10",
+    "Room": "Huchuy 9",
+    "Level": "L300",
+    "Category": "Security",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Ricardo",
@@ -288,22 +669,34 @@
     ]
   },
   {
-    "SessionId": 1020584,
-    "Title": "Implementando Seguridad Defensiva con WAF + Automatización",
+    "SessionId": 36,
+    "Title": "Alta disponibilidad y escalamiento en Kubernetes con Amazon EKS",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 1",
+    "Level": "L300",
+    "Category": "DevOps",
+    "Type": "Charla",
     "Speakers": [
       {
-        "FirstName": "Ricardo",
-        "LastName": "Reyes",
-        "TagLine": "Cloud Security Specialist",
-        "Bio": "Profesional con una amplia experiencia de 16 años en infraestructura de TI, ciberseguridad y continuidad del negocio, me especializo en salvaguardar la seguridad y la disponibilidad de soluciones basadas en la nube y On premise.",
-        "LinkedIn": "https://www.linkedin.com/in/williereyes/",
-        "Profile Picture": "https://sessionize.com/image/b0af-400o400o1-qMtzUrpGmqW4Q8kcSqZ3U.jpg"
+        "FirstName": "Max",
+        "LastName": "Zeballos Torres",
+        "TagLine": "DataOps en Rankmi",
+        "Bio": "x13 AWS Certified, AWS Community Builder x3, Fundador de la comunidad AWS Machine Learning Latam, (+13) años de experiencia en la industria tech, Desarrollo de cursos gratuitos online (Youtube - @MaxCloud101)",
+        "LinkedIn": "https://www.linkedin.com/in/maxcloud",
+        "Profile Picture": "https://sessionize.com/image/3ba1-0o0o0-DwjPqSFLvx1uMQokcHxUei.jpg"
       }
     ]
   },
   {
-    "SessionId": 1020667,
+    "SessionId": 37,
     "Title": "ChatBot de IA basado en RAG usando Amazon Bedrock",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 2",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Jordan",
@@ -316,8 +709,14 @@
     ]
   },
   {
-    "SessionId": 1021735,
+    "SessionId": 38,
     "Title": "De pipelines a plataformas: el siguiente nivel en la automatización y la entrega continua",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 3",
+    "Level": "L300",
+    "Category": "DevOps",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Jairo Hernan",
@@ -330,22 +729,14 @@
     ]
   },
   {
-    "SessionId": 1022503,
-    "Title": "Construyendo una plataforma de datos en AWS",
-    "Speakers": [
-      {
-        "FirstName": "Tex",
-        "LastName": "Albuja",
-        "TagLine": "Thoughtworks, Lead Consultant Developer",
-        "Bio": "Tex works at Thoughtworks as a Lead Consultant Developer. He has more than a decade of experience in software development. He loves to solve problems, analyze a situation, identify potential shortcomings and change course in times of difficulty and crisis. He is fluent in backend and front-end technologies, as well as software architecture and infrastructure.\n\nOccasionally, Tex looks for opportunities to gain skills or knowledge in areas that do not fall into his primary role, such as quality assurance, user experience, and technical leadership. As a generalist, Tex can help others get started in those disciplines and increase the overall success of a project.\n\n",
-        "LinkedIn": "https://www.linkedin.com/in/texalbuja/",
-        "Profile Picture": "https://sessionize.com/image/966a-400o400o1-aSoQbHANDrNkACei9i47mv.jpg"
-      }
-    ]
-  },
-  {
-    "SessionId": 1022777,
+    "SessionId": 39,
     "Title": "From Generic to Genius: Configurando Agentes en Amazon Q Developer + Rules + MCP's",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 4",
+    "Level": "L300",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Jose",
@@ -358,8 +749,14 @@
     ]
   },
   {
-    "SessionId": 1023615,
+    "SessionId": 40,
     "Title": "Construya su primer agente de lA listo para producción con Amazon Bedrock",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 5",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Kevin",
@@ -372,8 +769,14 @@
     ]
   },
   {
-    "SessionId": 1024074,
+    "SessionId": 41,
     "Title": "Comercio electrónico sin fronteras: seguridad, escalabilidad y coordinación con AWS Transit Gateway",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 6",
+    "Level": "L300",
+    "Category": "Networking & Seguridad",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Jocelyn",
@@ -386,8 +789,14 @@
     ]
   },
   {
-    "SessionId": 1024095,
+    "SessionId": 42,
     "Title": "Automatización Inteligente: Haz que los Agentes de IA Trabajen Para Ti",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 7",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Diego",
@@ -400,72 +809,111 @@
     ]
   },
   {
-    "SessionId": 1024923,
-    "Title": "De Zero a AI Tutor: Construye tu Agente para certificarte en AWS sin escribir código",
+    "SessionId": 43,
+    "Title": "De Zero a AI Tutor: Construye tu Agente para certificarte en AWS",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 8",
+    "Level": "L200",
+    "Category": "AI & ML",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Julio",
         "LastName": "Sarango",
         "TagLine": "Centro Hub / Diners Club - Especialista en DevSecOps",
-        "Bio": "Más de 10 años de experiencia en desarrollo de software, AWS Cloud Practitioner.\n\nApasionado por la tecnología y el software libre.",
+        "Bio": "Más de 10 años de experiencia en desarrollo de software, AWS Cloud Practitioner.  Apasionado por la tecnología y el software libre.",
         "LinkedIn": "https://www.linkedin.com/in/jsarangoq/",
         "Profile Picture": "https://sessionize.com/image/a671-400o400o1-JjosRHhMYoJFinyzWgbJAC.jpg"
       }
     ]
   },
   {
-    "SessionId": 984930,
-    "Title": "Desplegando agentes de IA con LangGraph, AWS Bedrock y arquitectura serverless",
+    "SessionId": 44,
+    "Title": "Autenticación Inteligente: Protegiendo aplicaciones con Amazon Cognito y IAM Roles",
+    "Desde": "15:10",
+    "Hasta": "16:00",
+    "Room": "Huchuy 9",
+    "Level": "L200",
+    "Category": "Security",
+    "Type": "Charla",
     "Speakers": [
       {
         "FirstName": "Willy Joao",
         "LastName": "Mateo Espinoza",
         "TagLine": "Fullstack Software Developer Engineer",
-        "Bio": "As a Computer Science Engineer and full-stack developer, I combine technologies such as Python, LangGraph, AWS, and Terraform to create scalable and accessible solutions, prioritizing clean code and robust architectures.\nMy focus is on integrating Artificial Intelligence into innovative projects: I led a research project using OpenAI's Whisper to analyze oral presentations at ESPOL, my alma mater, results that we published as a scientific paper in 2024.\nCurrently, as a consultant, I apply my passion for AI by developing applications that solve critical challenges at Incyte, a US biopharmaceutical company.",
+        "Bio": "As a Computer Science Engineer and full-stack developer, I combine technologies such as Python, LangGraph, AWS, and Terraform to create scalable and accessible solutions, prioritizing clean code and robust architectures. My focus is on integrating Artificial Intelligence into innovative projects: I led a research project using OpenAI's Whisper to analyze oral presentations at ESPOL, my alma mater, results that we published as a scientific paper in 2024. Currently, as a consultant, I apply my passion for AI by developing applications that solve critical challenges at Incyte, a US biopharmaceutical company.",
         "LinkedIn": "https://www.linkedin.com/in/willymateo",
         "Profile Picture": "https://sessionize.com/image/b235-400o400o1-hds3TTgLhi9sxTSMpALw1u.png"
       }
     ]
   },
   {
-    "SessionId": 986392,
-    "Title": "Cloud First: adoptando la nube como pilar de innovación",
+    "SessionId": 45,
+    "Title": "RECIEN OE? YO YA MISMO TERMINO XD",
+    "Desde": "13:30",
+    "Hasta": "14:20",
+    "Room": "Huchuy 5",
+    "Level": "L200",
+    "Category": "",
+    "Type": "Charla",
     "Speakers": [
       {
-        "FirstName": "Roberto ",
-        "LastName": "Hidalgo",
-        "TagLine": "Cloud Improvement and Innovation Leader",
-        "Bio": "Ingeniero en Informática con especialización en Cloud Computing, enfocado en construir soluciones que generan impacto real en las personas, el negocio y la sociedad.\n\nHe trabajado liderando equipos de tecnología, acompañando su crecimiento profesional y fortaleciendo su capacidad para tomar decisiones técnicas estratégicas.\n\nMi experiencia se enfoca en modernizar y optimizar servicios tecnológicos para los clientes, logrando mayor eficiencia, ahorro y valor.\n\nCreo en la tecnología no solo como herramienta, sino como motor de transformación cuando se combina con buenas prácticas, visión y compromiso.\n\nMi propósito es contribuir a un uso más inteligente de las TICs, que beneficie a las empresas, sus equipos, sus clientes… y la comunidad en general, como un principio personal de servicio.",
-        "LinkedIn": "https://www.linkedin.com/in/carlos-roberto-hidalgo-herrera-27979a59/",
-        "Profile Picture": "https://sessionize.com/image/6df4-400o400o1-QWTxYtaELcP9aUfdJyKuSk.jpg"
+        "FirstName": "Pablo",
+        "LastName": "Veintimilla",
+        "TagLine": "",
+        "Bio": "Mi objetivo es aportar iniciativas, conocimiento y profesionalismo en beneficio y progreso de la sociedad. Mi amplia experiencia profesional en entidades públicas y privadas me otorga la capacidad de liderar proyectos de cualquier índole. \n\nMis principales competencias son: Liderazgo, gestión por resultados, trabajo en equipo, pro - actividad, capacidad analítica y aprendizaje continuo. \n\nSoy hombre de familia, creyente, con altos valores de comunicación y empatía. ",
+        "LinkedIn": "https://www.linkedin.com/in/pabloveintimilla/",
+        "Profile Picture": ""
       }
     ]
   },
   {
-    "SessionId": 991413,
-    "Title": "Amazon Q",
+    "SessionId": 46,
+    "Title": "Conversatorio entre Goldens Jacker",
+    "Desde": "16:00",
+    "Hasta": "16:50",
+    "Room": "Auditorio Principal",
+    "Level": "All",
+    "Category": "Evento",
+    "Type": "Conversatorio",
     "Speakers": [
       {
-        "FirstName": "Francisco",
-        "LastName": "Tixi",
-        "TagLine": "Desarrollador",
-        "Bio": "Desarrollador de software enfocado en sistemas operativos móviles.\nIngeniero en Sistemas\nMaestria en Desarrollo de Software",
-        "LinkedIn": null,
-        "Profile Picture": "https://sessionize.com/image/e8ca-400o400o1-MMNLS3eGXdYnRNSVbBhDbv.jpg"
+        "FirstName": "Max",
+        "LastName": "Zeballos Torres",
+        "TagLine": "DataOps en Rankmi",
+        "Bio": "x13 AWS Certified, AWS Community Builder x3, Fundador de la comunidad AWS Machine Learning Latam, (+13) años de experiencia en la industria tech, Desarrollo de cursos gratuitos online (Youtube - @MaxCloud101)",
+        "LinkedIn": "https://www.linkedin.com/in/maxcloud",
+        "Profile Picture": "https://sessionize.com/image/3ba1-0o0o0-DwjPqSFLvx1uMQokcHxUei.jpg"
+      },
+      {
+        "FirstName": "David",
+        "LastName": "Bolivar",
+        "TagLine": "",
+        "Bio": "",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
       }
     ]
   },
+  
   {
-    "SessionId": 1025107,
-    "Title": "Procesos de Agilismo y DevOps para desarrollo productivo y de calidad.",
+    "SessionId": 48,
+    "Title": "Cierre AWS Community Day EC",
+    "Desde": "16:50",
+    "Hasta": "17:30",
+    "Room": "Auditorio Principal",
+    "Level": "All",
+    "Category": "Evento",
+    "Type": "Evento",
     "Speakers": [
       {
-        "FirstName": "Diego",
-        "LastName": "Zumarraga Mera",
-        "TagLine": "Solutions Architect & AI Consultant",
-        "Bio": "My name is Diego Zumarraga Mera, I'm from Ecuador, I am 38 years old. I am passionate about technology. For ten years I have helped transform the insurance and financial sectors with innovation projects. I love working with data, AI, Machine Learning and agile methodologies.",
-        "LinkedIn": "https://ec.linkedin.com/in/dfmera",
-        "Profile Picture": "https://sessionize.com/image/65a1-400o400o1-UyNkCaWn1r9YjzcwngsmJo.jpg"
+        "FirstName": "",
+        "LastName": "Equipo",
+        "TagLine": "Organizador",
+        "Bio": "Comunidades de AWS en Ecuador",
+        "LinkedIn": "",
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
       }
     ]
   }
