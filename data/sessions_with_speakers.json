@@ -36,7 +36,7 @@
         "Bio": "Damian Fernandez es pianista, productor musical y emprendedor en serie. Fundó Smart Citizen, PARKEN y DFX5, donde actualmente se desempeña como CEO impulsando transformaciones de CX/IA. Su carrera tecnológica comenzó en Intel desarrollando el procesador Pentium II. Es ganador del premio Ernst & Young Entrepreneur of the Year 2002.",
         "LinkedIn": "https://www.linkedin.com/in/damianfernandez",
         "Profile Picture": "https://sessionize.com/image/cb81-0o0o0-RKqkDYCDrJH5gVD4RTq8V6.jpg"
-      }
+        }
     ]
   },
   {
@@ -76,6 +76,7 @@
         "Bio": "",
         "LinkedIn": "",
         "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+        
       }
     ]
   },
@@ -109,10 +110,10 @@
   },
   {
     "SessionId": 6,
-    "Title": "Workshop: Arquitectura Inteligente en AWS: Automatiza y Transforma con Fargate, EventBridge y Bedrock",
-    "Desde": "11:00",
-    "Hasta": "12:30",
-    "Room": "Lambda del Cotopaxi",
+    "Title": "Arquitectura Inteligente en AWS: Automatiza y Transforma con Fargate, EventBridge y Bedrock",
+    "Desde": "13:30:00",
+    "Hasta": "14:20",
+    "Room": "Huchuy 7",
     "Level": "L200",
     "Category": "Architecture",
     "Type": "Charla",
@@ -124,6 +125,26 @@
         "Bio": "I am a passionate and versatile software engineer with over 5 years of experience specializing in Java, focusing on developing scalable and high-quality solutions. I have led teams using agile methodologies and established myself as a technical authority in the design and implementation of diverse architectures, including microservices, event-driven, and monolithic systems. My profound understanding of design patterns and best practices in software development enables me to deliver robust and scalable solutions that exceed client expectations. Currently, I shine as a Java Developer, dedicating myself to crafting high-quality solutions that reflect my love for technology and innovation.",
         "LinkedIn": "https://www.linkedin.com/in/bryam-vega",
         "Profile Picture": "https://sessionize.com/image/f899-400o400o1-97jJgJ1h2NcfMiPSr7nun8.jpg"
+      }
+    ]
+  },
+  {
+    "SessionId": 22,
+    "Title": "Tu Primer Despliegue con Infraestructura como Código",
+    "Desde": "11:00",
+    "Hasta": "12:30",
+    "Room": "Lambda del Cotopaxi",
+    "Level": "L100",
+    "Category": "DevOps",
+    "Type": "Workshop",
+    "Speakers": [
+      {
+        "FirstName": "Ricardo",
+        "LastName": "Maya",
+        "TagLine": "Digital Challengers, Java Senior Developer",
+        "Bio": "Profesional de tecnología con más de 6 años de experiencia, enfocado en el ciclo de vida completo de soluciones en la nube, abarcando desde el diseño de arquitecturas de alto nivel hasta el desarrollo y la optimización DevOps. Experto en el diseño de arquitecturas resilientes, escalables y de alto rendimiento en AWS, combinando la visión estratégica de un arquitecto con la ejecución técnica de un desarrollador senior para modernizar sistemas legados del sector bancario y mentorizar equipos en la adopción de mejores prácticas. Ingeniero en Sistemas Informáticos y de Computación Escuela Politécnica Nacional. AWS Certified DevOps Engineer – Professional AWS Certified Developer – Associate AWS Certified Solutions Architect – Associate AWS Certified Cloud Practitioner Oracle Certified Professional (OCP), Java Programmer",
+        "LinkedIn": "https://www.linkedin.com/in/ricardo-maya-930a9a161/",
+        "Profile Picture": "https://sessionize.com/image/340a-400o400o1-MtMgcZf1NXwLMorRyuAHYk.png"
       }
     ]
   },
@@ -143,7 +164,7 @@
         "TagLine": "",
         "Bio": "AWS Community Day Ecuador",
         "LinkedIn": "",
-        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg" 
       }
     ]
   },
@@ -204,15 +225,15 @@
         "Bio": "I am 22 years old, I live in Quito, and I work as a Software Specialist at a bank in Ecuador. I have followed the path of artificial intelligence and its implementation in a large company. I recently graduated from university with a degree in Computer Science Engineering. I am enthusiastic about learning and new cloud technologies. I have participated in AWS workshops in Ecuador, and I want to be a speaker because I want to share my ideas with the world and, just as I learn from them, I also want to share what I know with the younger generations. I have used cloud tools such as Bedrock, S3, RAG, EC2, and more.",
         "LinkedIn": "https://www.linkedin.com/in/andrew-paul-rueda-valencia/",
         "Profile Picture": "https://sessionize.com/image/68cc-400o400o1-WfGUUXMoFyZ5rKMXJAGkwB.jpg"
-      }
+              }
     ]
   },
   {
     "SessionId": 11,
     "Title": "Aprendiendo el Lenguaje de las Series de Tiempo - AWS Chronos Bolt",
-    "Desde": "11:20",
-    "Hasta": "12:10:00",
-    "Room": "Huchuy 3",
+    "Desde": "13:30:00",
+    "Hasta": "15:00",
+    "Room": "Lambda del Cotopaxi",
     "Level": "L300",
     "Category": "AI & ML",
     "Type": "Workshop",
@@ -231,7 +252,7 @@
     "SessionId": 12,
     "Title": "Del caos al control: Estrategias de optimización de costos en EKS",
     "Desde": "11:20",
-    "Hasta": "11:20",
+    "Hasta": "12:10",
     "Room": "Huchuy 4",
     "Level": "L300",
     "Category": "DevOps",
@@ -244,7 +265,7 @@
         "Bio": "Soy ingeniero en sistemas con más de 8 años de experiencia liderando la automatización y operación de entornos en la nube, especializado en AWS. Actualmente lidero un equipo DevSecOps enfocado en crear soluciones resilientes, seguras y escalables usando prácticas como GitOps, Infrastructure as Code con Terraform y estrategias avanzadas de optimización.  Me apasiona compartir experiencias reales y prácticas que ayuden a otros equipos a mejorar su eficiencia operativa sin sacrificar estabilidad. Hablo sobre lo que implemento, pruebo y mantengo en producción.",
         "LinkedIn": "https://www.linkedin.com/in/isrradev/",
         "Profile Picture": "https://sessionize.com/image/4288-400o400o1-R9E2XMeKiktWWK34a9GWNZ.jpg"
-      }
+              }
     ]
   },
   {
@@ -264,7 +285,7 @@
         "Bio": "Tex works at Thoughtworks as a Lead Consultant Developer. He has more than a decade of experience in software development. He loves to solve problems, analyze a situation, identify potential shortcomings and change course in times of difficulty and crisis. He is fluent in backend and front-end technologies, as well as software architecture and infrastructure.  Occasionally, Tex looks for opportunities to gain skills or knowledge in areas that do not fall into his primary role, such as quality assurance, user experience, and technical leadership. As a generalist, Tex can help others get started in those disciplines and increase the overall success of a project.  ",
         "LinkedIn": "https://www.linkedin.com/in/texalbuja/",
         "Profile Picture": "https://sessionize.com/image/966a-400o400o1-aSoQbHANDrNkACei9i47mv.jpg"
-      }
+              }
     ]
   },
   {
@@ -407,26 +428,7 @@
       }
     ]
   },
-  {
-    "SessionId": 22,
-    "Title": "Tu Primer Despliegue con Infraestructura como Código",
-    "Desde": "13:30:00",
-    "Hasta": "14:20",
-    "Room": "Huchuy 7",
-    "Level": "L100",
-    "Category": "DevOps",
-    "Type": "workshop",
-    "Speakers": [
-      {
-        "FirstName": "Ricardo",
-        "LastName": "Maya",
-        "TagLine": "Digital Challengers, Java Senior Developer",
-        "Bio": "Profesional de tecnología con más de 6 años de experiencia, enfocado en el ciclo de vida completo de soluciones en la nube, abarcando desde el diseño de arquitecturas de alto nivel hasta el desarrollo y la optimización DevOps. Experto en el diseño de arquitecturas resilientes, escalables y de alto rendimiento en AWS, combinando la visión estratégica de un arquitecto con la ejecución técnica de un desarrollador senior para modernizar sistemas legados del sector bancario y mentorizar equipos en la adopción de mejores prácticas. Ingeniero en Sistemas Informáticos y de Computación Escuela Politécnica Nacional. AWS Certified DevOps Engineer – Professional AWS Certified Developer – Associate AWS Certified Solutions Architect – Associate AWS Certified Cloud Practitioner Oracle Certified Professional (OCP), Java Programmer",
-        "LinkedIn": "https://www.linkedin.com/in/ricardo-maya-930a9a161/",
-        "Profile Picture": "https://sessionize.com/image/340a-400o400o1-MtMgcZf1NXwLMorRyuAHYk.png"
-      }
-    ]
-  },
+  
   {
     "SessionId": 23,
     "Title": "Apps que ven: Integrando Flutter con AWS Textract para resolver problemas reales",
@@ -475,7 +477,7 @@
     "Room": "Api Ruco Pichincha",
     "Level": "L200",
     "Category": "Security",
-    "Type": "workshop",
+    "Type": "Workshop",
     "Speakers": [
       {
         "FirstName": "Ricardo",
@@ -523,7 +525,7 @@
         "TagLine": "Global Sales - Digital sales",
         "Bio": "Actualmente me desempeño como Territory Sales Manager en IBM, donde lidero iniciativas de optimización del gasto en la nube, promoviendo soluciones que permiten a las organizaciones ser más eficientes, competitivas y sostenibles. Su experiencia incluye la implementación de programas FinOps, la gestión de consumo cloud y el acompañamiento estratégico a clientes en su evolución tecnológica.\nMi propósito es impulsar el uso inteligente de la nube en la región, ayudando a las empresas a tomar decisiones informadas sobre su consumo tecnológico y a convertir el gasto en una ventaja estratégica.",
         "LinkedIn": "https://www.linkedin.com/in/manuel-sarmiento/",
-        "Profile Picture": "https://sessionize.com/image/acb2-0o0o0-nuRGAyPWfgzV3ceEadHXxw.jpg"
+        "Profile Picture": "https://sessionize.com/image/acb2-0o0o0-nuRGAyPWfgzV3ceEadHXxw.jpg" 
       }
     ]
   },
@@ -575,16 +577,15 @@
       }
     ]
   },
-
   {
     "SessionId": 31,
     "Title": "Construyendo un sistema multi-agente para la atención al cliente con Amazon Bedrock y LangGraph",
-    "Desde": "14:20",
-    "Hasta": "15:10",
-    "Room": "Huchuy 5",
+    "Desde": "11:00",
+    "Hasta": "12:30",
+    "Room": "Api Ruco Pichincha",
     "Level": "L300",
     "Category": "AI & ML",
-    "Type": "workshop",
+    "Type": "Workshop",
     "Speakers": [
       {
         "FirstName": "Daniel",
@@ -658,10 +659,10 @@
   },
   {
     "SessionId": 35,
-    "Title": "WAF Custom Rules  Deep Dive",
-    "Desde": "14:20",
-    "Hasta": "15:10",
-    "Room": "Huchuy 9",
+    "Title": "WAF Custom Rules Deep Dive",
+    "Desde": "11:20",
+    "Hasta": "12:10",
+    "Room": "Huchuy 8",
     "Level": "L300",
     "Category": "Security",
     "Type": "Charla",
@@ -733,7 +734,7 @@
         "Bio": "Jairo Espinoza es DevOps Engineer en el sector bancario, con más de 3 años de experiencia en automatización e infraestructura. Con background en desarrollo, impulsa la adopción de IaC y prácticas modernas que llevan a los equipos de software del enfoque en pipelines hacia plataformas internas de autoservicio.",
         "LinkedIn": "https://www.linkedin.com/in/jhespinozaa/",
         "Profile Picture": "https://sessionize.com/image/75e1-400o400o1-REy9CV27QdrXdAEygmmMD5.jpg"
-      }
+              }
     ]
   },
   {
@@ -779,8 +780,8 @@
   {
     "SessionId": 41,
     "Title": "Comercio electrónico sin fronteras: seguridad, escalabilidad y coordinación con AWS Transit Gateway",
-    "Desde": "15:10",
-    "Hasta": "16:00",
+    "Desde": "11:20",
+    "Hasta": "12:10",
     "Room": "Huchuy 6",
     "Level": "L300",
     "Category": "Networking & Seguridad",
@@ -861,7 +862,7 @@
     "Title": "Proximamente",
     "Desde": "13:30",
     "Hasta": "14:20",
-    "Room": "Huchuy 5",
+    "Room": "Huchuy 4",
     "Level": "L200",
     "Category": "",
     "Type": "Charla",
@@ -904,7 +905,6 @@
       }
     ]
   },
-  
   {
     "SessionId": 48,
     "Title": "Cierre AWS Community Day EC",
