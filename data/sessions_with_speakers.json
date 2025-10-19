@@ -924,5 +924,45 @@
         "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-cd2025.jpg"
       }
     ]
+  },
+  {
+    "SessionId": 49,
+    "Title": "Prompt Engineering y diseño de experiencias conversacionales con LLMs en AWS",
+    "Desde": "13:30",
+    "Hasta": "14:20",
+    "Room": "Auditorio Principal",
+    "Level": "L200",
+    "Category": "IA generativa",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Alejandro",
+        "LastName": "Pozo",
+        "TagLine": "Cofundador Dharma | Especialista en Inteligencia Artificial y Transformación Digital | Docente UDLA",
+        "Bio": "Alejandro Pozo es especialista en inteligencia artificial y transformación digital, cofundador y gerente general de Dharma. Ha liderado más de 100 proyectos a nivel regional. En formación, es MCT y Azure AI Engineer Associate, Máster en Visual Analytics & Big Data (UNIR) e Ingeniero de Sistemas. Es docente en la UDLA (Networking y Telecomunicaciones) y tutor de pasantías en la UNIR. Como divulgador, es coautor del libro Power Automate | Automatización de Procesos, creador del canal HakuLearn, organizador del primer Global AI Bootcamp en Ecuador, expositor en grandes eventos nacionales e internacionales.",
+        "LinkedIn": "https://linkedin.com/in/alejandropozoo/",
+        "Profile Picture": "https://sessionize.com/image/7422-0o0o0-afPWmm8oXs6gC17GSi2aSN.png"
+      }
+    ]
+  },
+  {
+    "SessionId": 50,
+    "Title": "Implementación de RAG (Retrieval-Augmented Generation) en AWS",
+    "Desde": "11:20",
+    "Hasta": "12:10",
+    "Room": "Huchuy 3",
+    "Level": "L200",
+    "Category": "IA generativa",
+    "Type": "Charla",
+    "Speakers": [
+      {
+        "FirstName": "Alejandro",
+        "LastName": "Pozo",
+        "TagLine": "Cofundador Dharma | Especialista en Inteligencia Artificial y Transformación Digital | Docente UDLA",
+        "Bio": "Alejandro Pozo es especialista en inteligencia artificial y transformación digital, cofundador y gerente general de Dharma. Ha liderado más de 100 proyectos a nivel regional. En formación, es MCT y Azure AI Engineer Associate, Máster en Visual Analytics & Big Data (UNIR) e Ingeniero de Sistemas. Es docente en la UDLA (Networking y Telecomunicaciones) y tutor de pasantías en la UNIR. Como divulgador, es coautor del libro Power Automate | Automatización de Procesos, creador del canal HakuLearn, organizador del primer Global AI Bootcamp en Ecuador, expositor en grandes eventos nacionales e internacionales.",
+        "LinkedIn": "https://linkedin.com/in/alejandropozoo/",
+        "Profile Picture": "https://sessionize.com/image/7422-0o0o0-afPWmm8oXs6gC17GSi2aSN.png"
+      }
+    ]
   }
 ]
