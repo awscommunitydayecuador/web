@@ -190,21 +190,22 @@
   },
   {
     "SessionId": 9,
-    "Title": "Ondu Cloud",
+    "Title": "Estrategias híbridas de resiliencia: DRaaS, BaaS y SOC entre Ondú Cloud y AWS",
     "Desde": "11:20",
-    "Hasta": "12:10:00",
+    "Hasta": "12:10",
     "Room": "Auditorio Principal",
     "Level": "L200",
     "Category": "",
     "Type": "",
     "Speakers": [
       {
-        "FirstName": "Ondu",
-        "LastName": "Cloud",
+        "FirstName": "Darwin",
+        "LastName": "Jimenez",
         "TagLine": "",
         "Bio": "Ondu Cloud",
         "LinkedIn": "",
-        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/background-ondu.jpg"
+        "Profile Picture": "https://www.awsugecuador.com/wp-content/uploads/2025/10/darwinjimez.jpeg",
+        "Email": ""
       }
     ]
   },
@@ -859,7 +860,7 @@
   },
   {
     "SessionId": 45,
-    "Title": "Proximamente",
+    "Title": "Que nada nos detenga: continuidad de negocio y arquitecturas resilientes en AWS",
     "Desde": "13:30",
     "Hasta": "14:20",
     "Room": "Huchuy 4",
@@ -873,7 +874,17 @@
         "TagLine": "",
         "Bio": "Mi objetivo es aportar iniciativas, conocimiento y profesionalismo en beneficio y progreso de la sociedad. Mi amplia experiencia profesional en entidades públicas y privadas me otorga la capacidad de liderar proyectos de cualquier índole. \n\nMis principales competencias son: Liderazgo, gestión por resultados, trabajo en equipo, pro - actividad, capacidad analítica y aprendizaje continuo. \n\nSoy hombre de familia, creyente, con altos valores de comunicación y empatía. ",
         "LinkedIn": "https://www.linkedin.com/in/pabloveintimilla/",
-        "Profile Picture": ""
+        "Profile Picture": "https://sessionize.com/image/07fe-0o0o0-wbWq4aupmUAzr3MnWHu6eN.jpg",
+        "Email": "pabloveintimilla@gmail.com"
+      },
+      {
+        "FirstName": "Eduar",
+        "LastName": "Palomo",
+        "TagLine": "",
+        "Bio":"",
+        "LinkedIn": "https://www,https://www.linkedin.com/in/eduar-palomo-gené-66787b72/",
+        "Profile Picture": "https://sessionize.com/image/05d0-0o0o0-HMJ1r8EQXqkQ8T5WLu9rU1.jpg",
+        "Email": "pabloveintimilla@gmail.com"
       }
     ]
   },
