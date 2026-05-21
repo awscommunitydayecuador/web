@@ -14,8 +14,8 @@ const TIER_ACCENT: Record<SponsorDTO['tier'], string> = {
   platinum: 'text-ink-0',
   gold: 'text-aurora-gold',
   silver: 'text-ink-300',
-  bronze: 'text-ember-400',
-  community: 'text-aurora-violet',
+  bronze: 'text-brand-cyan',
+  community: 'text-brand-purple',
 }
 
 const TIER_ORDER: SponsorDTO['tier'][] = [
@@ -28,7 +28,7 @@ const TIER_ORDER: SponsorDTO['tier'][] = [
 
 function SponsorTile({ s }: { s: SponsorDTO }) {
   const inner = (
-    <div className="aspect-[3/2] grid place-items-center p-7 transition-transform duration-300 group-hover:scale-[1.03]">
+    <div className="aspect-[3/2] grid place-items-center p-6 sm:p-7 transition-transform duration-300 group-hover:scale-[1.03]">
       {s.logoUrl ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
@@ -37,14 +37,14 @@ function SponsorTile({ s }: { s: SponsorDTO }) {
           className="max-h-full max-w-full object-contain transition duration-500 brightness-0 invert opacity-70 group-hover:opacity-100 group-hover:filter-none"
         />
       ) : (
-        <span className="font-display text-2xl font-semibold tracking-tight text-ink-200 text-center">
+        <span className="font-display text-base sm:text-2xl font-semibold tracking-tight text-ink-200 text-center">
           {s.name}
         </span>
       )}
     </div>
   )
   const wrapClass =
-    'group relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06]'
+    'group relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden transition-all duration-300 hover:border-brand-cyan/40 hover:bg-white/[0.06]'
 
   return s.website ? (
     <a
@@ -68,17 +68,18 @@ export default async function Sponsors() {
   })).filter((g) => g.items.length > 0)
 
   return (
-    <section id="sponsors" className="relative py-24 sm:py-32 overflow-hidden">
-      <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-ember-500/10 blur-[120px] pointer-events-none" />
+    <section id="sponsors" className="relative py-20 sm:py-32 overflow-hidden">
+      <div className="section-veil" />
+      <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-magenta/10 blur-[120px] pointer-events-none" />
 
       <div className="container-wide relative">
-        <div className="grid lg:grid-cols-12 gap-8 mb-14 items-end">
+        <div className="grid lg:grid-cols-12 gap-8 mb-12 sm:mb-14 items-end">
           <div className="lg:col-span-7">
             <span className="section-eyebrow">Sponsors</span>
             <h2 className="section-title">
               Las marcas que creen
               <br />
-              en la <span className="text-ember-gradient">comunidad</span>.
+              en la <span className="text-violet-gradient">comunidad</span>.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pl-10">
@@ -88,7 +89,7 @@ export default async function Sponsors() {
             </p>
             <Link
               href={`mailto:${EVENT.sponsorEmail}`}
-              className="btn-primary mt-6"
+              className="btn-primary mt-6 tap-target"
             >
               Quiero ser sponsor
               <svg
@@ -106,15 +107,15 @@ export default async function Sponsors() {
         </div>
 
         {grouped.length === 0 ? (
-          <div className="surface-elev p-10 sm:p-16 text-center relative overflow-hidden">
-            <div className="glow-orb -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-ember-500/25" />
+          <div className="surface-elev p-8 sm:p-16 text-center relative overflow-hidden">
+            <div className="glow-orb -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/25" />
             <div className="relative">
-              <div className="font-mono text-[10px] tracking-[0.3em] text-ember-400 uppercase mb-3">
+              <div className="font-mono text-[10px] tracking-[0.3em] text-brand-cyan uppercase mb-3">
                 · recruiting ·
               </div>
-              <h3 className="font-display text-3xl sm:text-5xl font-semibold tracking-tighter text-ink-0">
+              <h3 className="font-display text-2xl sm:text-5xl font-semibold tracking-tighter text-ink-0">
                 Tu logo podría{' '}
-                <span className="text-ember-gradient">estar aquí</span>.
+                <span className="text-brand-gradient">estar aquí</span>.
               </h3>
               <p className="text-ink-400 mt-4 max-w-xl mx-auto">
                 Conviértete en aliado de la comunidad AWS de Ecuador y conecta
@@ -144,7 +145,7 @@ export default async function Sponsors() {
                   </span>
                 </div>
                 <div
-                  className={`grid gap-4 ${
+                  className={`grid gap-3 sm:gap-4 ${
                     tier === 'platinum'
                       ? 'sm:grid-cols-2'
                       : tier === 'gold'

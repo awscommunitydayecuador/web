@@ -3,29 +3,29 @@ import { EVENT } from '@/lib/event'
 
 export default function CTA() {
   return (
-    <section className="relative py-20 sm:py-28">
+    <section className="relative py-16 sm:py-28">
       <div className="container-wide">
-        <div className="relative rounded-[2.5rem] border border-white/10 overflow-hidden bg-ink-990">
+        <div className="relative rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 overflow-hidden bg-brand-night">
           {/* Aurora mesh background */}
           <div className="absolute inset-0 bg-aurora-mesh animate-aurora-shift" />
-          <div className="absolute inset-0 bg-ink-990/30" />
-          <div className="absolute inset-0 bg-grid bg-grid opacity-[0.25]" />
+          <div className="absolute inset-0 bg-brand-night/40" />
+          <div className="absolute inset-0 bg-grid bg-grid opacity-[0.2]" />
 
-          <div className="relative grid md:grid-cols-12 gap-10 p-8 sm:p-14 lg:p-20 items-center">
+          <div className="relative grid md:grid-cols-12 gap-8 sm:gap-10 p-6 sm:p-14 lg:p-20 items-center">
             <div className="md:col-span-7">
-              <span className="chip-ember mb-5">
+              <span className="chip-brand mb-5">
                 <span className="relative flex w-2 h-2">
-                  <span className="absolute inset-0 rounded-full bg-ember-400 animate-ping opacity-60" />
-                  <span className="relative w-2 h-2 rounded-full bg-ember-400" />
+                  <span className="absolute inset-0 rounded-full bg-brand-cyan animate-ping opacity-60" />
+                  <span className="relative w-2 h-2 rounded-full bg-brand-cyan" />
                 </span>
                 Cupos limitados · {EVENT.editionLabel}
               </span>
-              <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[0.92] text-ink-0">
+              <h2 className="font-display text-3xl sm:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[0.95] sm:leading-[0.92] text-ink-0">
                 Nos vemos en
                 <br />
                 <span className="text-aurora">Cuenca</span>, el 5/9.
               </h2>
-              <p className="mt-5 text-ink-200 text-pretty max-w-xl text-lg leading-relaxed">
+              <p className="mt-4 sm:mt-5 text-ink-200 text-pretty max-w-xl text-base sm:text-lg leading-relaxed">
                 Registro 100% gratuito. Confirma tu lugar antes de que se llene —
                 los pasados Community Day se llenaron en menos de 72 horas.
               </p>
@@ -35,7 +35,7 @@ export default function CTA() {
               <Link
                 href={EVENT.registrationUrl}
                 target="_blank"
-                className="btn-primary justify-center w-full text-base py-4"
+                className="btn-primary justify-center w-full text-base py-4 tap-target"
               >
                 Registrarme gratis
                 <svg
@@ -52,13 +52,13 @@ export default function CTA() {
               <Link
                 href={EVENT.cfpUrl}
                 target="_blank"
-                className="btn-ghost justify-center w-full py-4"
+                className="btn-ghost justify-center w-full py-4 tap-target"
               >
                 Quiero ser speaker
               </Link>
               <Link
                 href={`mailto:${EVENT.sponsorEmail}`}
-                className="btn-ghost justify-center w-full py-4"
+                className="btn-ghost justify-center w-full py-4 tap-target"
               >
                 Patrocinar el evento
               </Link>

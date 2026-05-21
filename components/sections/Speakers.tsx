@@ -11,7 +11,7 @@ function Initials({ name }: { name: string }) {
     .map((p) => p[0]?.toUpperCase() ?? '')
     .join('')
   return (
-    <div className="w-full aspect-square grid place-items-center bg-gradient-to-br from-ink-900 via-ink-950 to-ink-990 text-ink-0 font-display text-6xl font-semibold tracking-tighter">
+    <div className="w-full aspect-square grid place-items-center bg-gradient-to-br from-brand-electric via-brand-navy to-brand-night text-ink-0 font-display text-6xl font-semibold tracking-tighter">
       <span className="text-aurora">{initials || '?'}</span>
     </div>
   )
@@ -21,7 +21,8 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
   return (
     <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl transition-all duration-300 hover:border-white/25 hover:-translate-y-1">
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-ember-500/20 blur-3xl" />
+        <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-brand-blue/25 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-brand-magenta/20 blur-3xl" />
       </div>
 
       <div className="aspect-[4/5] overflow-hidden relative">
@@ -35,13 +36,13 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
         ) : (
           <Initials name={s.name} />
         )}
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-990 via-ink-990/40 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-night via-brand-night/40 to-transparent" />
       </div>
 
       <div className="relative p-5 -mt-16">
         <div className="space-y-1">
           {s.company && (
-            <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-ember-400">
+            <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-cyan">
               {s.company}
             </div>
           )}
@@ -58,7 +59,7 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
               href={s.twitter}
               target="_blank"
               aria-label="X"
-              className="p-1.5 rounded-lg border border-white/10 hover:border-ember-400/50 hover:text-ember-300 transition-colors"
+              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
             >
               <Twitter className="w-3.5 h-3.5" />
             </a>
@@ -68,7 +69,7 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
               href={s.linkedin}
               target="_blank"
               aria-label="LinkedIn"
-              className="p-1.5 rounded-lg border border-white/10 hover:border-ember-400/50 hover:text-ember-300 transition-colors"
+              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
             >
               <LinkedIn className="w-3.5 h-3.5" />
             </a>
@@ -78,7 +79,7 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
               href={s.github}
               target="_blank"
               aria-label="GitHub"
-              className="p-1.5 rounded-lg border border-white/10 hover:border-ember-400/50 hover:text-ember-300 transition-colors"
+              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
             >
               <Github className="w-3.5 h-3.5" />
             </a>
@@ -88,7 +89,7 @@ function SpeakerCard({ s }: { s: SpeakerDTO }) {
               href={s.website}
               target="_blank"
               aria-label="Web"
-              className="p-1.5 rounded-lg border border-white/10 hover:border-ember-400/50 hover:text-ember-300 transition-colors"
+              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
             >
               <Globe className="w-3.5 h-3.5" />
             </a>
@@ -106,12 +107,13 @@ export default async function Speakers() {
   return (
     <section
       id="speakers"
-      className="relative py-24 sm:py-32 overflow-hidden"
+      className="relative py-20 sm:py-32 overflow-hidden"
     >
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-aurora-violet/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="section-veil" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-magenta/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container-wide relative">
-        <div className="grid lg:grid-cols-12 gap-8 mb-14 items-end">
+        <div className="grid lg:grid-cols-12 gap-8 mb-12 sm:mb-14 items-end">
           <div className="lg:col-span-7">
             <span className="section-eyebrow">Speakers</span>
             <h2 className="section-title">
@@ -128,7 +130,7 @@ export default async function Speakers() {
             <Link
               href={EVENT.cfpUrl}
               target="_blank"
-              className="btn-primary mt-6"
+              className="btn-primary mt-6 tap-target"
             >
               Aplicar como speaker
               <svg
@@ -146,21 +148,21 @@ export default async function Speakers() {
         </div>
 
         {hasSpeakers ? (
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
             {speakers.map((s) => (
               <SpeakerCard key={s.id} s={s} />
             ))}
           </div>
         ) : (
-          <div className="surface-elev p-10 sm:p-16 text-center relative overflow-hidden">
-            <div className="glow-orb -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-ember-500/25" />
+          <div className="surface-elev p-8 sm:p-16 text-center relative overflow-hidden">
+            <div className="glow-orb -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/25" />
             <div className="relative">
-              <div className="font-mono text-[10px] tracking-[0.3em] text-ember-400 uppercase mb-3">
+              <div className="font-mono text-[10px] tracking-[0.3em] text-brand-cyan uppercase mb-3">
                 · soon ·
               </div>
-              <h3 className="font-display text-3xl sm:text-5xl font-semibold tracking-tighter text-ink-0">
+              <h3 className="font-display text-2xl sm:text-5xl font-semibold tracking-tighter text-ink-0">
                 Los nombres se revelan{' '}
-                <span className="text-ember-gradient">pronto</span>.
+                <span className="text-brand-gradient">pronto</span>.
               </h3>
               <p className="text-ink-400 mt-4 max-w-xl mx-auto">
                 ¿Quieres ser uno de ellos? El CFP está abierto.

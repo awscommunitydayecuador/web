@@ -39,23 +39,35 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-ink-990/85 backdrop-blur-xl border-b border-white/10'
+          ? 'bg-brand-night/85 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.6)]'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
       <div className="container-wide">
         <div
-          className={`flex items-center justify-between gap-8 transition-all ${
+          className={`flex items-center justify-between gap-4 sm:gap-8 transition-all ${
             scrolled ? 'h-14' : 'h-16 sm:h-20'
           }`}
         >
           {/* Left: logo + nav inline */}
           <div className="flex items-center gap-8 min-w-0">
-            <Link href="/" className="flex items-center shrink-0">
+            <Link href="/" className="flex items-center shrink-0" aria-label="Inicio">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo-community-day.svg"
@@ -65,7 +77,7 @@ export default function Navbar() {
               />
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-1" aria-label="Principal">
               {NAV.map((item) => {
                 const id = item.href.slice(1)
                 const isActive = active === id
@@ -81,7 +93,7 @@ export default function Navbar() {
                   >
                     {item.label}
                     {isActive && (
-                      <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-1 h-1 rounded-full bg-ember-400" />
+                      <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-1 h-1 rounded-full bg-brand-cyan shadow-[0_0_8px_rgba(79,167,255,0.8)]" />
                     )}
                   </a>
                 )
@@ -90,15 +102,15 @@ export default function Navbar() {
           </div>
 
           {/* Right: CTA + mobile burger */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link
               href={EVENT.registrationUrl}
               target="_blank"
-              className="hidden sm:inline-flex items-center gap-2.5 text-sm text-ink-0 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] hover:border-white/30 px-4 py-2 transition-all"
+              className="hidden sm:inline-flex items-center gap-2.5 text-sm text-ink-0 rounded-full border border-white/15 bg-white/[0.04] hover:bg-brand-blue/15 hover:border-brand-cyan/40 px-4 py-2 transition-all"
             >
               <span className="relative flex w-1.5 h-1.5">
-                <span className="absolute inset-0 rounded-full bg-ember-400 animate-ping opacity-60" />
-                <span className="relative w-1.5 h-1.5 rounded-full bg-ember-400" />
+                <span className="absolute inset-0 rounded-full bg-brand-cyan animate-ping opacity-60" />
+                <span className="relative w-1.5 h-1.5 rounded-full bg-brand-cyan" />
               </span>
               Registro abierto
               <svg
@@ -115,9 +127,10 @@ export default function Navbar() {
             </Link>
 
             <button
-              aria-label="Abrir menú"
+              aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+              aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-white/15 bg-white/[0.04]"
+              className="lg:hidden grid place-items-center w-10 h-10 rounded-full border border-white/15 bg-white/[0.04] tap-target"
             >
               <span className="sr-only">Menú</span>
               <div className="space-y-[5px]">
@@ -143,7 +156,7 @@ export default function Navbar() {
 
         {open && (
           <div className="lg:hidden pb-4 animate-fade-up">
-            <div className="rounded-3xl border border-white/10 bg-ink-990/95 backdrop-blur-xl shadow-soft p-2 grid gap-0.5">
+            <div className="rounded-3xl border border-white/10 bg-brand-night/95 backdrop-blur-xl shadow-soft p-2 grid gap-0.5">
               {NAV.map((item) => {
                 const id = item.href.slice(1)
                 const isActive = active === id
@@ -152,15 +165,15 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className={`px-4 py-3 rounded-2xl text-sm transition-colors flex items-center justify-between ${
+                    className={`px-4 py-3 rounded-2xl text-sm transition-colors flex items-center justify-between tap-target ${
                       isActive
-                        ? 'bg-white/[0.05] text-ink-0'
+                        ? 'bg-brand-blue/15 text-ink-0'
                         : 'text-ink-300 hover:bg-white/[0.04] hover:text-ink-0'
                     }`}
                   >
                     <span className="flex items-center gap-2">
                       {isActive && (
-                        <span className="w-1 h-1 rounded-full bg-ember-400" />
+                        <span className="w-1 h-1 rounded-full bg-brand-cyan shadow-[0_0_8px_rgba(79,167,255,0.8)]" />
                       )}
                       {item.label}
                     </span>
@@ -181,11 +194,12 @@ export default function Navbar() {
               <Link
                 href={EVENT.registrationUrl}
                 target="_blank"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] text-ink-0 text-sm font-medium px-4 py-3.5"
+                onClick={() => setOpen(false)}
+                className="mt-2 btn-primary justify-center w-full text-sm font-medium px-4 py-3.5"
               >
                 <span className="relative flex w-1.5 h-1.5">
-                  <span className="absolute inset-0 rounded-full bg-ember-400 animate-ping opacity-60" />
-                  <span className="relative w-1.5 h-1.5 rounded-full bg-ember-400" />
+                  <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-60" />
+                  <span className="relative w-1.5 h-1.5 rounded-full bg-white" />
                 </span>
                 Registro abierto
               </Link>

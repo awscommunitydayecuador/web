@@ -7,12 +7,14 @@ export default async function Community() {
   return (
     <section
       id="comunidad"
-      className="relative py-24 sm:py-32 overflow-hidden"
+      className="relative py-20 sm:py-32 overflow-hidden"
     >
-      <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-aurora-lime/10 blur-[120px] pointer-events-none" />
+      <div className="section-veil" />
+      <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-brand-blue/12 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full bg-brand-magenta/10 blur-[120px] pointer-events-none" />
 
       <div className="container-wide relative">
-        <div className="grid lg:grid-cols-12 gap-8 mb-14 items-end">
+        <div className="grid lg:grid-cols-12 gap-8 mb-12 sm:mb-14 items-end">
           <div className="lg:col-span-7">
             <span className="section-eyebrow">Comunidad</span>
             <h2 className="section-title">
@@ -34,9 +36,9 @@ export default async function Community() {
           {communities.map((c) => (
             <article
               key={c.id}
-              className="group surface p-6 sm:p-7 flex flex-col sm:flex-row gap-6 items-start sm:items-center transition-all duration-300 hover:border-white/25 hover:-translate-y-0.5"
+              className="group surface p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:gap-6 items-start sm:items-center transition-all duration-300 hover:border-brand-cyan/30 hover:-translate-y-0.5"
             >
-              <div className="relative w-20 h-20 rounded-2xl border border-white/10 bg-white/[0.04] grid place-items-center shrink-0 overflow-hidden p-3">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border border-white/10 bg-white/[0.04] grid place-items-center shrink-0 overflow-hidden p-3">
                 {c.logoUrl ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
@@ -51,7 +53,7 @@ export default async function Community() {
                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-display text-xl font-semibold tracking-tight text-ink-0 leading-tight">
+                <h3 className="font-display text-lg sm:text-xl font-semibold tracking-tight text-ink-0 leading-tight">
                   {c.name}
                 </h3>
                 {c.description && (
@@ -66,7 +68,7 @@ export default async function Community() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Instagram"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
                     >
                       <Instagram className="w-4 h-4" />
                     </a>
@@ -77,7 +79,7 @@ export default async function Community() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
                     >
                       <LinkedIn className="w-4 h-4" />
                     </a>
@@ -88,7 +90,7 @@ export default async function Community() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Facebook"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
                     >
                       <Facebook className="w-4 h-4" />
                     </a>
@@ -99,7 +101,7 @@ export default async function Community() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Web"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
                     >
                       <Globe className="w-4 h-4" />
                     </a>

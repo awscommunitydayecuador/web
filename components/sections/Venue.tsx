@@ -19,12 +19,13 @@ export default async function Venue() {
   return (
     <section
       id="venue"
-      className="relative py-24 sm:py-32 overflow-hidden"
+      className="relative py-20 sm:py-32 overflow-hidden"
     >
-      <div className="absolute -top-32 left-0 w-[600px] h-[400px] bg-aurora-cyan/10 blur-[120px] pointer-events-none" />
+      <div className="section-veil" />
+      <div className="absolute -top-32 left-0 w-[600px] h-[400px] bg-brand-cyan/12 blur-[120px] pointer-events-none" />
 
       <div className="container-wide relative">
-        <div className="grid lg:grid-cols-12 gap-8 items-end mb-14">
+        <div className="grid lg:grid-cols-12 gap-8 items-end mb-12 sm:mb-14">
           <div className="lg:col-span-7">
             <span className="section-eyebrow">Sede · {EVENT.editionRoman} edición</span>
             <h2 className="section-title">
@@ -42,7 +43,7 @@ export default async function Venue() {
 
         <div className="grid lg:grid-cols-12 gap-4">
           {/* Map */}
-          <div className="relative lg:col-span-7 rounded-3xl border border-white/10 overflow-hidden bg-ink-950 aspect-[16/10] lg:aspect-auto lg:min-h-[520px] group">
+          <div className="relative lg:col-span-7 rounded-3xl border border-white/10 overflow-hidden bg-brand-night aspect-[16/12] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[520px] group">
             <iframe
               title="Mapa del venue"
               src={mapsEmbed}
@@ -53,8 +54,8 @@ export default async function Venue() {
               className="w-full h-full grayscale-[60%] contrast-110 brightness-[0.85] transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100"
             />
             {/* Corner pin */}
-            <div className="absolute top-5 left-5 chip-ember pointer-events-none">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+            <div className="absolute top-4 left-4 sm:top-5 sm:left-5 pointer-events-none inline-flex items-center gap-2 rounded-full border border-brand-cyan/40 bg-brand-night/90 backdrop-blur-md px-3 py-1.5 text-[11px] font-mono uppercase tracking-[0.18em] text-brand-sky shadow-[0_8px_24px_-6px_rgba(2,8,36,0.7)]">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" className="text-brand-cyan">
                 <circle cx="12" cy="12" r="6" />
               </svg>
               UPS Cuenca
@@ -63,29 +64,30 @@ export default async function Venue() {
 
           {/* Right column */}
           <div className="lg:col-span-5 grid gap-4">
-            <div className="surface-elev p-7 sm:p-8">
+            <div className="surface-elev p-6 sm:p-8">
               <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-3">
                 Sede oficial
               </div>
-              <div className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-ink-0 leading-tight">
+              <div className="font-display text-xl sm:text-3xl font-semibold tracking-tight text-ink-0 leading-tight">
                 {name}
               </div>
-              <div className="text-ink-300 mt-2">{address}</div>
+              <div className="text-ink-300 mt-2 text-sm sm:text-base">{address}</div>
               <div className="text-ink-500 text-sm mt-1">
                 {city}, {country}
               </div>
             </div>
 
-            <div className="surface-ember p-7 sm:p-8 relative overflow-hidden">
+            <div className="surface-brand p-6 sm:p-8 relative overflow-hidden">
               <div className="absolute -top-20 -right-20 w-60 h-60 bg-white/20 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-brand-magenta/40 rounded-full blur-3xl pointer-events-none" />
               <div className="relative">
-                <div className="text-[10px] font-mono uppercase tracking-[0.3em] mb-3 text-ink-950/70">
+                <div className="text-[10px] font-mono uppercase tracking-[0.3em] mb-3 text-white/80">
                   Fecha
                 </div>
-                <div className="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+                <div className="font-display text-xl sm:text-3xl font-semibold tracking-tight text-white">
                   {date}
                 </div>
-                <div className="text-ink-950/80 mt-2 font-mono text-xs tracking-wider uppercase">
+                <div className="text-white/80 mt-2 font-mono text-xs tracking-wider uppercase">
                   {time}
                 </div>
               </div>
@@ -94,17 +96,17 @@ export default async function Venue() {
             <Link
               href={mapsLink}
               target="_blank"
-              className="group surface-elev p-6 sm:p-7 flex items-center justify-between gap-4 hover:border-white/25 transition-colors"
+              className="group surface-elev p-5 sm:p-7 flex items-center justify-between gap-4 hover:border-brand-cyan/30 transition-colors tap-target"
             >
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-1">
                   Cómo llegar
                 </div>
-                <div className="font-display text-lg font-semibold text-ink-0">
+                <div className="font-display text-base sm:text-lg font-semibold text-ink-0">
                   Abrir en Google Maps
                 </div>
               </div>
-              <span className="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-ink-0 group-hover:border-ember-400/50 group-hover:bg-ember-500/10 transition-all">
+              <span className="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-ink-0 group-hover:border-brand-cyan/60 group-hover:bg-brand-blue/10 transition-all">
                 <svg
                   width="16"
                   height="16"

@@ -32,12 +32,13 @@ export default function Countdown() {
       {vals.map((v, i) => (
         <div
           key={labels[i]}
-          className="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur px-2 py-3.5 text-center overflow-hidden group"
+          className="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur px-2 py-3 sm:py-3.5 text-center overflow-hidden group"
         >
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ember-400/60 to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-cyan/70 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand-magenta/50 to-transparent opacity-60" />
           <div
             suppressHydrationWarning
-            className="font-display text-3xl sm:text-4xl font-semibold tabular-nums leading-none text-ink-0 tracking-tight"
+            className="font-display text-2xl sm:text-4xl font-semibold tabular-nums leading-none text-ink-0 tracking-tight"
           >
             {String(v).padStart(2, '0')}
           </div>

@@ -24,6 +24,19 @@ const config: Config = {
           950: '#0b0b10',
           990: '#07070a',
         },
+        // Official AWS Community Day Ecuador 2026 palette
+        brand: {
+          night: '#020824',    // primary dark background
+          navy: '#07103D',     // secondary background
+          electric: '#0A1F7A', // AWS electric blue
+          blue: '#2D63FF',     // neon blue glow
+          cyan: '#4FA7FF',     // cyan blue glow
+          sky: '#89C8FF',      // light neon blue
+          deepPurple: '#35184F',
+          neonPurple: '#6C3CF2',
+          purple: '#8B5CFF',   // soft purple highlight
+          magenta: '#A248FF',  // AWS purple glow
+        },
         ember: {
           50: '#fff7ed',
           100: '#ffedd5',
@@ -37,10 +50,10 @@ const config: Config = {
           900: '#7c2d12',
         },
         aurora: {
-          violet: '#a78bfa',
-          indigo: '#818cf8',
-          cyan: '#22d3ee',
-          sky: '#38bdf8',
+          violet: '#8B5CFF',
+          indigo: '#6C3CF2',
+          cyan: '#4FA7FF',
+          sky: '#89C8FF',
           lime: '#bef264',
           gold: '#fbbf24',
           rose: '#fb7185',
@@ -67,18 +80,20 @@ const config: Config = {
         '3': '3px',
       },
       boxShadow: {
-        glow: '0 0 60px -10px rgba(249, 115, 22, 0.55)',
-        'glow-violet': '0 0 80px -10px rgba(167, 139, 250, 0.55)',
-        'glow-cyan': '0 0 80px -10px rgba(34, 211, 238, 0.5)',
+        glow: '0 0 60px -10px rgba(45, 99, 255, 0.55)',
+        'glow-violet': '0 0 80px -10px rgba(162, 72, 255, 0.55)',
+        'glow-cyan': '0 0 80px -10px rgba(79, 167, 255, 0.55)',
+        'glow-aws': '0 0 60px -10px rgba(255, 153, 0, 0.55)',
         'soft': '0 1px 0 0 rgba(255,255,255,0.06) inset, 0 30px 60px -30px rgba(0,0,0,0.7)',
-        'ring-ember': '0 0 0 1px rgba(249, 115, 22, 0.4), 0 0 30px -5px rgba(249, 115, 22, 0.5)',
+        'ring-brand': '0 0 0 1px rgba(45, 99, 255, 0.4), 0 0 30px -5px rgba(45, 99, 255, 0.5)',
       },
       backgroundImage: {
-        'grid': 'linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)',
+        'grid': 'linear-gradient(to right, rgba(137,200,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(137,200,255,0.06) 1px, transparent 1px)',
         'grid-light': 'linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)',
-        'dots': 'radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)',
+        'dots': 'radial-gradient(rgba(137,200,255,0.12) 1px, transparent 1px)',
         'aurora-mesh':
-          'radial-gradient(ellipse 80% 60% at 20% 10%, rgba(249,115,22,0.35), transparent 60%), radial-gradient(ellipse 60% 50% at 80% 0%, rgba(167,139,250,0.30), transparent 60%), radial-gradient(ellipse 70% 60% at 100% 80%, rgba(34,211,238,0.25), transparent 60%), radial-gradient(ellipse 60% 50% at 10% 90%, rgba(190,242,100,0.18), transparent 60%)',
+          'radial-gradient(ellipse 80% 60% at 20% 10%, rgba(45,99,255,0.35), transparent 60%), radial-gradient(ellipse 60% 50% at 80% 0%, rgba(79,167,255,0.30), transparent 60%), radial-gradient(ellipse 70% 60% at 100% 80%, rgba(162,72,255,0.30), transparent 60%), radial-gradient(ellipse 60% 50% at 10% 90%, rgba(108,60,242,0.22), transparent 60%)',
+        'hero-bg': "url('/hero-bg.svg')",
       },
       backgroundSize: {
         grid: '36px 36px',
@@ -96,6 +111,7 @@ const config: Config = {
         spin: 'spin 25s linear infinite',
         shimmer: 'shimmer 3s linear infinite',
         'aurora-shift': 'auroraShift 18s ease-in-out infinite',
+        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
@@ -133,6 +149,10 @@ const config: Config = {
           '0%, 100%': { transform: 'translate3d(0, 0, 0) scale(1)' },
           '33%': { transform: 'translate3d(2%, -2%, 0) scale(1.05)' },
           '66%': { transform: 'translate3d(-2%, 2%, 0) scale(0.98)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '0.55' },
+          '50%': { opacity: '0.9' },
         },
       },
     },

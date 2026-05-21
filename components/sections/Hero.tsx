@@ -4,19 +4,18 @@ import { EVENT } from '@/lib/event'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 lg:pt-36 pb-16">
-      {/* Background layers */}
-      <div className="aurora-canvas" />
-      <div className="absolute inset-0 -z-10 bg-grid bg-grid opacity-[0.35] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+    <section className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-16">
+      {/* Hero-specific background accents — sits on top of the global SVG background */}
+      <div className="absolute inset-0 -z-10 bg-grid bg-grid opacity-[0.25] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
       <div className="grain" />
 
       <div className="container-wide relative">
         {/* Edition chips */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10 animate-fade-up">
-          <span className="chip-ember">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-10 animate-fade-up">
+          <span className="chip-brand">
             <span className="relative flex w-2 h-2">
-              <span className="absolute inset-0 rounded-full bg-ember-400 animate-ping opacity-60" />
-              <span className="relative w-2 h-2 rounded-full bg-ember-400" />
+              <span className="absolute inset-0 rounded-full bg-brand-cyan animate-ping opacity-60" />
+              <span className="relative w-2 h-2 rounded-full bg-brand-cyan" />
             </span>
             {EVENT.editionLabel} · {EVENT.editionRoman}
           </span>
@@ -27,12 +26,12 @@ export default function Hero() {
         {/* Logo lockup */}
         <div className="relative mx-auto max-w-5xl text-center animate-fade-up [animation-delay:80ms]">
           {/* Glow behind logo */}
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-72 -z-0 pointer-events-none">
-            <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-ember-500/30 blur-[100px]" />
-            <div className="absolute right-1/4 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-aurora-violet/25 blur-[100px]" />
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-60 sm:h-72 -z-0 pointer-events-none">
+            <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-brand-blue/40 blur-[100px]" />
+            <div className="absolute right-1/4 top-1/2 -translate-y-1/2 w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-brand-magenta/35 blur-[100px]" />
           </div>
 
-          <div className="relative px-4 sm:px-8">
+          <div className="relative px-2 sm:px-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo-community-day.svg"
@@ -43,8 +42,8 @@ export default function Hero() {
           </div>
 
           {/* Edition tagline under logo */}
-          <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-5 font-display text-sm sm:text-base text-ink-300">
-            <span className="font-mono uppercase tracking-[0.32em] text-ember-300">
+          <div className="relative mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-5 font-display text-xs sm:text-base text-ink-300">
+            <span className="font-mono uppercase tracking-[0.32em] text-brand-cyan">
               {EVENT.editionRoman}
             </span>
             <span className="w-px h-4 bg-white/20" />
@@ -56,40 +55,40 @@ export default function Hero() {
           </div>
 
           {/* Subhead */}
-          <p className="relative mt-7 mx-auto max-w-2xl text-ink-300 text-pretty text-base sm:text-lg leading-relaxed">
+          <p className="relative mt-6 sm:mt-7 mx-auto max-w-2xl text-ink-300 text-pretty text-base sm:text-lg leading-relaxed px-2">
             {EVENT.description}
           </p>
 
           {/* CTAs */}
-          <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
+          <div className="relative mt-8 sm:mt-9 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
             <Link
               href={EVENT.registrationUrl}
               target="_blank"
-              className="btn-primary text-base px-7 py-3.5"
+              className="btn-primary text-base px-7 py-3.5 tap-target"
             >
               Registrarme gratis
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
             </Link>
-            <Link href="#sobre" className="btn-ghost text-base px-7 py-3.5">
+            <Link href="#sobre" className="btn-ghost text-base px-7 py-3.5 tap-target">
               Conocer el evento
             </Link>
           </div>
         </div>
 
         {/* Bento grid */}
-        <div className="grid lg:grid-cols-12 gap-4 mt-16 animate-fade-up [animation-delay:160ms]">
+        <div className="grid lg:grid-cols-12 gap-4 mt-14 sm:mt-16 animate-fade-up [animation-delay:160ms]">
           {/* Date + countdown */}
-          <div className="surface-elev lg:col-span-5 p-7 sm:p-9 relative">
-            <div className="glow-orb -top-20 -right-20 w-72 h-72 bg-ember-500/30" />
+          <div className="surface-elev lg:col-span-5 p-6 sm:p-9 relative">
+            <div className="glow-orb -top-20 -right-20 w-72 h-72 bg-brand-blue/30" />
             <div className="relative flex items-start justify-between gap-4">
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-3">
                   Save the date
                 </div>
-                <div className="font-display text-6xl sm:text-7xl font-semibold leading-none tracking-tighter text-ink-0">
-                  05<span className="text-ember-400">.</span>09
+                <div className="font-display text-5xl sm:text-7xl font-semibold leading-none tracking-tighter text-ink-0">
+                  05<span className="text-brand-cyan">.</span>09
                 </div>
                 <div className="text-ink-400 mt-2 font-mono text-xs tracking-wider uppercase">
                   sábado · {EVENT.timeLabel}
@@ -99,12 +98,12 @@ export default function Hero() {
                 <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400">
                   Edición
                 </div>
-                <div className="font-display text-7xl sm:text-8xl font-semibold leading-none text-ember-gradient">
+                <div className="font-display text-6xl sm:text-8xl font-semibold leading-none text-brand-gradient">
                   {EVENT.editionRoman}
                 </div>
               </div>
             </div>
-            <div className="relative mt-8 pt-6 border-t border-white/10">
+            <div className="relative mt-7 sm:mt-8 pt-6 border-t border-white/10">
               <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-3">
                 Cuenta regresiva
               </div>
@@ -113,38 +112,38 @@ export default function Hero() {
           </div>
 
           {/* Venue card */}
-          <div className="surface-aurora lg:col-span-7 p-7 sm:p-9 relative flex flex-col justify-between min-h-[260px]">
-            <div className="glow-orb top-1/2 -translate-y-1/2 -right-32 w-96 h-96 bg-aurora-violet/20" />
-            <div className="relative flex items-start gap-5">
-              <div className="grid place-items-center w-14 h-14 rounded-2xl border border-white/15 bg-white/[0.05] backdrop-blur shrink-0 font-display text-base font-semibold text-ink-0">
+          <div className="surface-aurora lg:col-span-7 p-6 sm:p-9 relative flex flex-col justify-between min-h-[260px]">
+            <div className="glow-orb top-1/2 -translate-y-1/2 -right-32 w-96 h-96 bg-brand-magenta/25" />
+            <div className="relative flex items-start gap-4 sm:gap-5">
+              <div className="grid place-items-center w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border border-white/15 bg-white/[0.05] backdrop-blur shrink-0 font-display text-sm sm:text-base font-semibold text-ink-0">
                 UPS
               </div>
-              <div>
+              <div className="min-w-0">
                 <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-2">
                   Sede oficial · {EVENT.city}
                 </div>
-                <div className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-ink-0 leading-tight">
+                <div className="font-display text-xl sm:text-3xl font-semibold tracking-tight text-ink-0 leading-tight">
                   Universidad Politécnica
-                  <br />
+                  <br className="hidden sm:inline" />{' '}
                   Salesiana
                 </div>
                 <div className="text-sm text-ink-300 mt-2">{EVENT.venueAddress}</div>
               </div>
             </div>
 
-            <div className="relative grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-white/10">
-              <Stat value="500+" label="builders" accent="ember" />
+            <div className="relative grid grid-cols-3 gap-3 sm:gap-4 mt-7 sm:mt-8 pt-6 border-t border-white/10">
+              <Stat value="500+" label="builders" accent="cyan" />
               <Stat value="30+" label="sesiones" accent="violet" />
-              <Stat value="IV" label="edición" accent="cyan" />
+              <Stat value="IV" label="edición" accent="blue" />
             </div>
           </div>
         </div>
 
         {/* Pillars row */}
         <div className="mt-4 grid sm:grid-cols-3 gap-4 animate-fade-up [animation-delay:240ms]">
-          <Pill icon="lightning" title="Charlas técnicas" body="Serverless, IA generativa, datos y seguridad." />
-          <Pill icon="terminal" title="Talleres hands-on" body="Build real con Bedrock, SageMaker y CDK." />
-          <Pill icon="users" title="Networking" body="AWS Heroes, Community Builders y reclutadores." />
+          <Pill icon="lightning" title="Charlas técnicas" body="Serverless, IA generativa, datos y seguridad." accent="cyan" />
+          <Pill icon="terminal" title="Talleres hands-on" body="Build real con Bedrock, SageMaker y CDK." accent="violet" />
+          <Pill icon="users" title="Networking" body="AWS Heroes, Community Builders y reclutadores." accent="blue" />
         </div>
       </div>
     </section>
@@ -158,17 +157,17 @@ function Stat({
 }: {
   value: string
   label: string
-  accent: 'ember' | 'violet' | 'cyan'
+  accent: 'blue' | 'violet' | 'cyan'
 }) {
   const color =
-    accent === 'ember'
-      ? 'text-ember-400'
+    accent === 'blue'
+      ? 'text-brand-cyan'
       : accent === 'violet'
-      ? 'text-aurora-violet'
-      : 'text-aurora-cyan'
+      ? 'text-brand-magenta'
+      : 'text-brand-sky'
   return (
     <div>
-      <div className={`font-display text-3xl sm:text-4xl font-semibold leading-none tracking-tighter ${color}`}>
+      <div className={`font-display text-2xl sm:text-4xl font-semibold leading-none tracking-tighter ${color}`}>
         {value}
       </div>
       <div className="mt-1.5 text-[10px] font-mono uppercase tracking-[0.22em] text-ink-400">
@@ -182,14 +181,22 @@ function Pill({
   icon,
   title,
   body,
+  accent,
 }: {
   icon: 'lightning' | 'terminal' | 'users'
   title: string
   body: string
+  accent: 'cyan' | 'violet' | 'blue'
 }) {
+  const iconStyles =
+    accent === 'cyan'
+      ? 'text-brand-cyan bg-brand-cyan/10 border-brand-cyan/30'
+      : accent === 'violet'
+      ? 'text-brand-magenta bg-brand-magenta/10 border-brand-magenta/30'
+      : 'text-brand-sky bg-brand-blue/10 border-brand-blue/30'
   return (
     <div className="surface p-5 flex items-start gap-4">
-      <div className="grid place-items-center w-10 h-10 rounded-xl bg-white/[0.05] border border-white/10 text-ember-400 shrink-0">
+      <div className={`grid place-items-center w-10 h-10 rounded-xl border shrink-0 ${iconStyles}`}>
         <Icon name={icon} />
       </div>
       <div>

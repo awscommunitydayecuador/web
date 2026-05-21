@@ -4,19 +4,20 @@ import { Instagram, LinkedIn, Facebook, Twitter } from '@/components/icons/Socia
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 bg-ink-990 overflow-hidden">
-      <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-ember-500/10 blur-[120px] pointer-events-none" />
+    <footer className="relative border-t border-white/10 bg-brand-night/80 backdrop-blur-xl overflow-hidden">
+      <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-blue/10 blur-[120px] pointer-events-none" />
+      <div className="absolute -top-32 right-0 w-[500px] h-[300px] bg-brand-magenta/10 blur-[120px] pointer-events-none" />
 
-      <div className="container-wide relative py-16 sm:py-20">
-        {/* Big wordmark */}
-        <div className="mb-14">
-          <div className="font-display font-semibold tracking-tighter leading-[0.86] text-[clamp(2.5rem,9vw,8rem)] text-ink-0">
+      <div className="container-wide relative py-14 sm:py-20">
+        {/* Wordmark */}
+        <div className="mb-10 sm:mb-14">
+          <div className="font-display font-semibold tracking-tighter leading-[0.95] sm:leading-[0.9] text-[clamp(1rem,4.5vw,4rem)] text-ink-0">
             AWS Community Day
-            <span className="block text-ember-gradient">Ecuador {EVENT.edition}</span>
+            <span className="block text-brand-gradient">Ecuador {EVENT.edition}</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid md:grid-cols-12 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-white/10">
           <div className="md:col-span-5">
             <p className="text-ink-300 max-w-md text-sm leading-relaxed">
               Organizado por la comunidad AWS de Ecuador. AWS y los logos
@@ -28,7 +29,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
               >
                 <Instagram className="w-4 h-4" />
               </a>
@@ -37,7 +38,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
               >
                 <LinkedIn className="w-4 h-4" />
               </a>
@@ -46,7 +47,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -55,7 +56,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X"
-                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-ember-400/50 hover:text-ember-300 hover:bg-ember-500/5 transition-all"
+                className="p-2.5 rounded-xl border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
               >
                 <Twitter className="w-4 h-4" />
               </a>
@@ -70,7 +71,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#sobre"
-                  className="text-ink-300 hover:text-ember-300 transition-colors"
+                  className="text-ink-300 hover:text-brand-cyan transition-colors"
                 >
                   Sobre el evento
                 </a>
@@ -78,7 +79,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#speakers"
-                  className="text-ink-300 hover:text-ember-300 transition-colors"
+                  className="text-ink-300 hover:text-brand-cyan transition-colors"
                 >
                   Speakers
                 </a>
@@ -86,7 +87,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#sponsors"
-                  className="text-ink-300 hover:text-ember-300 transition-colors"
+                  className="text-ink-300 hover:text-brand-cyan transition-colors"
                 >
                   Sponsors
                 </a>
@@ -94,7 +95,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#venue"
-                  className="text-ink-300 hover:text-ember-300 transition-colors"
+                  className="text-ink-300 hover:text-brand-cyan transition-colors"
                 >
                   Sede
                 </a>
@@ -102,7 +103,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#comunidad"
-                  className="text-ink-300 hover:text-ember-300 transition-colors"
+                  className="text-ink-300 hover:text-brand-cyan transition-colors"
                 >
                   Comunidad
                 </a>
@@ -118,7 +119,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${EVENT.contactEmail}`}
-                  className="text-ink-200 hover:text-ember-300 transition-colors"
+                  className="text-ink-200 hover:text-brand-cyan transition-colors break-all"
                 >
                   {EVENT.contactEmail}
                 </a>
@@ -132,7 +133,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/admin"
-                  className="text-xs text-ink-600 hover:text-ember-300 transition-colors inline-flex items-center gap-1"
+                  className="text-xs text-ink-600 hover:text-brand-cyan transition-colors inline-flex items-center gap-1"
                 >
                   Panel admin
                   <svg
@@ -151,7 +152,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-ink-500">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-ink-500">
           <div>© {new Date().getFullYear()} AWS User Group Ecuador.</div>
           <div className="font-mono tracking-wider">
             build/{EVENT.edition}.{EVENT.editionNumber}
