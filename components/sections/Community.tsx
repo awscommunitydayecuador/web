@@ -1,5 +1,33 @@
-import { fetchCommunities } from '@/lib/data'
-import { Instagram, LinkedIn, Facebook, Globe } from '@/components/icons/Social'
+import { fetchCommunities, type CommunityDTO } from '@/lib/data'
+import {
+  Instagram,
+  LinkedIn,
+  Facebook,
+  Twitter,
+  YouTube,
+  Meetup,
+  WhatsApp,
+  TikTok,
+  Globe,
+} from '@/components/icons/Social'
+
+type SocialEntry = {
+  key: keyof CommunityDTO
+  label: string
+  Icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element
+}
+
+const SOCIAL_LINKS: SocialEntry[] = [
+  { key: 'instagramUrl', label: 'Instagram', Icon: Instagram },
+  { key: 'facebookUrl', label: 'Facebook', Icon: Facebook },
+  { key: 'twitterUrl', label: 'X / Twitter', Icon: Twitter },
+  { key: 'tiktokUrl', label: 'TikTok', Icon: TikTok },
+  { key: 'youtubeUrl', label: 'YouTube', Icon: YouTube },
+  { key: 'linkedinUrl', label: 'LinkedIn', Icon: LinkedIn },
+  { key: 'meetupUrl', label: 'Meetup', Icon: Meetup },
+  { key: 'whatsappUrl', label: 'WhatsApp', Icon: WhatsApp },
+  { key: 'websiteUrl', label: 'Sitio web', Icon: Globe },
+]
 
 export default async function Community() {
   const communities = await fetchCommunities()
@@ -32,11 +60,11 @@ export default async function Community() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {communities.map((c) => (
             <article
               key={c.id}
-              className="group surface p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:gap-6 items-start sm:items-center transition-all duration-300 hover:border-brand-cyan/30 hover:-translate-y-0.5"
+              className="group surface p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:gap-6 items-start transition-all duration-300 hover:border-brand-cyan/30 hover:-translate-y-0.5"
             >
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border border-white/10 bg-white/[0.04] grid place-items-center shrink-0 overflow-hidden p-3">
                 {c.logoUrl ? (
@@ -47,8 +75,8 @@ export default async function Community() {
                     className="max-w-full max-h-full object-contain transition duration-500 brightness-0 invert opacity-80 group-hover:opacity-100 group-hover:filter-none"
                   />
                 ) : (
-                  <span className="font-display text-xs text-center text-ink-300">
-                    {c.name}
+                  <span className="font-display text-xl sm:text-2xl font-semibold text-brand-cyan">
+                    {initials(c.name)}
                   </span>
                 )}
               </div>
@@ -62,50 +90,22 @@ export default async function Community() {
                   </p>
                 )}
                 <div className="flex flex-wrap gap-1.5 mt-4">
-                  {c.instagramUrl && (
-                    <a
-                      href={c.instagramUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Instagram"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
-                    >
-                      <Instagram className="w-4 h-4" />
-                    </a>
-                  )}
-                  {c.linkedinUrl && (
-                    <a
-                      href={c.linkedinUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
-                    >
-                      <LinkedIn className="w-4 h-4" />
-                    </a>
-                  )}
-                  {c.facebookUrl && (
-                    <a
-                      href={c.facebookUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Facebook"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
-                    >
-                      <Facebook className="w-4 h-4" />
-                    </a>
-                  )}
-                  {c.websiteUrl && (
-                    <a
-                      href={c.websiteUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Web"
-                      className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
-                    >
-                      <Globe className="w-4 h-4" />
-                    </a>
-                  )}
+                  {SOCIAL_LINKS.map(({ key, label, Icon }) => {
+                    const url = c[key] as string | null | undefined
+                    if (!url) return null
+                    return (
+                      <a
+                        key={key}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${c.name} · ${label}`}
+                        className="p-2 rounded-lg border border-white/10 text-ink-300 hover:border-brand-cyan/50 hover:text-brand-cyan hover:bg-brand-blue/5 transition-all"
+                      >
+                        <Icon className="w-4 h-4" />
+                      </a>
+                    )
+                  })}
                 </div>
               </div>
             </article>
@@ -114,4 +114,14 @@ export default async function Community() {
       </div>
     </section>
   )
+}
+
+function initials(name: string) {
+  return name
+    .replace(/^AWS\s+/i, '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((p) => p[0]?.toUpperCase() ?? '')
+    .join('')
 }

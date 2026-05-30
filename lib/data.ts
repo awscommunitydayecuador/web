@@ -30,6 +30,11 @@ export type CommunityDTO = {
   instagramUrl?: string | null
   linkedinUrl?: string | null
   facebookUrl?: string | null
+  twitterUrl?: string | null
+  youtubeUrl?: string | null
+  meetupUrl?: string | null
+  whatsappUrl?: string | null
+  tiktokUrl?: string | null
   websiteUrl?: string | null
 }
 
@@ -62,24 +67,99 @@ export async function fetchCommunities(): Promise<CommunityDTO[]> {
     {
       id: 'aws-ug-ecuador',
       name: 'AWS User Group Ecuador',
-      description:
-        'Comunidad principal de AWS en Ecuador. Meetups, charlas y workshops todo el año.',
       logoUrl: '/logo-aws-ug-ecuador.svg',
       instagramUrl: 'https://www.instagram.com/ecuadoraws',
-      linkedinUrl: 'https://www.linkedin.com/company/awsecuador/',
       facebookUrl: 'https://www.facebook.com/ecuadoraws',
+      twitterUrl: 'https://x.com/awsecuador',
+      youtubeUrl: 'https://www.youtube.com/@awsugecuador4610',
+      linkedinUrl: 'https://www.linkedin.com/company/awsecuador/',
+      meetupUrl: 'https://www.meetup.com/es-es/aws-ecuador/',
       websiteUrl: 'https://www.awsugecuador.com/',
+    },
+    {
+      id: 'aws-ug-quito',
+      name: 'AWS User Group Quito',
+      instagramUrl: 'https://www.instagram.com/awsugquito',
+      twitterUrl: 'https://x.com/awsugquito',
+      youtubeUrl: 'https://www.youtube.com/@awsugquito',
+      linkedinUrl: 'https://www.linkedin.com/company/awsugquito/',
+      meetupUrl: 'https://www.meetup.com/aws-user-group-quito/',
+      whatsappUrl: 'https://chat.whatsapp.com/CKVja1AhL9e0x47GSIsLQc',
+      websiteUrl: 'https://www.awsugquito.com/',
     },
     {
       id: 'aws-women-ecuador',
       name: 'AWS Women Ecuador',
-      description:
-        'Comunidad de mujeres en AWS Ecuador. Networking, mentoría y crecimiento profesional en cloud.',
       logoUrl: '/logo-aws-woman-ecuador.svg',
       instagramUrl: 'https://www.instagram.com/awswomenecuador',
-      linkedinUrl: 'https://www.linkedin.com/company/aws-women-ecuador/',
       facebookUrl: 'https://www.facebook.com/groups/awswomenecuador',
       websiteUrl: 'https://linktr.ee/awswomenecuador',
+    },
+    {
+      id: 'aws-security-ecuador',
+      name: 'AWS User Group Security Ecuador',
+      instagramUrl: 'https://www.instagram.com/awssecurityecuador',
+      whatsappUrl: 'https://chat.whatsapp.com/LXb1Gg9TgEY3Dx6q0mtPJn',
+      websiteUrl: 'https://www.awssecurityecuador.com/',
+    },
+    {
+      id: 'aws-sbg-ug',
+      name: 'AWS Student Builders at UG',
+      instagramUrl: 'https://www.instagram.com/aws_sbg_ug',
+      meetupUrl: 'https://www.meetup.com/aws-sbg-at-universidad-de-guayaquil',
+      whatsappUrl: 'https://chat.whatsapp.com/JcP04n8PYVkJtsconrsy0e?mode=gi_t',
+    },
+    {
+      id: 'aws-sbg-manta',
+      name: 'AWS Student Builders at Manta',
+      instagramUrl: 'https://www.instagram.com/awssbglmanta',
+      whatsappUrl: 'https://chat.whatsapp.com/CIRaJNPBoajLwlT60AzHYG',
+      websiteUrl: 'https://linktr.ee/awsmanta',
+    },
+    {
+      id: 'aws-sbg-espol',
+      name: 'AWS Student Builder at ESPOL',
+      instagramUrl: 'https://www.instagram.com/aws.sbg.espol',
+      twitterUrl: 'https://x.com/aws_sbg_espol',
+      youtubeUrl: 'https://www.youtube.com/@aws_sbg_espol',
+      linkedinUrl: 'https://www.linkedin.com/company/student-builder-group-at-espol',
+      meetupUrl: 'https://www.meetup.com/aws-sbg-at-escuela-superior-politecnica-del-litoral-espol',
+      whatsappUrl: 'https://chat.whatsapp.com/Ek8cwkm5bzTHfHSKfUXvAg',
+      websiteUrl: 'https://linktr.ee/aws.sbg.espol',
+    },
+    {
+      id: 'aws-sbg-ucuenca',
+      name: 'AWS Student Builder at UCuenca',
+      instagramUrl: 'https://www.instagram.com/aws.ucuenca',
+      twitterUrl: 'https://x.com/aws.ucuenca',
+      linkedinUrl: 'https://www.linkedin.com/company/aws-student-builder-group-universidad-de-cuenca/',
+      meetupUrl: 'https://www.meetup.com/es-es/aws-cloud-club-at-universidad-de-cuenca/',
+      whatsappUrl: 'https://chat.whatsapp.com/LqqNGmzy0Ti4seISeiV4Bi',
+      websiteUrl: 'https://linktr.ee/awsclub.ucuenca',
+    },
+    {
+      id: 'aws-sbg-itb',
+      name: 'AWS Student Builder at ITB',
+      instagramUrl: 'https://www.instagram.com/aws.itb',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61590435900354',
+      twitterUrl: 'https://x.com/aws_itb',
+      youtubeUrl: 'https://www.youtube.com/@aws-itb',
+      whatsappUrl: 'https://chat.whatsapp.com/GDrxU8QQVdaEAhvET1fnwt',
+      websiteUrl: 'https://warkos27.github.io/awws-builders-itb/',
+    },
+    {
+      id: 'aws-sbg-uide',
+      name: 'AWS Student Builder at UIDE',
+      instagramUrl: 'https://www.instagram.com/aws_sbg_uide',
+      meetupUrl: 'https://www.meetup.com/aws-sbg-at-international-university-of-ecuador',
+      whatsappUrl: 'https://chat.whatsapp.com/IBITRvbUiQZLWrEmJNlRgz',
+    },
+    {
+      id: 'aws-sbg-puce',
+      name: 'AWS Student Builder at PUCE',
+      instagramUrl: 'https://www.instagram.com/aws_puce',
+      twitterUrl: 'https://x.com/aws_puce',
+      linkedinUrl: 'https://linkedin.com/company/aws_puce',
     },
   ]
 }
