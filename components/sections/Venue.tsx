@@ -65,8 +65,23 @@ export default async function Venue() {
           {/* Right column */}
           <div className="lg:col-span-5 grid gap-4">
             <div className="surface-elev p-6 sm:p-8">
-              <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400 mb-3">
-                Sede oficial
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <div className="text-[10px] font-mono uppercase tracking-[0.3em] text-ink-400">
+                  Sede oficial
+                </div>
+                <div className="flex flex-col items-end gap-1.5 shrink-0">
+                  <div className="rounded-xl bg-white/95 px-4 py-2.5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.5)]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/logo-ups.svg"
+                      alt="Universidad Politécnica Salesiana"
+                      className="h-10 sm:h-12 w-auto"
+                    />
+                  </div>
+                  <span className="text-[9px] font-mono uppercase tracking-[0.2em] text-brand-cyan">
+                    Co-organizador
+                  </span>
+                </div>
               </div>
               <div className="font-display text-xl sm:text-3xl font-semibold tracking-tight text-ink-0 leading-tight">
                 {name}

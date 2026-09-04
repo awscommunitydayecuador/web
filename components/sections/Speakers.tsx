@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { fetchSpeakers, type SpeakerDTO } from '@/lib/data'
 import { EVENT } from '@/lib/event'
-import { Twitter, LinkedIn, Github, Globe } from '@/components/icons/Social'
 
 function Initials({ name }: { name: string }) {
   const initials = name
@@ -11,92 +10,40 @@ function Initials({ name }: { name: string }) {
     .map((p) => p[0]?.toUpperCase() ?? '')
     .join('')
   return (
-    <div className="w-full aspect-square grid place-items-center bg-gradient-to-br from-brand-electric via-brand-navy to-brand-night text-ink-0 font-display text-6xl font-semibold tracking-tighter">
+    <div className="w-full h-full grid place-items-center bg-gradient-to-br from-brand-electric via-brand-navy to-brand-night text-ink-0 font-display text-lg font-semibold">
       <span className="text-aurora">{initials || '?'}</span>
     </div>
   )
 }
 
 function SpeakerCard({ s }: { s: SpeakerDTO }) {
-  return (
-    <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl transition-all duration-300 hover:border-white/25 hover:-translate-y-1">
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-brand-blue/25 blur-3xl" />
-        <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-brand-magenta/20 blur-3xl" />
-      </div>
+  const meta = [s.role, s.company].filter(Boolean).join(' · ')
 
-      <div className="aspect-[4/5] overflow-hidden relative">
+  return (
+    <div className="group flex flex-col items-center text-center gap-2.5">
+      <div className="w-full aspect-square rounded-full overflow-hidden border border-white/10 bg-white/[0.03] transition-colors duration-300 group-hover:border-brand-cyan/40">
         {s.photoUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={s.photoUrl}
             alt={s.name}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <Initials name={s.name} />
         )}
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-night via-brand-night/40 to-transparent" />
       </div>
-
-      <div className="relative p-5 -mt-16">
-        <div className="space-y-1">
-          {s.company && (
-            <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-cyan">
-              {s.company}
-            </div>
-          )}
-          <h3 className="font-display text-xl font-semibold leading-tight tracking-tight text-ink-0">
-            {s.name}
-          </h3>
-          {s.role && (
-            <div className="text-sm text-ink-400 leading-snug">{s.role}</div>
-          )}
-        </div>
-        <div className="flex items-center gap-1.5 mt-4">
-          {s.twitter && (
-            <a
-              href={s.twitter}
-              target="_blank"
-              aria-label="X"
-              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
-            >
-              <Twitter className="w-3.5 h-3.5" />
-            </a>
-          )}
-          {s.linkedin && (
-            <a
-              href={s.linkedin}
-              target="_blank"
-              aria-label="LinkedIn"
-              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
-            >
-              <LinkedIn className="w-3.5 h-3.5" />
-            </a>
-          )}
-          {s.github && (
-            <a
-              href={s.github}
-              target="_blank"
-              aria-label="GitHub"
-              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
-            >
-              <Github className="w-3.5 h-3.5" />
-            </a>
-          )}
-          {s.website && (
-            <a
-              href={s.website}
-              target="_blank"
-              aria-label="Web"
-              className="p-2 rounded-lg border border-white/10 hover:border-brand-cyan/50 hover:text-brand-cyan transition-colors"
-            >
-              <Globe className="w-3.5 h-3.5" />
-            </a>
-          )}
-        </div>
+      <div>
+        <h3 className="font-display text-sm font-semibold leading-tight tracking-tight text-ink-0">
+          {s.name}
+        </h3>
+        {meta && (
+          <p className="text-[11px] text-ink-500 leading-snug mt-0.5">
+            {meta}
+          </p>
+        )}
       </div>
-    </article>
+    </div>
   )
 }
 
@@ -107,13 +54,12 @@ export default async function Speakers() {
   return (
     <section
       id="speakers"
-      className="relative py-20 sm:py-32 overflow-hidden"
+      className="relative py-20 sm:py-28 overflow-hidden"
     >
       <div className="section-veil" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-magenta/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container-wide relative">
-        <div className="grid lg:grid-cols-12 gap-8 mb-12 sm:mb-14 items-end">
+        <div className="grid lg:grid-cols-12 gap-8 mb-10 sm:mb-12 items-end">
           <div className="lg:col-span-7">
             <span className="section-eyebrow">Speakers</span>
             <h2 className="section-title">
@@ -148,7 +94,7 @@ export default async function Speakers() {
         </div>
 
         {hasSpeakers ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-x-4 gap-y-7 sm:gap-x-6 sm:gap-y-9">
             {speakers.map((s) => (
               <SpeakerCard key={s.id} s={s} />
             ))}

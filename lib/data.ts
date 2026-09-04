@@ -50,11 +50,60 @@ export type VenueDTO = {
   description?: string | null
 }
 
+export type AgendaSpeakerDTO = {
+  firstName: string
+  lastName: string
+  company?: string | null
+  jobTitle?: string | null
+  photoUrl?: string | null
+}
+
+export type AgendaItemType =
+  | 'ceremony'
+  | 'talk'
+  | 'workshop'
+  | 'break'
+  | string
+
+export type AgendaItemDTO = {
+  id: string
+  title: string
+  description?: string | null
+  date: string
+  startTime: string
+  endTime: string
+  locationDetail?: string | null
+  type: AgendaItemType
+  speakers: AgendaSpeakerDTO[]
+}
+
 /* ── Data sources ─────────────────────────────────────────────── */
 
 export async function fetchSpeakers(): Promise<SpeakerDTO[]> {
-  // 2026 line-up pending announcement.
-  return []
+  const agenda = await fetchAgenda()
+  const seen = new Set<string>()
+  const speakers: SpeakerDTO[] = []
+
+  for (const item of agenda) {
+    for (const sp of item.speakers) {
+      const name = `${sp.firstName ?? ''} ${sp.lastName ?? ''}`.trim()
+      if (!name) continue
+
+      const key = name.toLowerCase()
+      if (seen.has(key)) continue
+      seen.add(key)
+
+      speakers.push({
+        id: key.replace(/\s+/g, '-'),
+        name,
+        role: sp.jobTitle ?? null,
+        company: sp.company ?? null,
+        photoUrl: sp.photoUrl ?? null,
+      })
+    }
+  }
+
+  return speakers
 }
 
 export async function fetchSponsors(): Promise<SponsorDTO[]> {
@@ -162,6 +211,47 @@ export async function fetchCommunities(): Promise<CommunityDTO[]> {
       linkedinUrl: 'https://linkedin.com/company/aws_puce',
     },
   ]
+}
+
+export async function fetchAgenda(): Promise<AgendaItemDTO[]> {
+  const url = process.env.AGENDA_API_URL
+  const user = process.env.AGENDA_API_USER
+  const pass = process.env.AGENDA_API_PASS
+  if (!url || !user || !pass) return []
+
+  try {
+    const auth = Buffer.from(`${user}:${pass}`).toString('base64')
+    const res = await fetch(url, {
+      headers: { Authorization: `Basic ${auth}` },
+      next: { revalidate: 300 },
+    })
+    if (!res.ok) return []
+
+    const data = await res.json()
+    const agenda = Array.isArray(data?.agenda) ? data.agenda : []
+
+    return agenda.map((item: any) => ({
+      id: String(item.id),
+      title: item.title,
+      description: item.description ?? null,
+      date: item.date,
+      startTime: item.start_time,
+      endTime: item.end_time,
+      locationDetail: item.location_detail ?? null,
+      type: item.type,
+      speakers: Array.isArray(item.speakers)
+        ? item.speakers.map((sp: any) => ({
+            firstName: sp.first_name,
+            lastName: sp.last_name,
+            company: sp.company ?? null,
+            jobTitle: sp.job_title ?? null,
+            photoUrl: sp.photo_url ?? null,
+          }))
+        : [],
+    }))
+  } catch {
+    return []
+  }
 }
 
 export async function fetchVenue(): Promise<VenueDTO | null> {

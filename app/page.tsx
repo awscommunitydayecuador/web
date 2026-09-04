@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
 import Marquee from '@/components/sections/Marquee'
 import Speakers from '@/components/sections/Speakers'
+import Agenda from '@/components/sections/Agenda'
 import Sponsors from '@/components/sections/Sponsors'
 import Venue from '@/components/sections/Venue'
 import Community from '@/components/sections/Community'
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Marquee />
       <Speakers />
+      <Agenda />
       <Sponsors />
       <Venue />
       <Community />
