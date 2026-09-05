@@ -1,3 +1,8 @@
+// Este módulo lee AGENDA_API_PASS. El import corta el build si alguien lo
+// importa desde un componente de cliente, para que la clave no acabe nunca en
+// el bundle del navegador (ver el bloque `env` de next.config.js).
+import 'server-only'
+
 import { fetchAgendaFromIcs } from './agenda-ics'
 import { EVENT } from './event'
 

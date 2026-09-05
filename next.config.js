@@ -6,6 +6,22 @@ const withBundleAnalyzer = process.env.ANALYZE === 'true'
   : (config) => config
 
 const nextConfig = {
+  // Amplify inyecta las variables de entorno en el BUILD, pero NO en el runtime
+  // de la compute SSR: al revalidar el ISR (cada 60s) `process.env` llegaba
+  // vacío, fetchAgenda caía al fallback .ics y se perdían fotos, cargos y el
+  // tipo real de sesión. Declararlas aquí las fija en el bundle de servidor en
+  // tiempo de build, que es la vía soportada en Amplify.
+  //
+  // AGENDA_API_PASS queda dentro del artefacto de build. Es aceptable porque el
+  // artefacto no se sirve al navegador y la credencial es de solo lectura y
+  // acotada a un evento; `import 'server-only'` en lib/data.ts hace que el build
+  // FALLE si algún día se importa ese módulo desde un componente de cliente,
+  // en vez de filtrar la clave al bundle público.
+  env: {
+    AGENDA_API_URL: process.env.AGENDA_API_URL,
+    AGENDA_API_USER: process.env.AGENDA_API_USER,
+    AGENDA_API_PASS: process.env.AGENDA_API_PASS,
+  },
   images: {
     domains: ['images.unsplash.com'],
     formats: ['image/webp', 'image/avif'],
