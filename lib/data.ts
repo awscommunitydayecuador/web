@@ -253,9 +253,16 @@ async function fetchAgendaFromApi(): Promise<AgendaItemDTO[]> {
 
   try {
     const auth = Buffer.from(`${user}:${pass}`).toString('base64')
+    // `cache: 'no-store'` a propósito: con `next: { revalidate }` este fetch
+    // usaba el Data Cache de Next, que en Amplify persiste entre builds (el
+    // build restaura `.next/cache`). El resultado: la agenda quedaba pegada a
+    // los datos del build en que se escribió esa entrada, aunque pasaran los
+    // 300s y se redesplegara. El ISR de la página (`revalidate = 60` en
+    // app/page.tsx) ya gobierna cada cuánto se vuelve a llamar esta función;
+    // no hace falta una segunda capa de caché aquí.
     const res = await fetch(url, {
       headers: { Authorization: `Basic ${auth}` },
-      next: { revalidate: 300 },
+      cache: 'no-store',
     })
     if (!res.ok) {
       console.error(`[agenda] el API respondió ${res.status}; se usa el fallback .ics`)

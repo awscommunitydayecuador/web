@@ -136,7 +136,9 @@ export async function fetchAgendaFromIcs(): Promise<AgendaItemDTO[]> {
   let raw: string
 
   try {
-    const res = await fetch(url, { next: { revalidate: 300 } })
+    // Mismo motivo que en lib/data.ts: sin esto, el Data Cache de Next
+    // persiste entre builds en Amplify y este fallback también queda pegado.
+    const res = await fetch(url, { cache: 'no-store' })
     if (!res.ok) {
       console.error(`[agenda] fallback .ics respondió ${res.status} en ${url}`)
       return []
