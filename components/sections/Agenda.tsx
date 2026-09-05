@@ -30,7 +30,7 @@ function SpeakerChip({ speaker }: { speaker: AgendaSpeakerDTO }) {
     .join('')
 
   return (
-    <div className="flex items-center gap-2.5">
+    <div className="flex min-w-0 items-center gap-2.5">
       <div className="w-[30px] h-[30px] rounded-full overflow-hidden shrink-0 border border-white/10 bg-brand-navy grid place-items-center">
         {speaker.photoUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -45,7 +45,7 @@ function SpeakerChip({ speaker }: { speaker: AgendaSpeakerDTO }) {
           </span>
         )}
       </div>
-      <span className="text-sm text-ink-400">{name}</span>
+      <span className="min-w-0 break-words text-sm text-ink-400">{name}</span>
     </div>
   )
 }
@@ -65,13 +65,13 @@ function SessionCard({ item }: { item: AgendaItemDTO }) {
   }
 
   return (
-    <article className="group relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-5 sm:p-6 transition-all duration-300 hover:border-brand-cyan/40 hover:bg-white/[0.05]">
+    <article className="group relative min-w-0 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-5 sm:p-6 transition-all duration-300 hover:border-brand-cyan/40 hover:bg-white/[0.05]">
       <div className="flex items-center justify-between gap-3 mb-3">
         <span className={TYPE_CHIP[item.type] ?? 'chip'}>
           {TYPE_LABEL[item.type] ?? item.type}
         </span>
         {item.locationDetail && (
-          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-500 text-right truncate">
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-500 text-right min-w-0 sm:truncate">
             {item.locationDetail}
           </span>
         )}
