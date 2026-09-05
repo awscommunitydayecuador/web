@@ -19,7 +19,13 @@ const nextConfig = {
   generateEtags: false,
   swcMinify: true,
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    // `error` y `warn` se conservan a propósito. Son los avisos de por qué la
+    // agenda se quedó vacía; borrándolos en el build, un fallo del API vuelve
+    // a ser invisible en producción y la sección solo dice "se publica pronto".
+    removeConsole:
+      process.env.NODE_ENV === 'production'
+        ? { exclude: ['error', 'warn'] }
+        : false,
   },
   // Optimize for Amplify
   output: 'standalone',
