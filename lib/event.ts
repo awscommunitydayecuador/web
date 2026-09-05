@@ -22,6 +22,9 @@ export const EVENT = {
     'https://www.google.com/maps?q=Universidad+Polit%C3%A9cnica+Salesiana+Cuenca+Turuhuayco&output=embed',
   registrationUrl: 'https://ec-central-1.console.awscommunity.ec/e/awscommunitydayec2026/register',
   cfpUrl: 'https://ec-central-1.console.awscommunity.ec/e/awscommunitydayec2026/cfp',
+  // Feed público (sin auth) del que se nutre el fallback de agenda.
+  agendaIcsUrl:
+    'https://ec-central-1.console.awscommunity.ec/e/awscommunitydayec2026/agenda.ics',
   sponsorEmail: 'hello@awsugecuador.com',
   contactEmail: 'hello@awsugecuador.com',
   social: {

@@ -1,3 +1,4 @@
+import { fetchAgendaFromIcs } from './agenda-ics'
 import { EVENT } from './event'
 
 export type SpeakerDTO = {
@@ -213,11 +214,37 @@ export async function fetchCommunities(): Promise<CommunityDTO[]> {
   ]
 }
 
+/**
+ * Agenda del evento.
+ *
+ * Fuente principal: el API externo de awscommunity.ec, que es el único que
+ * trae el tipo de sesión y los datos completos de cada speaker (foto, cargo,
+ * empresa). Si no está configurado o se cae, se usa el feed `.ics` público
+ * como red de seguridad para no dejar la sección vacía en pleno evento
+ * —ver lib/agenda-ics.ts—.
+ */
 export async function fetchAgenda(): Promise<AgendaItemDTO[]> {
+  const fromApi = await fetchAgendaFromApi()
+  if (fromApi.length > 0) return fromApi
+
+  return fetchAgendaFromIcs()
+}
+
+async function fetchAgendaFromApi(): Promise<AgendaItemDTO[]> {
   const url = process.env.AGENDA_API_URL
   const user = process.env.AGENDA_API_USER
   const pass = process.env.AGENDA_API_PASS
-  if (!url || !user || !pass) return []
+
+  // Ojo: estos avisos tienen que sobrevivir al build de producción. El
+  // `removeConsole` de next.config.js excluye `error` y `warn` justamente
+  // por esto: la primera versión se tragaba los fallos en silencio y el
+  // sitio mostraba "la agenda se publica pronto" sin dejar rastro.
+  if (!url || !user || !pass) {
+    console.warn(
+      '[agenda] faltan AGENDA_API_URL / AGENDA_API_USER / AGENDA_API_PASS; se usa el fallback .ics'
+    )
+    return []
+  }
 
   try {
     const auth = Buffer.from(`${user}:${pass}`).toString('base64')
@@ -225,7 +252,10 @@ export async function fetchAgenda(): Promise<AgendaItemDTO[]> {
       headers: { Authorization: `Basic ${auth}` },
       next: { revalidate: 300 },
     })
-    if (!res.ok) return []
+    if (!res.ok) {
+      console.error(`[agenda] el API respondió ${res.status}; se usa el fallback .ics`)
+      return []
+    }
 
     const data = await res.json()
     const agenda = Array.isArray(data?.agenda) ? data.agenda : []
@@ -249,7 +279,8 @@ export async function fetchAgenda(): Promise<AgendaItemDTO[]> {
           }))
         : [],
     }))
-  } catch {
+  } catch (error) {
+    console.error('[agenda] no se pudo leer el API; se usa el fallback .ics:', error)
     return []
   }
 }
